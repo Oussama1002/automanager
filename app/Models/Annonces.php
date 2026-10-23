@@ -1,0 +1,215 @@
+<?php
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Annonces extends Model
+{
+    use HasFactory, SoftDeletes;
+
+    protected $table = 'annonces';
+    
+protected $fillable = [
+    'phone',
+    'pack_id',
+    'titre',
+    'prix',
+    'mark',
+    'images', // ✅ add this line
+
+    'modele',
+    'matricule',
+    'year',
+    'km',
+    'carburant',
+    'box',
+    'etat',
+    'type', // Occasion / Neuf (vente modal)
+    'city',
+    'cv',
+    'nb_Door',
+    'origine',
+    'premiere_main',
+    'video',
+    'reel',
+    'bodywork',
+    'status',
+    'image',
+    'imgrleft',
+    'imgrtop',
+    'imgrmed',
+    'imgrbottom',
+    'imgrright',
+    'imginterior',
+    'imgrapport',
+    'rapport',
+    'co2',
+    'certifie',
+    'particulie',
+    'pro',
+    'showroom',
+    'finance',
+    'jantes_aluminium',
+    'airbags',
+    'climatisation',
+    'gps',
+    'toit_ouvrant',
+    'double_toit_ouvrant',
+    'siege_cuir',
+    'radar_recul',
+    'camera_recul',
+    'vitreselec',
+    'abs',
+    'eps',
+    'rv',
+    'lv',
+    'cd',
+    'ordinateur',
+    'verrouillage',
+    'garantie',
+    'views',
+    'active',
+    'verified',
+    'pack',
+    'featured_position',
+    'show_in_homepage',
+    'homepage_position',
+    'is_homepage',
+    'colors',
+
+    // nouvelles colonnes sécurité / confort
+    'esp',
+    'antipatinage',
+    'aide_freinage_urgence',
+    'antidemarrage_electronique',
+    'aide_demarrage_cote',
+    'selecteur_mode_conduite',
+    'detection_fatigue',
+    'maintien_dans_la_voie',
+    'detecteur_angle_mort',
+    'detecteur_sous_gonflage',
+    'fermeture_portes_auto',
+    'preparation_isofix',
+    'phares_antibrouillard',
+    'systeme_alarme',
+    'start_stop',
+    'regulateur_vitesse',
+    'detecteur_pluie',
+    'allumage_auto_feux',
+    'frein_main_electrique',
+    'aide_stationnement',
+    'volant_reglable',
+    'retros_electriques',
+    'retros_rabat_electriques',
+    'coffre_electrique',
+    'sieges_electriques',
+    'sieges_elec_memoire',
+    'banquette_rabattable',
+    'ecran_tactile',
+    'cockpit_digital',
+    'commandes_volant',
+    'commandes_vocales',
+    'reconnaissance_panneaux',
+    'affichage_tete_haute',
+    'systeme_audio',
+    'wifi_bord',
+    'bluetooth',
+    'compatibilite_smartphone',
+    'apple_carplay_android_auto',
+    'chargeur_sans_fil',
+    'sellerie_similicuir_tissu',
+    'volant_cuir',
+    'follow_me_home',
+    'lumiere_ambiance',
+    'feux_jour_led',
+    'phares_full_led',
+    'toit_panoramique',
+    'barres_de_toit',
+    'vitres_surteintees',
+];
+
+
+    protected $casts = [
+        'verified' => 'boolean',
+        // si tu veux forcer les options à int (0/1)
+        'jantesA' => 'integer',
+        'airbags' => 'integer',
+        'climatisation' => 'integer',
+        'pro' => 'boolean',
+    'images' => 'array', // now Laravel will automatically decode JSON into a PHP array
+];
+        // ... tu peux ajouter les autres si besoin
+
+    // Relations
+    public function autoencheres()
+    {
+        return $this->hasMany(Autoenchere::class);
+    }
+
+    public function favoredBy()
+    {
+        return $this->belongsToMany(User::class, 'favorites')->withTimestamps();
+    }
+
+    public function clientsfavorites()
+    {
+        return $this->belongsToMany(
+            Client::class,
+            'favorites',
+            'annonce_id',
+            'client_id'
+        )->withTimestamps();
+    }
+
+    public function client()
+    {
+        return $this->belongsTo(Client::class, 'phone', 'phone');
+    }
+
+    public function media()
+    {
+        return $this->hasMany(Media::class, 'annonces_id');
+    }
+
+    public function entretiens()
+    {
+        return $this->hasMany(Entretien::class, 'annonce_id');
+    }
+
+    public function pack()
+    {
+        return $this->belongsTo(Pack::class);
+    }
+
+   public function brand()
+{
+    return $this->belongsTo(Brand::class, 'mark', 'id');
+}
+
+
+    // Model relationship
+    public function modeleRelation()
+    {
+        return $this->belongsTo(Modele::class, 'modele', 'id'); // 'modele' = foreign key in annonces
+    }
+public function videoAd()
+{
+    return $this->hasOne(\App\Models\Videosads::class, 'annonce_id');
+}
+
+
+    // Corrigé : utilise la relation media au lieu de décoder $this->media qui n'est pas un JSON
+    public function pathImageAds()
+    {
+        $first = $this->media()->first();
+        if ($first && !empty($first->name)) {
+            return $first->name;
+        }
+
+        return 'phonedef.jpg';
+    }
+ 
+
+}
