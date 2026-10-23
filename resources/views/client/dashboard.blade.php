@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Mon Espace | NADO')
+@section('title', 'Mon Espace | AUTOMANAGER')
 
 @section('content')
 @php
@@ -18,8 +18,8 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 :root {
-    --blue:    #1459DD;
-    --yellow:  #FDD817;
+    --blue:    #0E0F12;
+    --yellow:  #C8A24B;
     --slate-50:#f8fafc; --slate-100:#f1f5f9; --slate-200:#e2e8f0;
     --slate-400:#94a3b8; --slate-500:#64748b; --slate-600:#475569;
     --slate-700:#334155; --slate-800:#1e293b; --slate-900:#0f172a;
@@ -242,7 +242,7 @@ body { background: var(--slate-50); font-family: 'Inter', sans-serif; color: var
     flex-shrink: 0;
     font-size: 18px;
 }
-.stat-icon.blue   { background: #dbeafe; color: var(--blue); }
+.stat-icon.blue   { background: #F2E9D2; color: var(--blue); }
 .stat-icon.yellow { background: #fefce8; color: #ca8a04; }
 .stat-icon.green  { background: #f0fdf4; color: #16a34a; }
 .stat-icon.red    { background: #fef2f2; color: #dc2626; }
@@ -326,7 +326,7 @@ table.dash-table tr:hover td { background: #fafbfd; }
     white-space: nowrap;
 }
 .tbl-btn-edit  { background: var(--slate-100); color: var(--slate-700); }
-.tbl-btn-edit:hover  { background: #dbeafe; color: var(--blue); }
+.tbl-btn-edit:hover  { background: #F2E9D2; color: var(--blue); }
 .tbl-btn-del   { background: #fef2f2; color: #dc2626; }
 .tbl-btn-del:hover   { background: #fee2e2; }
 
@@ -892,7 +892,7 @@ if (offersCtx) {
         data: {
             labels: @json($offersLabels),
             datasets: [{ label: 'Offres', data: @json($offersData),
-                         backgroundColor: 'rgba(20,89,221,.18)', borderColor: '#1459DD',
+                         backgroundColor: 'rgba(20,89,221,.18)', borderColor: '#0E0F12',
                          borderWidth: 2, borderRadius: 8 }]
         },
         options: chartDefaults
@@ -907,7 +907,7 @@ if (viewsCtx) {
         data: {
             labels: @json($viewsLabels),
             datasets: [{ label: 'Vues', data: @json($viewsData),
-                         backgroundColor: 'rgba(20,89,221,.12)', borderColor: '#1459DD',
+                         backgroundColor: 'rgba(20,89,221,.12)', borderColor: '#0E0F12',
                          borderWidth: 2, borderRadius: 8 }]
         },
         options: chartDefaults

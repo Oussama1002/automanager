@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Nado.ma</title>
+    <title>Home | Automanager</title>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -15,8 +15,8 @@
 
     <style>
         :root {
-            --primary: #1459DD;
-            --secondary: #FDD817;
+            --primary: #0E0F12;
+            --secondary: #C8A24B;
             --slate-50: #f8fafc;
             --slate-100: #f1f5f9;
             --slate-200: #e2e8f0;
@@ -341,7 +341,7 @@
             color: transparent;
             background-clip: text;
             -webkit-background-clip: text;
-            background-image: linear-gradient(to right, var(--primary), #7ea9ff);
+            background-image: linear-gradient(to right, var(--primary), #E3C178);
         }
 
         .hero-desc {
@@ -468,8 +468,8 @@
             margin: 0;
         }
 
-        .nado-y { color: #FDD817; }
-        .nado-b { color: #1459DD; }
+        .nado-y { color: #C8A24B; }
+        .nado-b { color: #0E0F12; }
 
         .story-scroll {
             display: flex;
@@ -689,7 +689,7 @@
         }
 
         .btn-find:hover {
-            background-color: #1d4ed8;
+            background-color: #A17E31;
             transform: scale(1.02);
         }
 
@@ -885,9 +885,9 @@
         }
 
         #derniers-vehicules .dv-btn:hover:not(:disabled) {
-            background: var(--primary, #1459DD);
+            background: var(--primary, #0E0F12);
             color: #fff;
-            border-color: var(--primary, #1459DD);
+            border-color: var(--primary, #0E0F12);
         }
 
         #derniers-vehicules .dv-btn:disabled {
@@ -1096,7 +1096,7 @@
         }
 
         .listing-price-text {
-            color: #1459DD;
+            color: #0E0F12;
             font-size: 1.5rem;
             /* text-2xl */
             font-weight: 900;
@@ -1127,7 +1127,7 @@
         }
 
         .listing-card:hover .listing-title-new {
-            color: #1459DD;
+            color: #0E0F12;
         }
 
         /* Specs Grid */
@@ -1155,7 +1155,7 @@
         /* Footer (Blue Full Width) */
         .listing-footer-btn {
             background-color: var(--primary);
-            /* bg-[#1459DD] */
+            /* bg-[#0E0F12] */
             padding: 1.5rem;
             /* p-6 */
             border-radius: 2rem;
@@ -1205,7 +1205,7 @@
             font-size: 0.75rem;
             /* text-xs */
             font-weight: 900;
-            color: #FDD817;
+            color: #C8A24B;
         }
 
         .arrow-circle {
@@ -1369,7 +1369,7 @@
         }
 
 
-        /* PUB NADO EXPERT */
+        /* PUB AUTOMANAGER EXPERT */
         .promo-section {
             padding: 2rem 1rem;
             background-color: var(--white);
@@ -1482,7 +1482,7 @@
             object-fit: cover;
         }
 
-        /* NADO PRICE */
+        /* AUTOMANAGER PRICE */
         .price-section {
             padding: 6rem 0;
             background-color: var(--primary);
@@ -1522,7 +1522,7 @@
         }
 
         .price-desc {
-            color: #eff6ff;
+            color: #FAF6EC;
             font-size: 1.25rem;
             font-weight: 500;
             line-height: 1.625;
@@ -2630,9 +2630,9 @@
         $isAutoEnchere = request()->routeIs('nadoautoenchere.*');
 
         // Theme Colors
-        $accentColor = $isAutoEnchere ? '#F37021' : '#FDD817';
-        $buttonHoverBg = $isAutoEnchere ? '#F37021' : '#FDD817';
-        $logoText = $isAutoEnchere ? 'AUTO ENCHÈRE' : 'NADO';
+        $accentColor = $isAutoEnchere ? '#C8A24B' : '#C8A24B';
+        $buttonHoverBg = $isAutoEnchere ? '#C8A24B' : '#C8A24B';
+        $logoText = $isAutoEnchere ? 'AUTO ENCHÈRE' : 'AUTOMANAGER';
 
         // Recent demandes for the live-notification toast (bottom-left).
         $recentDemandes = \App\Models\Demande::public()
@@ -2660,7 +2660,7 @@
         <div id="dmdLive" style="position:fixed;left:20px;bottom:20px;z-index:9999;width:400px;max-width:calc(100vw - 20px);font-family:'Inter',sans-serif;pointer-events:none;">
             {{-- Persistent banner on top (bigger & more prominent than the live cards) --}}
             <a href="{{ route('demandes.index') }}" id="dmdLiveBanner"
-               style="pointer-events:auto;display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,#1459DD,#2563eb);color:#fff;padding:20px 22px;border-radius:18px;text-decoration:none;box-shadow:0 24px 48px -14px rgba(20,89,221,.5);margin-bottom:14px;position:relative;">
+               style="pointer-events:auto;display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,#0E0F12,#C8A24B);color:#fff;padding:20px 22px;border-radius:18px;text-decoration:none;box-shadow:0 24px 48px -14px rgba(20,89,221,.5);margin-bottom:14px;position:relative;">
                 <div style="width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
                         <path d="M3 13l2-7h14l2 7"/><path d="M3 13v5a1 1 0 001 1h2a1 1 0 001-1v-1h10v1a1 1 0 001 1h2a1 1 0 001-1v-5"/><circle cx="7" cy="16" r="1.3"/><circle cx="17" cy="16" r="1.3"/>
@@ -2710,12 +2710,12 @@
             .dmd-live-card.leaving { animation:dmdSlideOut .35s ease forwards; }
             .dmd-live-av {
                 width:34px; height:34px; border-radius:50%;
-                background:linear-gradient(135deg,#1459DD,#F37021);
+                background:linear-gradient(135deg,#0E0F12,#C8A24B);
                 color:#fff; display:flex; align-items:center; justify-content:center;
                 font-weight:800; font-size:13px; flex-shrink:0;
             }
             .dmd-live-tag {
-                font-size:10px; font-weight:700; color:#1459DD;
+                font-size:10px; font-weight:700; color:#0E0F12;
                 text-transform:uppercase; letter-spacing:.04em;
                 display:flex; align-items:center; gap:5px;
             }
@@ -2725,7 +2725,7 @@
             }
             .dmd-live-text { font-size:13px; color:#0f172a; line-height:1.4; margin-top:2px; }
             .dmd-live-text strong { color:#0f172a; }
-            .dmd-live-link { font-size:11px; color:#1459DD; font-weight:700; text-decoration:none; }
+            .dmd-live-link { font-size:11px; color:#0E0F12; font-weight:700; text-decoration:none; }
             .dmd-live-ago { font-size:10px; color:#94a3b8; margin-top:1px; }
             /* Hide the demandes feed while the mobile drawer is open (any viewport) */
             body:has(.mobile-drawer.visible) #dmdLive,
@@ -2879,12 +2879,12 @@
         <script src="https://unpkg.com/lucide@latest"></script>
 
         <!-- Top Bar Info -->
-        <div class="top-bar" style="background-color: #FDD817;">
+        <div class="top-bar" style="background-color: #0E0F12;">
             <div class="container custom-container top-bar-content">
                 <div class="contact-info">
                     <div class="info-item">
                         <i data-lucide="mail"></i>
-                        <a href="mailto:contact@nado.ma">contact@nado.ma</a>
+                        <a href="mailto:contact@automanager.ma">contact@automanager.ma</a>
                     </div>
                     <div class="info-item">
                         <i data-lucide="phone-call"></i>
@@ -2907,15 +2907,13 @@
                     <!-- Logo -->
                     <a href="{{ $isAutoEnchere ? route('nadoautoenchere.prelogin') : route('index') }}"
                         class="logo-link">
-                        @if ($isAutoEnchere)
-                            <span class="logo-text">
-                                <span class="text-dark">AUTO </span>
-                                <span style="color: #F37021;">ENCHÈRE</span>
-                            </span>
-                        @else
-                            <img src="{{ asset('storage/logos/UAfjepY72Xe7grWDva9cqSlRFsRKNZPV3HBDbBP1.png') }}"
-                                 alt="NADO" style="height: 36px; width: auto; object-fit: contain;" />
-                        @endif
+                        <span class="brand-wordmark">
+                            @if ($isAutoEnchere)
+                                <span class="bw-dark">AUTO</span><span class="bw-gold">ENCHÈRE</span>
+                            @else
+                                <span class="bw-dark">AUTO</span><span class="bw-gold">MANAGER</span>
+                            @endif
+                        </span>
                     </a>
 
                     <!-- Desktop Menu -->
@@ -3001,10 +2999,10 @@
                     <span class="logo-text">
                         @if ($isAutoEnchere)
                             <span class="text-dark">AUTO </span>
-                            <span style="color: #F37021;">ENCHÈRE</span>
+                            <span style="color: #C8A24B;">ENCHÈRE</span>
                         @else
-                            <span style="color: #1459DD;">NA</span>
-                            <span style="color: #FDD817;">DO</span>
+                            <span style="color: #0E0F12;">NA</span>
+                            <span style="color: #C8A24B;">DO</span>
                         @endif
                     </span>
                     <button id="closeDrawerBtn" class="close-btn">
@@ -3020,7 +3018,7 @@
                     @else
                         <a href="{{ route('achat.index') }}">Achat</a>
                         <a href="{{ route('vente.form') }}">Vente</a>
-                        <a href="{{ route('nadoautoenchere.prelogin') }}" style="color: #1459DD;">Auto-enchère</a>
+                        <a href="{{ route('nadoautoenchere.prelogin') }}" style="color: #0E0F12;">Auto-enchère</a>
                         <a href="{{ route('reprise.form') }}">Reprise</a>
                         <a href="{{ route('financement.index') }}">Auto-financement</a>
                         <a href="{{ route('about.index') }}">À propos</a>
@@ -3056,7 +3054,7 @@
                     <div class="drawer-divider"></div>
 
                     <div class="drawer-support">
-                        <p>Support NADO</p>
+                        <p>Support AUTOMANAGER</p>
                         <a href="tel:+212520070611">+212 520 070 611</a>
                     </div>
                 </div>
@@ -3066,7 +3064,12 @@
         <!-- Styles -->
         <style>
             :root {
-                --primary-blue: #1459DD;
+                --primary-blue: #C8A24B;
+                --nav-gold: #C8A24B;
+                --nav-gold-bright: #E3C178;
+                --nav-obsidian: #0E0F12;
+                --nav-obsidian-800: #17181C;
+                --nav-ivory: #F7F5F1;
                 --slate-900: #0f172a;
                 --slate-700: #334155;
                 --slate-50: #f8fafc;
@@ -3093,9 +3096,21 @@
             /* Top Bar */
             .top-bar {
                 padding: 10px 16px;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-                color: var(--slate-900);
+                border-bottom: 1px solid rgba(200, 162, 75, 0.16);
+                color: var(--nav-ivory);
             }
+
+            .brand-wordmark {
+                font-family: 'Inter', sans-serif;
+                font-size: 1.7rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                line-height: 1;
+                letter-spacing: 0.04em;
+                display: inline-flex;
+            }
+            .brand-wordmark .bw-dark { color: var(--nav-ivory); }
+            .brand-wordmark .bw-gold { color: var(--nav-gold); margin-left: 0.12em; }
 
             .custom-container {
                 max-width: 1280px;
@@ -3145,13 +3160,13 @@
             }
 
             .social-links a {
-                color: var(--slate-900);
-                opacity: 0.6;
+                color: var(--nav-ivory);
+                opacity: 0.55;
                 transition: opacity 0.2s, color 0.2s;
             }
 
             .social-links a:hover {
-                color: var(--primary-blue);
+                color: var(--nav-gold);
                 opacity: 1;
             }
 
@@ -3162,8 +3177,8 @@
 
             /* Main Nav */
             .main-nav {
-                background: white;
-                border-bottom: 1px solid var(--border-color);
+                background: var(--nav-obsidian-800);
+                border-bottom: 1px solid rgba(200, 162, 75, 0.22);
                 height: 96px;
                 display: flex;
                 align-items: center;
@@ -3202,7 +3217,7 @@
             }
 
             .text-dark {
-                color: var(--slate-900);
+                color: var(--nav-ivory);
             }
 
             /* Desktop Menu */
@@ -3219,13 +3234,13 @@
             }
 
             .nav-link {
-                font-size: 14.4px;
-                font-weight: 700;
+                font-size: 13.5px;
+                font-weight: 600;
                 text-transform: uppercase;
-                letter-spacing: 0.025em;
-                padding: 8px 12px;
-                border-radius: 16px;
-                color: var(--slate-700);
+                letter-spacing: 0.08em;
+                padding: 8px 14px;
+                border-radius: 10px;
+                color: rgba(247, 245, 241, 0.72);
                 text-decoration: none;
                 transition: all 0.2s;
                 background: transparent;
@@ -3234,17 +3249,18 @@
             }
 
             .nav-link:hover {
-                background-color: #f1f5f9;
-                color: var(--primary-blue);
+                background-color: rgba(200, 162, 75, 0.1);
+                color: var(--nav-gold);
             }
 
             .highlight-link {
-                color: var(--primary-blue);
-                background-color: #dbeafe;
+                color: var(--nav-gold);
+                background-color: rgba(200, 162, 75, 0.12);
+                box-shadow: inset 0 -2px 0 var(--nav-gold);
             }
 
             .highlight-link:hover {
-                background-color: #bfdbfe;
+                background-color: rgba(200, 162, 75, 0.2);
             }
 
             /* Dropdown */
@@ -3263,10 +3279,10 @@
                 top: 100%;
                 left: 0;
                 margin-top: 8px;
-                background: white;
-                border-radius: 16px;
-                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-                border: 1px solid var(--border-color);
+                background: var(--nav-obsidian-800);
+                border-radius: 12px;
+                box-shadow: 0 24px 40px -12px rgba(0, 0, 0, 0.6);
+                border: 1px solid rgba(200, 162, 75, 0.2);
                 min-width: 200px;
                 overflow: hidden;
                 display: none;
@@ -3278,18 +3294,19 @@
 
             .nav-dropdown-menu a {
                 display: block;
-                padding: 16px 20px;
-                font-size: 14px;
-                font-weight: 700;
+                padding: 14px 20px;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: 0.05em;
                 text-transform: uppercase;
-                color: var(--slate-700);
+                color: rgba(247, 245, 241, 0.75);
                 text-decoration: none;
-                transition: background 0.2s;
+                transition: background 0.2s, color 0.2s;
             }
 
             .nav-dropdown-menu a:hover {
-                background-color: #fff7ed;
-                color: #F37021;
+                background-color: rgba(200, 162, 75, 0.12);
+                color: var(--nav-gold);
             }
 
             /* Right Section */
@@ -3347,17 +3364,30 @@
             }
 
             .outline-btn {
-                background-color: rgba(253, 216, 23, 0.2);
-                border: 1px solid rgba(253, 216, 23, 0.5);
-                color: var(--slate-900);
+                background-color: rgba(200,162,75, 0.1);
+                border: 1px solid rgba(200,162,75, 0.45);
+                color: var(--nav-ivory);
             }
 
             .outline-btn:hover {
-                background-color: #FDD817;
+                background-color: rgba(200,162,75, 0.22);
+                border-color: var(--nav-gold);
+            }
+
+            .cta-publish {
+                background-color: var(--nav-gold);
+                border: 1px solid var(--nav-gold);
+                color: var(--nav-obsidian);
+                box-shadow: 0 6px 18px -6px rgba(200,162,75, 0.6);
+            }
+
+            .cta-publish:hover {
+                background-color: var(--nav-gold-bright);
+                border-color: var(--nav-gold-bright);
             }
 
             /* Adjust hover for enchere mode via JS or specific classes if needed,
-                   but inline style logic handles the main color. Here we default to Nado yellow styles. */
+                   but inline style logic handles the main color. Here we default to Automanager yellow styles. */
 
             .desktop-only {
                 display: none;
@@ -3372,11 +3402,11 @@
             .mobile-menu-btn {
                 display: block;
                 padding: 12px;
-                background-color: var(--slate-50);
+                background-color: rgba(200, 162, 75, 0.12);
                 border: none;
                 border-radius: 12px;
                 cursor: pointer;
-                color: var(--slate-900);
+                color: var(--nav-ivory);
             }
 
             @media (min-width: 1024px) {
@@ -3888,7 +3918,7 @@
                 <div class="hero-badge">
                     <span
                         style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--secondary); display: inline-block;"></span>
-                    <span>Expérience Premium NADO</span>
+                    <span>Expérience Premium AUTOMANAGER</span>
                 </div>
                 <h1 class="hero-title">L'Auto <br /><span class="text-gradient">Redéfinie</span></h1>
                 <p class="hero-desc">Le plus grand catalogue de véhicules certifiés au Maroc. Achat, vente et enchères
@@ -4037,16 +4067,16 @@
                                 </h3>
                                 <div class="listing-specs-grid">
                                     <div class="listing-spec-item"><i data-lucide="calendar"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->year }}</span></div>
                                     <div class="listing-spec-item"><i data-lucide="gauge"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->km }} km</span></div>
                                     <div class="listing-spec-item"><i data-lucide="settings-2"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->boite_vitesse ?? 'Auto' }}</span></div>
                                     <div class="listing-spec-item"><i data-lucide="fuel"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->carburant }}</span></div>
                                 </div>
                                 <div class="listing-footer-btn">
@@ -4080,7 +4110,7 @@
         <section class="stories">
             <div class="container">
                 <div class="story-header">
-                    <h2 class="story-title"><span class="nado-b">NADO</span><span class="nado-y">.MA</span> sur les réseaux : Ne ratez rien !</h2>
+                    <h2 class="story-title"><span class="nado-b">AUTOMANAGER</span><span class="nado-y">.MA</span> sur les réseaux : Ne ratez rien !</h2>
                 </div>
 
                 <div class="story-scroll no-scrollbar">
@@ -4160,7 +4190,7 @@
                             </div>
 
                             <div class="story-info" style="position: absolute; bottom: 1.25rem; left: 1.25rem;">
-                                <span class="story-name" style="color: white; font-weight: 900; font-size: 11px;">NADO
+                                <span class="story-name" style="color: white; font-weight: 900; font-size: 11px;">AUTOMANAGER
                                     Story</span>
                             </div>
                         </div>
@@ -4186,10 +4216,10 @@
                 <!-- Card Header -->
                 <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; padding: 0 4px;">
                     <div
-                        style="width: 32px; height: 32px; border-radius: 50%; background: #1459DD; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 10px;">
+                        style="width: 32px; height: 32px; border-radius: 50%; background: #0E0F12; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 10px;">
                         N</div>
                     <div style="display: flex; flex-direction: column;">
-                        <span style="font-weight: 700; color: #1e293b; font-size: 14px; line-height: 1;">NADO
+                        <span style="font-weight: 700; color: #1e293b; font-size: 14px; line-height: 1;">AUTOMANAGER
                             Officiel</span>
                         <span style="font-size: 11px; color: #64748b;">En direct</span>
                     </div>
@@ -4282,16 +4312,16 @@
                                 </h3>
                                 <div class="listing-specs-grid">
                                     <div class="listing-spec-item"><i data-lucide="calendar"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->year }}</span></div>
                                     <div class="listing-spec-item"><i data-lucide="gauge"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->km }} km</span></div>
                                     <div class="listing-spec-item"><i data-lucide="settings-2"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->boite_vitesse ?? 'Auto' }}</span></div>
                                     <div class="listing-spec-item"><i data-lucide="fuel"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->carburant }}</span></div>
                                 </div>
                                 <div class="listing-footer-btn">
@@ -4317,7 +4347,7 @@
         </section>
 
 
-        <!-- 6. PUB NADO EXPERT -->
+        <!-- 6. PUB AUTOMANAGER EXPERT -->
         <section class="promo-section">
             <div class="container">
                 <div class="expert-card">
@@ -4391,16 +4421,16 @@
                                 </h3>
                                 <div class="listing-specs-grid">
                                     <div class="listing-spec-item"><i data-lucide="calendar"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->year }}</span></div>
                                     <div class="listing-spec-item"><i data-lucide="gauge"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->km }} km</span></div>
                                     <div class="listing-spec-item"><i data-lucide="settings-2"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->boite_vitesse ?? 'Auto' }}</span></div>
                                     <div class="listing-spec-item"><i data-lucide="fuel"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->carburant }}</span></div>
                                 </div>
                                 <div class="listing-footer-btn">
@@ -4504,16 +4534,16 @@
                                 </h3>
                                 <div class="listing-specs-grid">
                                     <div class="listing-spec-item"><i data-lucide="calendar"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->year }}</span></div>
                                     <div class="listing-spec-item"><i data-lucide="gauge"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->km }} km</span></div>
                                     <div class="listing-spec-item"><i data-lucide="settings-2"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->boite_vitesse ?? 'Auto' }}</span></div>
                                     <div class="listing-spec-item"><i data-lucide="fuel"
-                                            style="width: 14px; height: 14px; color: #1459DD;"></i><span
+                                            style="width: 14px; height: 14px; color: #0E0F12;"></i><span
                                             class="listing-spec-label">{{ $ad->carburant }}</span></div>
                                 </div>
                                 <div class="listing-footer-btn">
@@ -4536,7 +4566,7 @@
         </section>
         @endif
 
-        <!-- 5. NADO PRICE -->
+        <!-- 5. AUTOMANAGER PRICE -->
         <section class="price-section">
             <div class="container relative z-10">
                 <div class="price-grid">
@@ -4663,7 +4693,7 @@
             <div class="container">
                 <div class="whatsapp-card">
                     <div class="whatsapp-content">
-                        <h2 class="whatsapp-title">BESOIN D'UN <br /><span class="text-secondary">EXPERT <br />NADO
+                        <h2 class="whatsapp-title">BESOIN D'UN <br /><span class="text-secondary">EXPERT <br />AUTOMANAGER
                                 ?</span></h2>
                         <a href="{{ url('/contactez-nous') }}" class="btn-whatsapp">
                             <i data-lucide="mail" style="width: 24px; height: 24px; stroke-width: 3;"></i>
@@ -4672,7 +4702,7 @@
                     </div>
                     <div class="whatsapp-image">
                         <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&q=80&w=1200"
-                            alt="Expert NADO" />
+                            alt="Expert AUTOMANAGER" />
                     </div>
                 </div>
             </div>
@@ -4730,12 +4760,12 @@
         </section>
 
 
-        <!-- 14. NADO BLOG -->
+        <!-- 14. AUTOMANAGER BLOG -->
         <section class="blog-section">
             <div class="container">
                 <div class="blog-header">
                     <div class="blog-title-wrapper">
-                        <h2 class="blog-big-title">BLOG <br /><span class="text-primary">NADO</span></h2>
+                        <h2 class="blog-big-title">BLOG <br /><span class="text-primary">AUTOMANAGER</span></h2>
                     </div>
                     <a href="{{ route('articles.index') }}" class="btn-explore-blog" style="text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
                         Explorer le blog <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
@@ -4810,13 +4840,13 @@
                         <li><a href="#">Accueil</a></li>
                         <li><a href="#">Acheter une voiture</a></li>
                         <li><a href="#">Vendre ma voiture</a></li>
-                        <li><a href="#">À propos de NADO</a></li>
+                        <li><a href="#">À propos de AUTOMANAGER</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="footer-heading">Services</h4>
                     <ul class="footer-links">
-                        <li><a href="#" class="text-secondary">NADO Connect</a></li>
+                        <li><a href="#" class="text-secondary">AUTOMANAGER Connect</a></li>
                         <li><a href="#">Auto Enchère</a></li>
                         <li><a href="#">Vente cash</a></li>
                     </ul>
@@ -4837,7 +4867,7 @@
             </div>
             <div
                 style="padding-top: 2rem; border-top: 1px solid var(--slate-600); text-align: center; font-size: 10px; font-weight: 700; color: var(--slate-500); text-transform: uppercase; letter-spacing: 0.1em;">
-                © 2025 NADO PREMIUM AUTOMOTIVE • TOUS DROITS RÉSERVÉS
+                © 2025 AUTOMANAGER PREMIUM AUTOMOTIVE • TOUS DROITS RÉSERVÉS
             </div>
         </div>
     </footer>
@@ -4864,9 +4894,9 @@
                 <div style="display: flex; align-items: center; gap: 1rem;">
                     <img src="{{ asset('images/logoValidator.png') }}"
                         style="width: 3rem; height: 3rem; border-radius: 50%; border: 2px solid var(--primary);"
-                        onerror="this.src='https://ui-avatars.com/api/?name=NADO&background=1459DD&color=fff'" />
+                        onerror="this.src='https://ui-avatars.com/api/?name=AUTOMANAGER&background=0E0F12&color=fff'" />
                     <div>
-                        <h4 style="color: var(--white); font-weight: 900; text-transform: uppercase;">NADO Officiel
+                        <h4 style="color: var(--white); font-weight: 900; text-transform: uppercase;">AUTOMANAGER Officiel
                         </h4>
                         <span style="color: var(--slate-400); font-size: 0.75rem; font-weight: 700;">En direct</span>
                     </div>
@@ -5052,7 +5082,7 @@
 
         });
 
-        // --- NADO STORY FUNCTIONS (RENAMED) ---
+        // --- AUTOMANAGER STORY FUNCTIONS (RENAMED) ---
         function launchNadoStory(element) {
             console.log('launchNadoStory called');
             var src = element.getAttribute('data-src');
@@ -5194,7 +5224,7 @@
     </script>
 
 <!-- ═══════════════════════════════════════════════
-     NADO CHATBOT WIDGET
+     AUTOMANAGER CHATBOT WIDGET
 ════════════════════════════════════════════════ -->
 <style>
 /* ── Floating button ── */
@@ -5205,7 +5235,7 @@
     width: 62px;
     height: 62px;
     border-radius: 50%;
-    background: #1459DD;
+    background: #0E0F12;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -5222,12 +5252,12 @@
     position: absolute;
     top: -2px; right: -2px;
     width: 18px; height: 18px;
-    background: #FDD817;
+    background: #C8A24B;
     border-radius: 50%;
     border: 2px solid #fff;
     font-size: 10px;
     font-weight: 900;
-    color: #1459DD;
+    color: #0E0F12;
     display: flex; align-items: center; justify-content: center;
 }
 
@@ -5259,7 +5289,7 @@
 
 /* ── Header ── */
 .nc-header {
-    background: #1459DD;
+    background: #0E0F12;
     color: #fff;
     padding: 18px 20px;
     display: flex;
@@ -5317,12 +5347,12 @@
     border-bottom-left-radius: 4px;
 }
 .nc-msg.user .nc-bubble {
-    background: #1459DD;
+    background: #0E0F12;
     color: #fff;
     border-bottom-right-radius: 4px;
 }
-.nc-bubble a { color: #1459DD; font-weight: 700; text-decoration: underline; }
-.nc-msg.user .nc-bubble a { color: #FDD817; }
+.nc-bubble a { color: #0E0F12; font-weight: 700; text-decoration: underline; }
+.nc-msg.user .nc-bubble a { color: #C8A24B; }
 .nc-bubble strong { font-weight: 800; }
 
 /* ── Quick replies ── */
@@ -5350,7 +5380,7 @@
     transition: background .15s, border-color .15s;
     font-family: 'Inter', sans-serif;
 }
-.nc-chip:hover { background: #dbeafe; border-color: #1459DD; color: #1459DD; }
+.nc-chip:hover { background: #F2E9D2; border-color: #0E0F12; color: #0E0F12; }
 
 /* Chips shown inside a bot bubble (profile picker for the documents answer) */
 .nc-inline-chips {
@@ -5384,11 +5414,11 @@
     transition: border-color .2s;
     color: #0f172a;
 }
-#nc-input:focus { border-color: #1459DD; }
+#nc-input:focus { border-color: #0E0F12; }
 #nc-send {
     width: 40px; height: 40px;
     border-radius: 50%;
-    background: #1459DD;
+    background: #0E0F12;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -5407,7 +5437,7 @@
 </style>
 
 <!-- Floating Button -->
-<button id="nado-chat-btn" aria-label="Chat NADO" title="Discuter avec nous">
+<button id="nado-chat-btn" aria-label="Chat AUTOMANAGER" title="Discuter avec nous">
     <span id="nado-chat-badge">1</span>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
@@ -5466,7 +5496,7 @@
     /* ── Contact facts (single place to update) ── */
     var TEL      = '<a href="tel:+212520070611"><strong>+212 520 070 611</strong></a>';
     var WHATSAPP = '<a href="https://wa.me/212770080009" target="_blank" rel="noopener"><strong>WhatsApp 07 70 08 00 09</strong></a>';
-    var EMAIL    = '<a href="mailto:contact@nado.ma"><strong>contact@nado.ma</strong></a>';
+    var EMAIL    = '<a href="mailto:contact@automanager.ma"><strong>contact@automanager.ma</strong></a>';
     var MAPS     = '<a href="https://maps.app.goo.gl/RuP9P8wv898XNAAJ9" target="_blank" rel="noopener"><strong>Voir sur Google Maps</strong></a>';
     var HOURS    = '<strong>Lundi – Samedi : 9h00 – 20h00</strong> (fermé le dimanche)';
 
@@ -5495,9 +5525,9 @@
         { keys: ['acheter','achat','achete','chercher voiture','cherche une voiture','voitures disponibles','catalogue','annonces','occasion'],
           answer: '🚗 Parcourez nos <a href="/achat"><strong>véhicules à vendre</strong></a>.<br>Filtrez par <strong>marque, modèle, prix, année, kilométrage, carburant et boîte</strong>. Chaque annonce affiche photos, équipements, rapport d\'expertise et un <strong>simulateur de crédit</strong>.' },
         { keys: ['certifie','certification','expertise','rapport','inspection','controle','fiable','etat du vehicule'],
-          answer: '✅ Les véhicules <strong>certifiés NADO</strong> sont contrôlés par nos experts avant la mise en vente.<br>Le <strong>rapport d\'expertise</strong> est consultable dans l\'onglet <strong>« Expertise NADO »</strong> de chaque annonce.' },
+          answer: '✅ Les véhicules <strong>certifiés AUTOMANAGER</strong> sont contrôlés par nos experts avant la mise en vente.<br>Le <strong>rapport d\'expertise</strong> est consultable dans l\'onglet <strong>« Expertise AUTOMANAGER »</strong> de chaque annonce.' },
         { keys: ['garantie','garanti','panne','serenite'],
-          answer: '🛡️ <strong>Garantie NADO Sérénité</strong> : <strong>1 mois</strong> couvrant <strong>pièces et main d\'œuvre</strong>, dans la limite de <strong>1 000 km</strong>.<br>Les annonces concernées affichent le badge « Garantie incluse ».' },
+          answer: '🛡️ <strong>Garantie AUTOMANAGER Sérénité</strong> : <strong>1 mois</strong> couvrant <strong>pièces et main d\'œuvre</strong>, dans la limite de <strong>1 000 km</strong>.<br>Les annonces concernées affichent le badge « Garantie incluse ».' },
         { keys: ['essai','essayer','visite','visiter','voir la voiture','voir le vehicule','rendez-vous','rdv'],
           answer: '📅 Pour voir ou essayer un véhicule, contactez-nous avec la référence de l\'annonce :<br>' + WHATSAPP + ' ou ' + TEL + '.<br>📍 Agence : <strong>Casablanca – Jnane Californie</strong> (' + MAPS + ').' },
         { keys: ['comparer','comparaison','comparateur','compare'],
@@ -5543,13 +5573,13 @@
         { keys: ['vendre','vente','vends','vend','publier','deposer','mettre en vente','deposer une annonce'],
           answer: '💰 <strong>Vendre votre voiture</strong> :<br>• Particulier : <a href="/vente/particulier"><strong>déposer une annonce</strong></a><br>• Professionnel : <a href="/vente/pro"><strong>espace pro</strong></a><br>• Ou remplissez le <a href="/vente/formulaire"><strong>formulaire de vente</strong></a> et nous vous rappelons.<br>Votre annonce est publiée après validation par notre équipe.' },
         { keys: ['reprise','reprendre','rachat','racheter','echange','echanger','troquer'],
-          answer: '🔁 <strong>NADO Reprise</strong> : nous reprenons votre véhicule, y compris en échange d\'une voiture de notre stock.<br>👉 Remplissez le <a href="/reprise/formulaire"><strong>formulaire de reprise</strong></a> (marque, modèle, année, km, photos).' },
+          answer: '🔁 <strong>AUTOMANAGER Reprise</strong> : nous reprenons votre véhicule, y compris en échange d\'une voiture de notre stock.<br>👉 Remplissez le <a href="/reprise/formulaire"><strong>formulaire de reprise</strong></a> (marque, modèle, année, km, photos).' },
         { keys: ['estimation','estimer','valeur','cote','combien vaut','combien ca vaut','argus'],
           answer: '📊 <strong>Estimation gratuite</strong> de votre voiture en quelques clics :<br>👉 <a href="/estimate-value"><strong>Estimer mon véhicule</strong></a> (marque, modèle, année, km, carburant, boîte).' },
 
         // ── Enchères ──
         { keys: ['enchere','encheres','auction','miser','mise','enchérir','encherir'],
-          answer: '🔨 <strong>NADO Auto Enchère</strong> :<br>• Voir les <a href="/nadoautoenchere"><strong>ventes aux enchères</strong></a><br>• <a href="/nadoautoenchere/register"><strong>S\'inscrire</strong></a> pour enchérir<br>• <a href="/nadoautoenchere/vendre"><strong>Vendre aux enchères</strong></a>' },
+          answer: '🔨 <strong>AUTOMANAGER Auto Enchère</strong> :<br>• Voir les <a href="/nadoautoenchere"><strong>ventes aux enchères</strong></a><br>• <a href="/nadoautoenchere/register"><strong>S\'inscrire</strong></a> pour enchérir<br>• <a href="/nadoautoenchere/vendre"><strong>Vendre aux enchères</strong></a>' },
 
         // ── Compte ──
         { keys: ['compte','inscription','inscrire','connexion','connecter','login','mot de passe','profil'],
@@ -5561,15 +5591,15 @@
 
         // ── À propos / services ──
         { keys: ['nado','qui etes','a propos','entreprise nado','societe nado','confiance'],
-          answer: 'ℹ️ <strong>NADO</strong> : achat, vente, reprise, financement et enchères de véhicules d\'occasion, basé à <strong>Casablanca</strong>.<br>👉 <a href="/a-propos"><strong>En savoir plus</strong></a> · <a href="/services"><strong>Nos services</strong></a>' },
+          answer: 'ℹ️ <strong>AUTOMANAGER</strong> : achat, vente, reprise, financement et enchères de véhicules d\'occasion, basé à <strong>Casablanca</strong>.<br>👉 <a href="/a-propos"><strong>En savoir plus</strong></a> · <a href="/services"><strong>Nos services</strong></a>' },
 
         // ── Politesse ──
         { keys: ['bonjour','salut','hello','bonsoir','salam','bjr','slt','cc','coucou','hey'],
-          answer: 'Bonjour ! 👋 Bienvenue chez <strong>NADO</strong>.<br>Je peux vous aider à <strong>acheter</strong>, <strong>vendre</strong>, faire <strong>reprendre</strong> ou <strong>financer</strong> une voiture, et vous donner nos <strong>coordonnées</strong>.' },
+          answer: 'Bonjour ! 👋 Bienvenue chez <strong>AUTOMANAGER</strong>.<br>Je peux vous aider à <strong>acheter</strong>, <strong>vendre</strong>, faire <strong>reprendre</strong> ou <strong>financer</strong> une voiture, et vous donner nos <strong>coordonnées</strong>.' },
         { keys: ['merci','thanks','thank you','shukran','choukran','top','parfait'],
           answer: 'Avec plaisir ! 😊 N\'hésitez pas si vous avez d\'autres questions.' },
         { keys: ['au revoir','bye','bonne journee','bonne soiree','a bientot'],
-          answer: 'À bientôt chez <strong>NADO</strong> ! 👋' },
+          answer: 'À bientôt chez <strong>AUTOMANAGER</strong> ! 👋' },
     ];
 
     var DEFAULT = 'Je n\'ai pas trouvé de réponse précise 🤔<br>Essayez par exemple : <strong>acheter</strong>, <strong>vendre</strong>, <strong>reprise</strong>, <strong>estimation</strong>, <strong>financement</strong>, <strong>documents</strong>, <strong>garantie</strong>, <strong>enchères</strong>, <strong>adresse</strong>, <strong>horaires</strong>.<br>Ou parlez à un conseiller : ' + WHATSAPP + ' · ' + TEL + '.';
@@ -5638,7 +5668,7 @@
         if (!opened) {
             opened = true;
             badge.style.display = 'none';
-            addMsg('Bonjour ! 👋 Je suis l\'assistant <strong>NADO</strong>.<br>Posez vos questions ou choisissez un sujet ci-dessous.', 'bot');
+            addMsg('Bonjour ! 👋 Je suis l\'assistant <strong>AUTOMANAGER</strong>.<br>Posez vos questions ou choisissez un sujet ci-dessous.', 'bot');
         }
         panel.classList.add('open');
     }
@@ -5772,7 +5802,7 @@
                 style="flex-shrink:0;width:40px;height:40px;border:0;border-radius:50%;background:rgba(255,255,255,.15);color:#fff;font-size:22px;line-height:1;cursor:pointer;">&times;</button>
         </div>
         <div style="position:relative;width:100%;padding-top:56.25%;border-radius:16px;overflow:hidden;background:#000;">
-            <iframe id="yt-modal-frame" src="" title="Vidéo NADO"
+            <iframe id="yt-modal-frame" src="" title="Vidéo AUTOMANAGER"
                 style="position:absolute;inset:0;width:100%;height:100%;border:0;"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>

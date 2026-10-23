@@ -7,7 +7,7 @@
                         <div class="widget widget_about">
                             <div class="logo-footer m-a0"><a href="index.html"><img src="{{ asset('assets/images/logo.png') }}" alt=""></a></div>
                             <p class="m-t20 m-b40">
-                                Nado.ma , la plateforme digitale de "AUTO ENCHÈRE" pour l’achat, la vente et la reprise des véhicules neufs et d’occasions.
+                                Automanager , la plateforme digitale de "AUTO ENCHÈRE" pour l’achat, la vente et la reprise des véhicules neufs et d’occasions.
                                 Avec plus de 20 ans d’expertise dans le secteur de la vente et achat d’automobile. "AUTO ENCHÈRE" ne cesse de développer son activité, de diversifier son portefeuille et de conclure des partenariats de renom dans l’ambition de servir au mieux ses clients.
                             </p>
 							<form action="script/mailchamp.php" method="post" class="form-subscribe dzSubscribe">
@@ -58,7 +58,7 @@
                     <div class="col-md-6 col-sm-6 col-xs-12 text-right social-item-link">
 						<a href="https://web.facebook.com/profile.php?id=61552295353235" class="fb" target="_blank"><i class="fab fa-facebook-f"></i>. Facebook </a>
 						<a href="ttps://twitter.com/NADO_AUTO" class="twt" target="_blank"><i class="fab fa-twitter"></i>. Tweeter </a>
-                        <a href="https://www.youtube.com/@Nado-Auto" class="gplus" target="_blank"><i class="fab fa-youtube"></i>. Youtube</a>
+                        <a href="https://www.youtube.com/@Automanager-Auto" class="gplus" target="_blank"><i class="fab fa-youtube"></i>. Youtube</a>
 					</div>
                 </div>
             </div>

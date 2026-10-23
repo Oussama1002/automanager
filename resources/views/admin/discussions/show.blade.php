@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 
-@section('title', 'Discussion #' . $discussion->id . ' | Admin NADO')
+@section('title', 'Discussion #' . $discussion->id . ' | Admin AUTOMANAGER')
 
 @section('content')
 <style>
@@ -83,7 +83,7 @@
                         <div class="d-flex {{ $isAdmin ? 'justify-content-end' : 'justify-content-start' }}" data-msg-id="{{ $msg->id }}">
                             <div style="max-width:70%;">
                                 <div style="{{ $isAdmin
-                                    ? 'background:#1459DD;color:#fff;padding:.75rem 1rem;border-radius:18px 18px 4px 18px;'
+                                    ? 'background:#0E0F12;color:#fff;padding:.75rem 1rem;border-radius:18px 18px 4px 18px;'
                                     : 'background:#fff;border:1px solid #e2e8f0;color:#0f172a;padding:.75rem 1rem;border-radius:18px 18px 18px 4px;' }}font-size:.9rem;line-height:1.5;">
                                     @if(($msg->type ?? 'text') === 'audio' && $msg->attachment)
                                         <audio controls preload="metadata" src="{{ parse_url(Storage::url($msg->attachment), PHP_URL_PATH) }}"></audio>
@@ -200,7 +200,7 @@
 
         var bubble = document.createElement('div');
         bubble.style.cssText = (isAdmin
-            ? 'background:#1459DD;color:#fff;padding:.75rem 1rem;border-radius:18px 18px 4px 18px;'
+            ? 'background:#0E0F12;color:#fff;padding:.75rem 1rem;border-radius:18px 18px 4px 18px;'
             : 'background:#fff;border:1px solid #e2e8f0;color:#0f172a;padding:.75rem 1rem;border-radius:18px 18px 18px 4px;')
             + 'font-size:.9rem;line-height:1.5;';
 

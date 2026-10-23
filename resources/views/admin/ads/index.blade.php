@@ -1,7 +1,7 @@
-{{-- NADO-DEMANDE-INDEX-V2 - 2026-10-17 --}}
+{{-- AUTOMANAGER-DEMANDE-INDEX-V2 - 2026-10-17 --}}
 @extends('layouts.app')
 
-@section('title', 'Forum des demandes — NADO')
+@section('title', 'Forum des demandes — AUTOMANAGER')
 
 @section('content')
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -11,16 +11,16 @@
     .dmd-hero { display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; margin-bottom:28px; }
     .dmd-hero h1 { font-size:30px; font-weight:800; margin:0; letter-spacing:-0.02em; }
     .dmd-hero p  { margin:6px 0 0; color:#64748b; font-size:15px; }
-    .dmd-cta { display:inline-flex; align-items:center; gap:8px; padding:12px 20px; background:#1459DD; color:#fff; border-radius:12px; text-decoration:none; font-weight:700; font-size:14px; box-shadow:0 6px 18px rgba(20,89,221,.25); transition:transform .15s, box-shadow .15s; }
+    .dmd-cta { display:inline-flex; align-items:center; gap:8px; padding:12px 20px; background:#0E0F12; color:#fff; border-radius:12px; text-decoration:none; font-weight:700; font-size:14px; box-shadow:0 6px 18px rgba(20,89,221,.25); transition:transform .15s, box-shadow .15s; }
     .dmd-cta:hover { transform:translateY(-1px); box-shadow:0 10px 24px rgba(20,89,221,.35); color:#fff; text-decoration:none; }
 
     .dmd-filters { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px; background:#f8fafc; border:1px solid #e2e8f0; padding:14px; border-radius:14px; margin-bottom:24px; }
     .dmd-filters select, .dmd-filters input {
         padding:10px 12px; border:1px solid #e2e8f0; border-radius:10px; font-size:14px; background:#fff; outline:none; font-family:inherit;
     }
-    .dmd-filters select:focus, .dmd-filters input:focus { border-color:#1459DD; box-shadow:0 0 0 3px rgba(20,89,221,.1); }
+    .dmd-filters select:focus, .dmd-filters input:focus { border-color:#0E0F12; box-shadow:0 0 0 3px rgba(20,89,221,.1); }
     .dmd-filters button { padding:10px 18px; background:#0f172a; color:#fff; border:0; border-radius:10px; font-weight:700; cursor:pointer; font-family:inherit; }
-    .dmd-filters button:hover { background:#1459DD; }
+    .dmd-filters button:hover { background:#0E0F12; }
 
     .dmd-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:16px; }
     .dmd-card {
@@ -30,11 +30,11 @@
     .dmd-card:hover { transform:translateY(-2px); box-shadow:0 12px 30px -8px rgba(15,23,42,.12); border-color:#cbd5e1; }
 
     .dmd-card-head { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }
-    .dmd-badge { display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:700; padding:4px 10px; border-radius:999px; background:#dbeafe; color:#1459DD; text-transform:uppercase; letter-spacing:.03em; }
+    .dmd-badge { display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:700; padding:4px 10px; border-radius:999px; background:#F2E9D2; color:#0E0F12; text-transform:uppercase; letter-spacing:.03em; }
     .dmd-date { font-size:12px; color:#94a3b8; }
 
     .dmd-title { font-size:17px; font-weight:700; color:#0f172a; margin:0; line-height:1.3; text-decoration:none; }
-    .dmd-title:hover { color:#1459DD; }
+    .dmd-title:hover { color:#0E0F12; }
     .dmd-by { font-size:12px; color:#64748b; display:inline-flex; align-items:center; gap:5px; margin-top:2px; }
     .dmd-by strong { color:#0f172a; font-weight:700; }
 
@@ -47,7 +47,7 @@
 
     .dmd-contact { margin-top:auto; padding-top:12px; border-top:1px dashed #e2e8f0; display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; }
     .dmd-user { display:flex; align-items:center; gap:10px; min-width:0; }
-    .dmd-avatar { width:36px; height:36px; border-radius:50%; background:linear-gradient(135deg,#1459DD,#F37021); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; flex-shrink:0; }
+    .dmd-avatar { width:36px; height:36px; border-radius:50%; background:linear-gradient(135deg,#0E0F12,#C8A24B); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; flex-shrink:0; }
     .dmd-name { font-size:13px; font-weight:600; color:#0f172a; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
     .dmd-phone { font-size:12px; color:#64748b; font-variant-numeric:tabular-nums; letter-spacing:.03em; }
 

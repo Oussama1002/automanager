@@ -19,7 +19,7 @@
 
     <a href="{{ route('demandes.create', array_filter($filters)) }}"
        class="btn btn-primary"
-       style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;background:#0d6efd;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">
+       style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;background:#C8A24B;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
             <path d="M12 5v14M5 12h14"/>
         </svg>

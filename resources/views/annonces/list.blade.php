@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Catalogue voitures — NADO')
+@section('title', 'Catalogue voitures — AUTOMANAGER')
 
 @section('content')
 <style>
@@ -37,7 +37,7 @@
         text-decoration: none;
         transition: color 0.2s;
     }
-    .pp-breadcrumb a:hover { color: #1459DD; }
+    .pp-breadcrumb a:hover { color: #0E0F12; }
     .pp-breadcrumb .current { color: #0f172a; }
 
     /* ========== HERO HEADER ========== */
@@ -62,7 +62,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        color: #1459DD;
+        color: #0E0F12;
         font-size: 10px;
         font-weight: 900;
         text-transform: uppercase;
@@ -87,8 +87,8 @@
     @media (min-width: 1024px) {
         .pp-h1 { font-size: 6rem; }
     }
-    .pp-h1 .pp-blue { color: #1459DD; }
-    .pp-h1 .pp-yellow { color: #FDD817; }
+    .pp-h1 .pp-blue { color: #0E0F12; }
+    .pp-h1 .pp-yellow { color: #C8A24B; }
 
     /* ========== CATEGORIES ========== */
     .pp-cats-wrap {
@@ -119,13 +119,13 @@
         text-align: left;
     }
     .pp-cat-tile:hover {
-        border-color: #1459DD;
+        border-color: #0E0F12;
         box-shadow: 0 8px 20px -4px rgba(20,89,221,0.12);
     }
     .pp-cat-tile:hover .pp-cat-top img { opacity: 1 !important; }
     .pp-cat-tile.active .pp-cat-top img { opacity: 1 !important; }
     .pp-cat-tile.active {
-        border-color: #1459DD;
+        border-color: #0E0F12;
         box-shadow: 0 12px 28px -6px rgba(20,89,221,0.18);
         transform: scale(1.03);
     }
@@ -139,16 +139,16 @@
         position: relative;
     }
     .pp-cat-top svg { transition: color 0.2s; }
-    .pp-cat-tile.active .pp-cat-top svg { color: #1459DD; }
+    .pp-cat-tile.active .pp-cat-top svg { color: #0E0F12; }
     .pp-cat-tile:not(.active) .pp-cat-top svg { color: #94a3b8; }
-    .pp-cat-tile:not(.active):hover .pp-cat-top svg { color: #1459DD; }
+    .pp-cat-tile:not(.active):hover .pp-cat-top svg { color: #0E0F12; }
     .pp-cat-check {
         position: absolute;
         top: 8px;
         right: 8px;
         width: 16px;
         height: 16px;
-        background: #FDD817;
+        background: #C8A24B;
         border-radius: 50%;
         display: none;
         align-items: center;
@@ -164,7 +164,7 @@
         letter-spacing: 0.05em;
         line-height: 1.3;
     }
-    .pp-cat-tile.active .pp-cat-label { color: #1459DD; }
+    .pp-cat-tile.active .pp-cat-label { color: #0E0F12; }
     .pp-cat-tile:not(.active) .pp-cat-label { color: #475569; }
 
     /* ========== MAIN LAYOUT ========== */
@@ -227,7 +227,7 @@
     .pp-icon-box {
         width: 40px;
         height: 40px;
-        background: #1459DD;
+        background: #0E0F12;
         color: #fff;
         border-radius: 10px;
         display: flex;
@@ -236,8 +236,8 @@
         flex-shrink: 0;
     }
     .pp-icon-box.blue-light {
-        background: #eff6ff;
-        color: #1459DD;
+        background: #FAF6EC;
+        color: #0E0F12;
     }
     .pp-sidebar-title h2 {
         font-size: 1.25rem;
@@ -250,7 +250,7 @@
     .pp-reset-btn {
         font-size: 10px;
         font-weight: 700;
-        color: #1459DD;
+        color: #0E0F12;
         text-transform: uppercase;
         letter-spacing: 0.1em;
         background: none;
@@ -344,7 +344,7 @@
     }
     .pp-chip:hover { background: #f1f5f9; }
     .pp-chip.active {
-        background: #1459DD;
+        background: #0E0F12;
         color: #fff;
         box-shadow: 0 4px 12px -2px rgba(20,89,221,0.35);
     }
@@ -366,7 +366,7 @@
     .pp-slider-val {
         font-size: 14px;
         font-weight: 900;
-        color: #1459DD;
+        color: #0E0F12;
     }
 
     input[type="range"].pp-range {
@@ -376,14 +376,14 @@
         appearance: none;
         background: #e2e8f0;
         cursor: pointer;
-        accent-color: #1459DD;
+        accent-color: #0E0F12;
         margin-bottom: 6px;
     }
     input[type="range"].pp-range::-webkit-slider-thumb {
         appearance: none;
         width: 24px;
         height: 24px;
-        background: #1459DD;
+        background: #0E0F12;
         border: 4px solid #fff;
         border-radius: 50%;
         box-shadow: 0 2px 8px rgba(20,89,221,0.3);
@@ -401,7 +401,7 @@
     .pp-search-btn {
         width: 100%;
         padding: 16px;
-        background: #1459DD;
+        background: #0E0F12;
         color: #fff;
         border: none;
         border-radius: 12px;
@@ -417,7 +417,7 @@
         gap: 8px;
         box-shadow: 0 8px 20px -4px rgba(20,89,221,0.3);
     }
-    .pp-search-btn:hover { background: #1d4ed8; transform: translateY(-1px); }
+    .pp-search-btn:hover { background: #A17E31; transform: translateY(-1px); }
     .pp-search-btn:active { transform: scale(0.98); }
 
     /* ========== LISTING AREA ========== */
@@ -442,7 +442,7 @@
         align-items: center;
         gap: 6px;
         padding: 7px 14px;
-        background: #1459DD;
+        background: #0E0F12;
         color: #fff;
         border-radius: 9999px;
         font-size: 9px;
@@ -455,7 +455,7 @@
     .pp-af-clear {
         font-size: 9px;
         font-weight: 900;
-        color: #1459DD;
+        color: #0E0F12;
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 0.05em;
@@ -561,7 +561,7 @@
     .pp-price-overlay span {
         font-size: 1.5rem;
         font-weight: 900;
-        color: #1459DD;
+        color: #0E0F12;
         letter-spacing: -0.05em;
         line-height: 1;
     }
@@ -589,7 +589,7 @@
         margin: 0;
         transition: color 0.2s;
     }
-    .pp-card:hover .pp-card-title-row h3 { color: #1459DD; }
+    .pp-card:hover .pp-card-title-row h3 { color: #0E0F12; }
 
     .pp-specs {
         display: grid;
@@ -602,7 +602,7 @@
         align-items: center;
         gap: 10px;
     }
-    .pp-spec svg { color: #1459DD; flex-shrink: 0; }
+    .pp-spec svg { color: #0E0F12; flex-shrink: 0; }
     .pp-spec span {
         font-size: 12px;
         font-weight: 700;
@@ -615,7 +615,7 @@
     .pp-monthly {
         margin-top: auto;
         padding: 20px 24px;
-        background: #1459DD;
+        background: #0E0F12;
         border-radius: 2rem;
         display: flex;
         justify-content: space-between;
@@ -640,7 +640,7 @@
     .pp-monthly-val small {
         font-size: 11px;
         font-weight: 900;
-        color: #FDD817;
+        color: #C8A24B;
     }
     .pp-monthly-arrow {
         width: 40px;
@@ -684,7 +684,7 @@
     .pp-promo-eyebrow span {
         font-size: 9px;
         font-weight: 900;
-        color: #FDD817;
+        color: #C8A24B;
         text-transform: uppercase;
         letter-spacing: 0.3em;
     }
@@ -700,7 +700,7 @@
     @media (min-width: 768px) {
         .pp-promo h2 { font-size: 2.25rem; }
     }
-    .pp-promo h2 .pp-promo-accent { color: #1459DD; }
+    .pp-promo h2 .pp-promo-accent { color: #0E0F12; }
     .pp-promo-body {
         color: #64748b;
         font-size: 14px;
@@ -714,7 +714,7 @@
         align-items: center;
         gap: 8px;
         padding: 14px 28px;
-        background: #1459DD;
+        background: #0E0F12;
         color: #fff;
         border-radius: 12px;
         font-size: 9px;
@@ -790,15 +790,15 @@
         transition: all 0.2s;
     }
     .pp-pagination li.active span {
-        background: #1459DD !important;
+        background: #0E0F12 !important;
         color: #fff !important;
-        border-color: #1459DD !important;
+        border-color: #0E0F12 !important;
         box-shadow: 0 6px 16px -3px rgba(20,89,221,0.4);
     }
     .pp-pagination li a:hover {
-        background: #1459DD !important;
+        background: #0E0F12 !important;
         color: #fff !important;
-        border-color: #1459DD !important;
+        border-color: #0E0F12 !important;
     }
     .pp-pagination li.disabled span {
         opacity: 0.4;
@@ -829,7 +829,7 @@
     .pp-fab-btn {
         width: 100%;
         height: 56px;
-        background: #1459DD;
+        background: #0E0F12;
         color: #fff;
         border: none;
         border-radius: 1rem;
@@ -977,7 +977,7 @@
                                 style="width:56px;height:40px;object-fit:contain;object-position:center;opacity:{{ $isActive ? '1' : '0.6' }};transition:opacity 0.2s;"
                                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
                             >
-                            <span style="display:none;align-items:center;justify-content:center;color:{{ $isActive ? '#1459DD' : '#94a3b8' }};">
+                            <span style="display:none;align-items:center;justify-content:center;color:{{ $isActive ? '#0E0F12' : '#94a3b8' }};">
                                 <i data-lucide="{{ $cat['icon'] }}" width="24" height="24"></i>
                             </span>
                         @else
@@ -1156,7 +1156,7 @@
                             <div class="pp-card-body">
                                 <div class="pp-card-title-row">
                                     <h3>{{ $ad->brand ? $ad->brand->name : $ad->mark }} {{ $ad->modeleRelation ? $ad->modeleRelation->name : $ad->modele }}</h3>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1459DD" stroke-width="2" flex-shrink="0">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0E0F12" stroke-width="2" flex-shrink="0">
                                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                                     </svg>
                                 </div>
@@ -1208,13 +1208,13 @@
                             <div class="pp-promo">
                                 <div style="flex: 1;">
                                     <div class="pp-promo-eyebrow">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FDD817" stroke-width="2">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2">
                                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                                         </svg>
                                         <span>Label Confiance</span>
                                     </div>
                                     <h2>EXPERTISE <span class="pp-promo-accent">110 POINTS</span> DE CONTRÔLE</h2>
-                                    <p class="pp-promo-body">Chaque véhicule NADO passe par une inspection rigoureuse en 110 points certifiée par nos techniciens agréés — pour vous garantir la tranquillité d'esprit.</p>
+                                    <p class="pp-promo-body">Chaque véhicule AUTOMANAGER passe par une inspection rigoureuse en 110 points certifiée par nos techniciens agréés — pour vous garantir la tranquillité d'esprit.</p>
                                     <button class="pp-promo-cta" onclick="window.location.href='{{ route('about.index') }}'">
                                         Découvrir le rapport d'expertise
                                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -1223,7 +1223,7 @@
                                     </button>
                                 </div>
                                 <div class="pp-promo-img-wrap">
-                                    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80" alt="Expertise NADO">
+                                    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80" alt="Expertise AUTOMANAGER">
                                 </div>
                             </div>
                         @endif
@@ -1260,7 +1260,7 @@
                     </div>
                     <div class="pp-no-match-text">
                         <h3>Vous n'avez pas trouvé votre voiture ?</h3>
-                        <p>Déposez une demande et notre équipe NADO vous trouvera la voiture qui correspond à vos critères.</p>
+                        <p>Déposez une demande et notre équipe AUTOMANAGER vous trouvera la voiture qui correspond à vos critères.</p>
                     </div>
                     <a href="{{ route('demandes.create') }}" class="pp-no-match-btn">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
@@ -1271,7 +1271,7 @@
                     .pp-no-match-cta {
                         margin: 32px 0;
                         padding: 28px 24px;
-                        background: linear-gradient(135deg, #1459DD 0%, #2563eb 100%);
+                        background: linear-gradient(135deg, #0E0F12 0%, #C8A24B 100%);
                         color: #fff;
                         border-radius: 20px;
                         display: flex;
@@ -1298,7 +1298,7 @@
                         flex-shrink: 0;
                         display: inline-flex; align-items: center; gap: 8px;
                         padding: 14px 22px;
-                        background: #FDD817;
+                        background: #C8A24B;
                         color: #0f172a !important;
                         border-radius: 12px;
                         font-size: 13px; font-weight: 800;

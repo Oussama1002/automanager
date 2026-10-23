@@ -6,7 +6,7 @@
 <div class="register-page">
     <div class="register-container">
         <div class="form-header">
-            <h2><i class="fa-solid fa-gavel" style="color:#F37021"></i> Rejoindre les enchères NADO</h2>
+            <h2><i class="fa-solid fa-gavel" style="color:#C8A24B"></i> Rejoindre les enchères AUTOMANAGER</h2>
             <p>Créez votre compte <strong>Flotte &amp; Enchère</strong> pour participer aux ventes aux enchères.</p>
         </div>
 
@@ -91,13 +91,13 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style>
-.register-page { min-height: 100vh; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #F37021, #1459DD); padding: 20px; }
+.register-page { min-height: 100vh; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #C8A24B, #0E0F12); padding: 20px; }
 .register-container { background: #fff; padding: 40px 35px; border-radius: 16px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); width: 100%; max-width: 460px; animation: fadeInUp 0.7s ease; }
 .form-header { text-align: center; margin-bottom: 25px; }
 .form-header h2 { font-size: 24px; font-weight: 700; color: #222; display: flex; gap: 10px; align-items: center; justify-content: center; }
 .form-header p { color: #555; font-size: 14px; margin-top: 6px; }
 .form-group { margin-bottom: 18px; position: relative; }
-.form-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #F37021; font-size: 16px; }
+.form-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #C8A24B; font-size: 16px; }
 .register-form input, .register-form select {
     width: 100%;
     padding: 14px 16px;
@@ -109,12 +109,12 @@ document.addEventListener('DOMContentLoaded', function () {
     transition: all 0.3s ease;
 }
 .form-group label { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; }
-.register-form input:focus { border-color: #F37021; background: #fff; box-shadow: 0 0 8px rgba(243,112,33,0.3); outline: none; }
-.btn-register { width: 100%; padding: 14px; border-radius: 10px; border: none; background: linear-gradient(135deg, #F37021, #ff8a3d); color: #fff; font-size: 16px; font-weight: 700; cursor: pointer; transition: all 0.3s ease; margin-top: 10px; }
-.btn-register:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(243,112,33,0.4); }
+.register-form input:focus { border-color: #C8A24B; background: #fff; box-shadow: 0 0 8px rgba(200,162,75,0.3); outline: none; }
+.btn-register { width: 100%; padding: 14px; border-radius: 10px; border: none; background: linear-gradient(135deg, #C8A24B, #ff8a3d); color: #fff; font-size: 16px; font-weight: 700; cursor: pointer; transition: all 0.3s ease; margin-top: 10px; }
+.btn-register:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(200,162,75,0.4); }
 .error-box { background: #ffe5e5; color: #b30000; padding: 12px; border-radius: 8px; margin-bottom: 15px; font-size: 13px; }
 .register-link { margin-top: 20px; text-align: center; font-size: 14px; color: #444; }
-.register-link a { color: #F37021; font-weight: 600; text-decoration: none; }
+.register-link a { color: #C8A24B; font-weight: 600; text-decoration: none; }
 .register-link a:hover { text-decoration: underline; }
 .password-group input { padding-right: 44px; }
 .toggle-password {
@@ -129,12 +129,12 @@ document.addEventListener('DOMContentLoaded', function () {
     border: none;
     cursor: pointer;
     font-size: 16px;
-    color: #F37021;
+    color: #C8A24B;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
-.toggle-password:hover { background: rgba(243,112,33,0.08); }
+.toggle-password:hover { background: rgba(200,162,75,0.08); }
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 </style>
 @endsection

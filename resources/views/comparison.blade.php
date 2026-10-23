@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Comparison | Nado.ma')
+@section('title', 'Comparison | Automanager')
 
 @section('link')
 
@@ -264,7 +264,7 @@
                                         </div>
                                         <div class="dlab-info block-detail-list text-left border-blr" style="text-align: left !important;">
                                             <h4 class="dlab-title m-b0" ><a href="{{ route('achat.detail', [ 'marque' => str_replace(' ', '', $ad->mark),  'modele' =>  str_replace(' ', '', $ad->modele),  'id' => $ad['id'] ]) }}" style="color:#333 !important;font-weight: normal;">{{$ad['mark']}} {{$ad['modele']}} - {{$ad['year']}}</a></h4>
-                                            <span class="text-muted font-14">Voitures d'occasion NADO.MA</span>
+                                            <span class="text-muted font-14">Voitures d'occasion AUTOMANAGER.MA</span>
                                             <img src="{{ asset('assets/images/icons/icon-car.png')}}" class="icon-image-list" style="width: 60px;display: inline-block;">
                                             <ul class="used-car-dl-info" style="font-size: 10px;">
                 								<li><i class="fa fa-map-marker"></i> {{$ad->city}}</li>
@@ -327,7 +327,7 @@ $(document).ready(function(){
             data: formData,
             dataType: 'json',
             success: function (data) {
-                $(".blockimgcar"+nb+" img").attr("src", "https://nado.ma/storage/ads/"+data[0].image);
+                $(".blockimgcar"+nb+" img").attr("src", "https://automanager.ma/storage/ads/"+data[0].image);
                 $(".titlecar"+nb).text(data[0].mark+" "+ data[0].modele+" "+ data[0].year);
                 $(".prixcar"+nb).text(data[0].prix+" Dhs");
                 $(".markcar"+nb).text(data[0].mark);

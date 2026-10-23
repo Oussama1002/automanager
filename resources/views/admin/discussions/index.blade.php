@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 
-@section('title', 'Discussions | Admin NADO')
+@section('title', 'Discussions | Admin AUTOMANAGER')
 
 @section('content')
 <div class="page-heading">

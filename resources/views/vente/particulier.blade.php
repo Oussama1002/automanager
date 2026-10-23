@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Vendre en tant que particulier – NADO')
+@section('title', 'Vendre en tant que particulier – AUTOMANAGER')
 
 @section('link')
 <script src="https://unpkg.com/lucide@latest"></script>
 <style>
 :root {
-    --pp-blue   : #1459DD;
-    --pp-orange : #1459DD;
+    --pp-blue   : #0E0F12;
+    --pp-orange : #0E0F12;
     --pp-slate  : #0f172a;
     --pp-muted  : #64748b;
     --pp-border : #e2e8f0;
@@ -28,8 +28,8 @@
 /* Header */
 .pp-pill {
     display: inline-flex; align-items: center; gap: 8px;
-    padding: 8px 20px; background: #dbeafe; color: var(--pp-orange);
-    border-radius: 9999px; border: 1px solid #bfdbfe;
+    padding: 8px 20px; background: #F2E9D2; color: var(--pp-orange);
+    border-radius: 9999px; border: 1px solid #E8D7A9;
     font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .25em;
     margin-bottom: 20px;
 }
@@ -67,7 +67,7 @@
 .pp-phone-label { font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .25em; color: rgba(255,255,255,.6); margin-bottom: 16px; }
 .pp-phone-number { font-size: 1.6rem; font-weight: 900; letter-spacing: -.02em; margin-bottom: 4px; }
 .pp-phone-number a { color: white; text-decoration: none; transition: color .2s; }
-.pp-phone-number a:hover { color: #FDD817; }
+.pp-phone-number a:hover { color: #C8A24B; }
 .pp-phone-hours { font-size: 12px; font-weight: 500; color: rgba(255,255,255,.6); margin-bottom: 24px; }
 .pp-phone-btn { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 16px; background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.25); border-radius: .75rem; color: white; font-size: 12px; font-weight: 900; text-transform: uppercase; letter-spacing: .1em; cursor: pointer; text-decoration: none; transition: background .2s; }
 .pp-phone-btn:hover { background: rgba(255,255,255,.25); color: white; }
@@ -122,7 +122,7 @@
                 VENDEZ VOTRE VOITURE<br>
                 <span class="accent">RAPIDEMENT</span> ET EN TOUTE<br>SÉCURITÉ
             </h1>
-            <p class="pp-subtitle">Particulier ou vendeur occasionnel — NADO vous accompagne de l'estimation à la transaction finale. Rejoignez des milliers de vendeurs satisfaits.</p>
+            <p class="pp-subtitle">Particulier ou vendeur occasionnel — AUTOMANAGER vous accompagne de l'estimation à la transaction finale. Rejoignez des milliers de vendeurs satisfaits.</p>
             <a class="pp-cta" href="{{ route('vente.form', ['open_modal' => 1]) }}" style="text-decoration:none;">
                 <i data-lucide="plus-circle" style="width:16px;height:16px;"></i>
                 Déposer mon annonce
@@ -150,13 +150,13 @@
                                 <div class="pp-cond-icon"><i data-lucide="megaphone" style="width:16px;height:16px;"></i></div>
                                 <div>
                                     <div class="pp-cond-title">2. Nous publions et gérons les contacts</div>
-                                    <div class="pp-cond-desc">Votre annonce est diffusée sur NADO.ma et nos plateformes partenaires. Notre équipe filtre les prospects et vous met en relation avec les acheteurs vérifiés.</div>
+                                    <div class="pp-cond-desc">Votre annonce est diffusée sur AUTOMANAGER.ma et nos plateformes partenaires. Notre équipe filtre les prospects et vous met en relation avec les acheteurs vérifiés.</div>
                                 </div>
                             </div>
                             <div class="pp-condition">
                                 <div class="pp-cond-icon"><i data-lucide="shield-check" style="width:16px;height:16px;"></i></div>
                                 <div>
-                                    <div class="pp-cond-title">3. Transaction sécurisée chez NADO</div>
+                                    <div class="pp-cond-title">3. Transaction sécurisée chez AUTOMANAGER</div>
                                     <div class="pp-cond-desc">La signature et le paiement s'effectuent dans nos locaux, sous la supervision de nos conseillers. Zéro risque, zéro arnaque.</div>
                                 </div>
                             </div>
@@ -174,7 +174,7 @@
                 {{-- Quote card --}}
                 <div class="pp-quote-card">
                     <div class="pp-quote-text">
-                        "NADO m'a permis de vendre ma Mercedes C-Class en moins de 10 jours, au prix que je voulais. Le processus était simple, rapide et 100% sécurisé."
+                        "AUTOMANAGER m'a permis de vendre ma Mercedes C-Class en moins de 10 jours, au prix que je voulais. Le processus était simple, rapide et 100% sécurisé."
                     </div>
                     <div class="pp-quote-author">
                         <div class="pp-quote-avatar">AK</div>
@@ -209,15 +209,15 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div class="pp-map-body">
                         <div class="pp-map-address">
-                            <i data-lucide="map-pin" style="width:16px;height:16px;color:#1459DD;flex-shrink:0;margin-top:2px;"></i>
-                            <span><a href="https://maps.app.goo.gl/wrR8THmnk8ix3MVy9" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Showroom NADO — Casablanca, Maroc</a><br><span style="color:var(--pp-muted);font-size:12px;">Ouvert Lun. au Sam. 9h–18h</span></span>
+                            <i data-lucide="map-pin" style="width:16px;height:16px;color:#0E0F12;flex-shrink:0;margin-top:2px;"></i>
+                            <span><a href="https://maps.app.goo.gl/wrR8THmnk8ix3MVy9" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Showroom AUTOMANAGER — Casablanca, Maroc</a><br><span style="color:var(--pp-muted);font-size:12px;">Ouvert Lun. au Sam. 9h–18h</span></span>
                         </div>
                     </div>
                 </div>
 
                 {{-- Trust --}}
                 <div class="pp-trust-card">
-                    <div class="pp-trust-title">Pourquoi NADO ?</div>
+                    <div class="pp-trust-title">Pourquoi AUTOMANAGER ?</div>
                     <ul class="pp-trust-list">
                         <li class="pp-trust-item">
                             <i data-lucide="check-circle" class="pp-trust-check" style="width:16px;height:16px;"></i>

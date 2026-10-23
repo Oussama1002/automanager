@@ -22,8 +22,8 @@
         opacity: 0.03;
         pointer-events: none;
         background-image:
-            linear-gradient(#1459DD 1px, transparent 1px),
-            linear-gradient(90deg, #1459DD 1px, transparent 1px);
+            linear-gradient(#0E0F12 1px, transparent 1px),
+            linear-gradient(90deg, #0E0F12 1px, transparent 1px);
         background-size: 32px 32px;
         z-index: 0;
     }
@@ -92,8 +92,8 @@
         letter-spacing: -0.03em;
     }
     @media (min-width: 640px) { .auth-wordmark { font-size: 20px; } }
-    .auth-wordmark .na { color: #1459DD; }
-    .auth-wordmark .do { color: #FDD817; }
+    .auth-wordmark .na { color: #0E0F12; }
+    .auth-wordmark .do { color: #C8A24B; }
 
     .auth-header-spacer { width: 64px; }
     @media (min-width: 640px) { .auth-header-spacer { width: 80px; } }
@@ -175,7 +175,7 @@
     }
     .auth-tab-btn:hover:not(.active) { color: #0f172a; }
     .auth-tab-btn.active {
-        background: #1459DD;
+        background: #0E0F12;
         color: #fff;
         box-shadow: 0 4px 12px rgba(20,89,221,0.25);
     }
@@ -255,8 +255,8 @@
     @media (min-width: 640px) {
         .auth-card-icon { width: 48px; height: 48px; }
     }
-    .auth-card-icon.blue { background: rgba(20,89,221,0.1); color: #1459DD; }
-    .auth-card-icon.yellow { background: rgba(253,216,23,0.2); color: #d97706; }
+    .auth-card-icon.blue { background: rgba(20,89,221,0.1); color: #0E0F12; }
+    .auth-card-icon.yellow { background: rgba(200,162,75,0.2); color: #d97706; }
 
     .auth-card-head h2 {
         font-size: 18px;
@@ -324,12 +324,12 @@
     }
     .auth-input::placeholder { color: #94a3b8; }
     .auth-input:focus {
-        border-color: #1459DD;
+        border-color: #0E0F12;
         background: #fff;
         box-shadow: 0 0 0 3px rgba(20,89,221,0.15);
     }
     .auth-card:last-child .auth-input:focus {
-        border-color: #1459DD;
+        border-color: #0E0F12;
         box-shadow: 0 0 0 3px rgba(20,89,221,0.12);
     }
 
@@ -340,7 +340,7 @@
     .auth-btn-login {
         width: 100%;
         padding: 16px;
-        background: #1459DD;
+        background: #0E0F12;
         color: #fff;
         border: none;
         border-radius: 10px;
@@ -361,7 +361,7 @@
     .auth-btn-register {
         width: 100%;
         padding: 16px;
-        background: #FDD817;
+        background: #C8A24B;
         color: #0f172a;
         border: none;
         border-radius: 10px;
@@ -371,7 +371,7 @@
         letter-spacing: 0.08em;
         cursor: pointer;
         transition: background 0.15s, transform 0.1s;
-        box-shadow: 0 8px 20px -4px rgba(253,216,23,0.35);
+        box-shadow: 0 8px 20px -4px rgba(200,162,75,0.35);
         min-height: 48px;
         touch-action: manipulation;
         font-family: inherit;
@@ -423,7 +423,7 @@
         align-items: center;
         justify-content: center;
     }
-    .pw-toggle:hover { color: #1459DD; }
+    .pw-toggle:hover { color: #0E0F12; }
     .auth-input-wrap:has(.pw-toggle) .auth-input { padding-right: 40px !important; }
 
     /* ========== PHONE REGISTER MODAL ========== */
@@ -491,7 +491,7 @@
 
     <div class="auth-z">
 
-        {{-- ====== HEADER — full NADO navbar ====== --}}
+        {{-- ====== HEADER — full AUTOMANAGER navbar ====== --}}
         @include('partials.nado-navbar')
         <div style="height:110px;"></div>{{-- spacer for fixed navbar --}}
 
@@ -604,7 +604,7 @@
                                         </button>
                                     </div>
                                     <div style="text-align:right;margin-top:8px;">
-                                        <a href="{{ route('client.password.request') }}" style="font-size:13px;color:#1459DD;font-weight:600;text-decoration:none;">Mot de passe oublié ?</a>
+                                        <a href="{{ route('client.password.request') }}" style="font-size:13px;color:#0E0F12;font-weight:600;text-decoration:none;">Mot de passe oublié ?</a>
                                     </div>
                                 </div>
 
@@ -614,12 +614,12 @@
 
                                 <p style="text-align:center;margin-top:16px;font-size:14px;color:#475569;font-weight:500;">
                                     Pas encore inscrit ?
-                                    <a href="{{ route('client.register') }}" style="color:#1459DD;font-weight:700;text-decoration:none;">Créer un compte</a>
+                                    <a href="{{ route('client.register') }}" style="color:#0E0F12;font-weight:700;text-decoration:none;">Créer un compte</a>
                                 </p>
 
                                 <p style="text-align:center;margin-top:8px;font-size:14px;color:#475569;font-weight:500;">
                                     Vous n'avez pas de mail ?
-                                    <a href="#" id="openPhoneRegister" style="color:#1459DD;font-weight:700;text-decoration:none;">Cliquez ici</a>
+                                    <a href="#" id="openPhoneRegister" style="color:#0E0F12;font-weight:700;text-decoration:none;">Cliquez ici</a>
                                 </p>
                             </form>
                         </div>

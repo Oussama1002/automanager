@@ -1,17 +1,17 @@
 @extends('layouts.app')
 
-@section('title', "L'Univers NADO — À Propos")
+@section('title', "L'Univers AUTOMANAGER — À Propos")
 
 @section('link')
 <script src="https://unpkg.com/lucide@latest"></script>
 <style>
 /* ============================================================
-   À PROPOS / L'UNIVERS NADO
-   #1459DD blue · #FDD817 yellow · #0F172A dark
+   À PROPOS / L'UNIVERS AUTOMANAGER
+   #0E0F12 blue · #C8A24B yellow · #0F172A dark
 ============================================================ */
 :root {
-    --ap-blue   : #1459DD;
-    --ap-yellow : #FDD817;
+    --ap-blue   : #0E0F12;
+    --ap-yellow : #C8A24B;
     --ap-dark   : #0F172A;
     --ap-bg     : #fcfcfd;
     --ap-slate  : #0f172a;
@@ -59,7 +59,7 @@
 
 .ap-hero-eyebrow {
     display: inline-flex; align-items: center; gap: 8px;
-    padding: 6px 14px; background: #eff6ff; color: var(--ap-blue);
+    padding: 6px 14px; background: #FAF6EC; color: var(--ap-blue);
     border-radius: 9999px; margin-bottom: 24px;
     font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .12em;
 }
@@ -181,7 +181,7 @@
 
 .ap-svc-icon {
     width: 56px; height: 56px;
-    background: #eff6ff; color: var(--ap-blue);
+    background: #FAF6EC; color: var(--ap-blue);
     border-radius: 1rem; display: flex; align-items: center; justify-content: center;
     margin-bottom: 32px;
     transition: background .3s, color .3s;
@@ -367,7 +367,7 @@
             <div>
                 <div class="ap-hero-eyebrow">
                     <span class="pulse-dot"></span>
-                    L'UNIVERS NADO EN DIRECT
+                    L'UNIVERS AUTOMANAGER EN DIRECT
                 </div>
 
                 <h1 class="ap-h1">
@@ -376,7 +376,7 @@
                 </h1>
 
                 <p class="ap-hero-lead">
-                    Depuis plus de 20 ans, NADO accompagne les Marocains dans
+                    Depuis plus de 20 ans, AUTOMANAGER accompagne les Marocains dans
                     chaque étape de leur vie automobile — achat, vente, financement,
                     expertise. Une seule adresse de confiance.
                 </p>
@@ -386,7 +386,7 @@
             <div class="ap-phone-col">
                 <div class="ap-phone">
                     <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80"
-                         alt="NADO — L'auto sans filtres" loading="lazy">
+                         alt="AUTOMANAGER — L'auto sans filtres" loading="lazy">
                     <div class="ap-phone-overlay">
                         <i data-lucide="play" style="width:40px;height:40px;fill:white;color:white;"></i>
                     </div>
@@ -413,21 +413,21 @@
                             <div class="ap-ms-year">2005</div>
                             <div>
                                 <div class="ap-ms-title">La Fondation</div>
-                                <div class="ap-ms-desc">Ouverture du premier showroom NADO à Casablanca. Une vision simple : rendre le marché automobile marocain plus transparent et plus sûr.</div>
+                                <div class="ap-ms-desc">Ouverture du premier showroom AUTOMANAGER à Casablanca. Une vision simple : rendre le marché automobile marocain plus transparent et plus sûr.</div>
                             </div>
                         </div>
                         <div class="ap-milestone">
                             <div class="ap-ms-year">2012</div>
                             <div>
                                 <div class="ap-ms-title">L'Expansion</div>
-                                <div class="ap-ms-desc">Lancement de la plateforme digitale NADO.ma et des enchères auto en ligne. Des milliers d'acheteurs et vendeurs connectés à l'échelle nationale.</div>
+                                <div class="ap-ms-desc">Lancement de la plateforme digitale AUTOMANAGER.ma et des enchères auto en ligne. Des milliers d'acheteurs et vendeurs connectés à l'échelle nationale.</div>
                             </div>
                         </div>
                         <div class="ap-milestone">
                             <div class="ap-ms-year">2025</div>
                             <div>
                                 <div class="ap-ms-title">L'Écosystème</div>
-                                <div class="ap-ms-desc">NADO devient un écosystème complet : achat, vente, reprise, financement, expertise et enchères — tout sous une seule marque de confiance.</div>
+                                <div class="ap-ms-desc">AUTOMANAGER devient un écosystème complet : achat, vente, reprise, financement, expertise et enchères — tout sous une seule marque de confiance.</div>
                             </div>
                         </div>
                     </div>
@@ -437,7 +437,7 @@
                 <div>
                     <div class="ap-hist-media">
                         <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=1200&q=80"
-                             alt="Showroom NADO" loading="lazy">
+                             alt="Showroom AUTOMANAGER" loading="lazy">
                         <div class="ap-hist-media-overlay"></div>
                     </div>
                 </div>
@@ -447,11 +447,11 @@
     </section>
 
     {{-- ════════════════════════════════════════════
-         3. L'ÉCOSYSTÈME NADO — 6 services
+         3. L'ÉCOSYSTÈME AUTOMANAGER — 6 services
     ════════════════════════════════════════════ --}}
     <section class="ap-eco">
         <div class="ap-wrap">
-            <h2 class="ap-eco-h2">L'Écosystème <span>NADO.</span></h2>
+            <h2 class="ap-eco-h2">L'Écosystème <span>AUTOMANAGER.</span></h2>
 
             <div class="ap-eco-grid">
 
@@ -459,7 +459,7 @@
                     <div class="ap-svc-icon">
                         <i data-lucide="car-front" style="width:28px;height:28px;"></i>
                     </div>
-                    <h3 class="ap-svc-title">NADO Achat</h3>
+                    <h3 class="ap-svc-title">AUTOMANAGER Achat</h3>
                     <p class="ap-svc-desc">Trouvez le véhicule idéal parmi des centaines d'annonces certifiées. Chaque voiture est inspectée et garantie par nos experts.</p>
                 </div>
 
@@ -467,7 +467,7 @@
                     <div class="ap-svc-icon">
                         <i data-lucide="tags" style="width:28px;height:28px;"></i>
                     </div>
-                    <h3 class="ap-svc-title">NADO Vente</h3>
+                    <h3 class="ap-svc-title">AUTOMANAGER Vente</h3>
                     <p class="ap-svc-desc">Vendez votre voiture rapidement et au meilleur prix. Diffusion premium, gestion des contacts, transaction 100 % sécurisée.</p>
                 </div>
 
@@ -475,7 +475,7 @@
                     <div class="ap-svc-icon">
                         <i data-lucide="hand-coins" style="width:28px;height:28px;"></i>
                     </div>
-                    <h3 class="ap-svc-title">NADO Reprise</h3>
+                    <h3 class="ap-svc-title">AUTOMANAGER Reprise</h3>
                     <p class="ap-svc-desc">Échangez votre ancien véhicule contre un crédit sur votre prochain achat. Estimation immédiate, aucune contrainte.</p>
                 </div>
 
@@ -491,7 +491,7 @@
                     <div class="ap-svc-icon">
                         <i data-lucide="landmark" style="width:28px;height:28px;"></i>
                     </div>
-                    <h3 class="ap-svc-title">NADO Finance</h3>
+                    <h3 class="ap-svc-title">AUTOMANAGER Finance</h3>
                     <p class="ap-svc-desc">Simulez et obtenez votre crédit auto en quelques clics. Partenariats bancaires exclusifs, taux compétitifs, réponse rapide.</p>
                 </div>
 
@@ -499,7 +499,7 @@
                     <div class="ap-svc-icon">
                         <i data-lucide="shield-check" style="width:28px;height:28px;"></i>
                     </div>
-                    <h3 class="ap-svc-title">NADO Expert</h3>
+                    <h3 class="ap-svc-title">AUTOMANAGER Expert</h3>
                     <p class="ap-svc-desc">Inspection complète de 110 points par nos techniciens certifiés. Rapport d'expertise détaillé et badge de garantie inclus.</p>
                 </div>
 
@@ -544,8 +544,8 @@
                     <div class="ap-bento-icon">
                         <i data-lucide="shield-check" style="width:32px;height:32px;"></i>
                     </div>
-                    <h3 class="ap-bento-title">Garantie NADO</h3>
-                    <p class="ap-bento-desc">Chaque véhicule certifié reçoit le badge Garantie NADO Sérénité. Couverture pièces et main d'œuvre, tranquillité assurée.</p>
+                    <h3 class="ap-bento-title">Garantie AUTOMANAGER</h3>
+                    <p class="ap-bento-desc">Chaque véhicule certifié reçoit le badge Garantie AUTOMANAGER Sérénité. Couverture pièces et main d'œuvre, tranquillité assurée.</p>
                 </div>
 
             </div>
@@ -567,7 +567,7 @@
                     @php
                         $src = asset('storage/' . ltrim($story->media_path, '/'));
                         $label = $story->media_type === 'video' ? 'Story · Vidéo' : 'Story · Photo';
-                        $title = 'Story NADO';
+                        $title = 'Story AUTOMANAGER';
                     @endphp
                     <a href="{{ $src }}" target="_blank" rel="noopener"
                        class="ap-social-card" style="text-decoration:none;color:inherit;">
@@ -620,7 +620,7 @@
                         <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
                     </div>
                     <p class="ap-tem-text">
-                        "NADO a totalement transformé mon expérience d'achat auto. En moins de 48h, j'avais ma BMW inspectée, certifiée et livrée. Une équipe professionnelle, un processus transparent du début à la fin."
+                        "AUTOMANAGER a totalement transformé mon expérience d'achat auto. En moins de 48h, j'avais ma BMW inspectée, certifiée et livrée. Une équipe professionnelle, un processus transparent du début à la fin."
                     </p>
                     <div class="ap-tem-name">Karim El Mansouri</div>
                     <div class="ap-tem-role">Acheteur — Casablanca</div>
@@ -638,7 +638,7 @@
                         <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
                     </div>
                     <p class="ap-tem-text">
-                        "J'ai vendu ma Mercedes en 10 jours grâce à NADO. Le Pack Showroom est exceptionnel — photos pro, vidéo YouTube, badge certifié. Le prix obtenu a dépassé mes attentes. Je recommande à 100%."
+                        "J'ai vendu ma Mercedes en 10 jours grâce à AUTOMANAGER. Le Pack Showroom est exceptionnel — photos pro, vidéo YouTube, badge certifié. Le prix obtenu a dépassé mes attentes. Je recommande à 100%."
                     </p>
                     <div class="ap-tem-name">Samira Benali</div>
                     <div class="ap-tem-role">Vendeuse Particulier — Rabat</div>

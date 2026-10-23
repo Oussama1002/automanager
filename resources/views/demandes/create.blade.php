@@ -1,4 +1,4 @@
-{{-- NADO-DEMANDE-CREATE-V5 --}}
+{{-- AUTOMANAGER-DEMANDE-CREATE-V5 --}}
 @extends('layouts.app')
 
 @section('title', 'Publier ma demande')
@@ -22,7 +22,7 @@
         font-size:15px; outline:none; background:#fff; font-family:inherit; color:#0f172a;
     }
     .dmd-form input:focus,
-    .dmd-form select:focus { border-color:#1459DD; box-shadow:0 0 0 3px rgba(20,89,221,.1); }
+    .dmd-form select:focus { border-color:#0E0F12; box-shadow:0 0 0 3px rgba(20,89,221,.1); }
     .dmd-form select {
         appearance:none; -webkit-appearance:none;
         background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
@@ -44,14 +44,14 @@
     @media (max-width:600px) { .dmd-car-remove { grid-column:1 / -1; } }
 
     .dmd-add-car {
-        padding:12px 14px; background:#eff6ff; color:#1459DD; border:1px dashed #93c5fd;
+        padding:12px 14px; background:#FAF6EC; color:#0E0F12; border:1px dashed #E3C178;
         border-radius:10px; cursor:pointer; font-weight:700; font-family:inherit; font-size:14px;
         display:flex; align-items:center; justify-content:center; gap:6px;
     }
-    .dmd-add-car:hover { background:#dbeafe; }
+    .dmd-add-car:hover { background:#F2E9D2; }
 
     .dmd-btn {
-        padding:14px 20px; background:#1459DD; color:#fff; border:0; border-radius:12px;
+        padding:14px 20px; background:#0E0F12; color:#fff; border:0; border-radius:12px;
         font-weight:700; cursor:pointer; font-family:inherit; font-size:15px;
         box-shadow:0 6px 18px rgba(20,89,221,.25);
         transition:transform .15s, box-shadow .15s;
@@ -71,7 +71,7 @@
     <h1>Publier ma demande</h1>
     <p class="intro">
         Dites-nous quelles voitures vous recherchez — vous pouvez en ajouter plusieurs (ex. BMW Série 5, Audi A4, Mercedes Classe A).
-        Un agent NADO vous contactera rapidement.
+        Un agent AUTOMANAGER vous contactera rapidement.
     </p>
 
     @if ($errors->any())

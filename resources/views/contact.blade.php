@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Contact | Nado.ma')
+@section('title', 'Contact | Automanager')
 
 @section('content')
   <!-- inner page banner -->
@@ -41,7 +41,7 @@
                     <div class="icon-xl text-primary m-b20"> <a href="#" class="icon-cell"><i class="fa fa-envelope"></i></a> </div>
                     <div class="icon-content">
                         <h5 class="dlab-tilte text-uppercase">Email</h5>
-                        <p>contact@nado.ma</p>
+                        <p>contact@automanager.ma</p>
                     </div>
                 </div>
             </div>

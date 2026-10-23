@@ -20,8 +20,8 @@
         opacity: 0.03;
         pointer-events: none;
         background-image:
-            linear-gradient(#1459DD 1px, transparent 1px),
-            linear-gradient(90deg, #1459DD 1px, transparent 1px);
+            linear-gradient(#0E0F12 1px, transparent 1px),
+            linear-gradient(90deg, #0E0F12 1px, transparent 1px);
         background-size: 32px 32px;
         z-index: 0;
     }
@@ -52,7 +52,7 @@
         height: 72px;
         margin: 0 auto 24px;
         border-radius: 50%;
-        background: linear-gradient(135deg, #1459DD, #3b82f6);
+        background: linear-gradient(135deg, #0E0F12, #C8A24B);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -69,7 +69,7 @@
     }
 
     .verify-email {
-        color: #1459DD;
+        color: #0E0F12;
         font-weight: 600;
     }
 
@@ -123,7 +123,7 @@
     }
 
     .btn-primary {
-        background: #1459DD;
+        background: #0E0F12;
         color: #fff;
     }
 
@@ -131,7 +131,7 @@
 
     .btn-ghost {
         background: transparent;
-        color: #1459DD;
+        color: #0E0F12;
         border: 1px solid #cbd5e1;
     }
 
@@ -144,7 +144,7 @@
     }
 
     .verify-hint a {
-        color: #1459DD;
+        color: #0E0F12;
         text-decoration: none;
         font-weight: 500;
     }

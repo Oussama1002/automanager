@@ -1,7 +1,7 @@
 <footer>
     <div class="footer clearfix mb-0 text-muted">
         <div class="float-start">
-            <p>{{ now()->year }} &copy; nado.ma</p>
+            <p>{{ now()->year }} &copy; automanager.ma</p>
         </div>
     </div>
 </footer>

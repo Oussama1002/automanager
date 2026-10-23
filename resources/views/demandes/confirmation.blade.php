@@ -18,7 +18,7 @@
 
     <div style="margin-top:20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
         <a href="{{ route('demandes.index') }}"
-           style="padding:10px 18px;background:#0d6efd;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">
+           style="padding:10px 18px;background:#C8A24B;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">
             Voir le forum des demandes
         </a>
         <a href="{{ url('/achat') }}"

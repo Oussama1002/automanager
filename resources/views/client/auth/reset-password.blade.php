@@ -4,7 +4,7 @@
 <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     .auth-page { min-height: 100vh; display: flex; flex-direction: column; background: #f8fafc; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
-    .auth-grid-bg { position: fixed; inset: 0; opacity: 0.03; pointer-events: none; background-image: linear-gradient(#1459DD 1px, transparent 1px), linear-gradient(90deg, #1459DD 1px, transparent 1px); background-size: 32px 32px; z-index: 0; }
+    .auth-grid-bg { position: fixed; inset: 0; opacity: 0.03; pointer-events: none; background-image: linear-gradient(#0E0F12 1px, transparent 1px), linear-gradient(90deg, #0E0F12 1px, transparent 1px); background-size: 32px 32px; z-index: 0; }
     .auth-z { position: relative; z-index: 10; display: flex; flex-direction: column; flex: 1; }
     .auth-main { flex: 1; padding: 32px 16px; }
     .auth-main-inner { max-width: 72rem; margin: 0 auto; display: flex; flex-direction: column; }
@@ -18,7 +18,7 @@
     .auth-card { border-radius: 1.5rem; background: #fff; border: 1px solid #e2e8f0; box-shadow: 0 8px 24px -4px rgba(148,163,184,0.15); }
     .auth-card-body { padding: 32px; }
     .auth-card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .auth-card-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: rgba(20,89,221,0.1); color: #1459DD; }
+    .auth-card-icon { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: rgba(20,89,221,0.1); color: #0E0F12; }
     .auth-card-head h2 { font-size: 20px; font-weight: 900; color: #0f172a; margin: 0 0 2px; }
     .auth-card-head p { font-size: 14px; color: #64748b; margin: 0; }
     .auth-form { display: flex; flex-direction: column; gap: 20px; }
@@ -26,8 +26,8 @@
     .auth-input-wrap { position: relative; }
     .auth-input-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: #94a3b8; }
     .auth-input { width: 100%; padding: 14px 16px 14px 42px; background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 10px; font-size: 14px; min-height: 48px; }
-    .auth-input:focus { border-color: #1459DD; background: #fff; box-shadow: 0 0 0 3px rgba(20,89,221,0.15); outline: none; }
-    .auth-btn-login { width: 100%; padding: 16px; background: #1459DD; color: #fff; border: none; border-radius: 10px; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; cursor: pointer; min-height: 48px; }
+    .auth-input:focus { border-color: #0E0F12; background: #fff; box-shadow: 0 0 0 3px rgba(20,89,221,0.15); outline: none; }
+    .auth-btn-login { width: 100%; padding: 16px; background: #0E0F12; color: #fff; border: none; border-radius: 10px; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; cursor: pointer; min-height: 48px; }
     .auth-btn-login:hover { background: #0d47b4; }
 
     /* Show / hide password */
@@ -46,7 +46,7 @@
         align-items: center;
         justify-content: center;
     }
-    .pw-toggle:hover { color: #1459DD; }
+    .pw-toggle:hover { color: #0E0F12; }
     .auth-input-wrap:has(.pw-toggle) .auth-input { padding-right: 40px !important; }
 </style>
 

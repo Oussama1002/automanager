@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Nado.ma')
+@section('title', 'Automanager')
 
 @section('content')
     <!-- inner page banner -->

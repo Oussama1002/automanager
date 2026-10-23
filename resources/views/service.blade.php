@@ -6,12 +6,12 @@
     {{-- Intro Section --}}
     <div class="max-w-6xl mx-auto mb-16">
         <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">
-            À Propos de <span class="text-yellow-500">NADO.ma</span> et <span class="text-yellow-500">AUTO ENCHÈRE</span> : Votre Partenaire Automobile de Confiance
+            À Propos de <span class="text-yellow-500">AUTOMANAGER.ma</span> et <span class="text-yellow-500">AUTO ENCHÈRE</span> : Votre Partenaire Automobile de Confiance
         </h2>
         <div class="flex flex-col md:flex-row items-center gap-6">
             <img src="{{ asset('images/service-header.png') }}" alt="voiture clavier" class="w-full md:w-1/2 rounded shadow">
             <p class="text-lg leading-relaxed md:w-1/2">
-                Bienvenue sur <strong>NADO.ma</strong>, la plateforme digitale d'<strong>AUTO ENCHÈRE</strong>, votre spécialiste de l'automobile avec des dizaines d'années d'expérience. Depuis plus de 20 ans, nous accompagnons les clients à travers l’expérience d'achat, de vente et d'enchères de véhicules en toute simplicité, transparence et confiance.<br><br>
+                Bienvenue sur <strong>AUTOMANAGER.ma</strong>, la plateforme digitale d'<strong>AUTO ENCHÈRE</strong>, votre spécialiste de l'automobile avec des dizaines d'années d'expérience. Depuis plus de 20 ans, nous accompagnons les clients à travers l’expérience d'achat, de vente et d'enchères de véhicules en toute simplicité, transparence et confiance.<br><br>
                 Notre équipe met un point d’honneur à vous offrir un accès privilégié à un large choix de véhicules d’occasion et neufs, en alliant expertise technique et accompagnement complet à chaque étape.
             </p>
         </div>
@@ -57,7 +57,7 @@
             Nos Engagements : <span class="text-yellow-500">Expertise, Transparence et Confiance</span>
         </h3>
         <p class="text-lg leading-relaxed mb-10 px-4 md:px-0">
-            Chez AUTO ENCHÈRE, la confiance est au cœur de notre métier. Nous nous engageons sur une conformité rigoureuse et un accompagnement optimal. Chaque véhicule proposé par NADO.ma est contrôlé, préparé et évalué pour assurer une expérience fiable et sans surprises. Nous assurons le lien entre les vendeurs et acheteurs dans le respect des meilleures pratiques.
+            Chez AUTO ENCHÈRE, la confiance est au cœur de notre métier. Nous nous engageons sur une conformité rigoureuse et un accompagnement optimal. Chaque véhicule proposé par AUTOMANAGER.ma est contrôlé, préparé et évalué pour assurer une expérience fiable et sans surprises. Nous assurons le lien entre les vendeurs et acheteurs dans le respect des meilleures pratiques.
         </p>
         <img src="{{ asset('images/blue-car.png') }}" alt="voiture bleue" class="w-full max-w-md mx-auto rounded shadow-md">
     </div>

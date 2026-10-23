@@ -265,7 +265,7 @@
                 <ul class="list-unstyled small text-start px-2">
                   <li>• Renouvellement 1 fois/jour</li>
                   <li>• Réseaux sociaux & sites de vente</li>
-                  <li>• Vitrine Nado.ma</li>
+                  <li>• Vitrine Automanager</li>
                   <li>• Afficher votre numéro</li>
                 </ul>
               </div>
@@ -282,7 +282,7 @@
                 <ul class="list-unstyled small text-start px-2">
                   <li>• Renouvellement 1 fois/jour</li>
                   <li>• Réseaux sociaux & sites de vente</li>
-                  <li>• Vitrine Nado.ma</li>
+                  <li>• Vitrine Automanager</li>
                   <li>• Afficher votre numéro</li>
                 </ul>
               </div>
@@ -299,7 +299,7 @@
                 <ul class="list-unstyled small text-start px-2">
                   <li>• Renouvellement 2 fois/jour</li>
                   <li>• Réseaux sociaux & sites de vente</li>
-                  <li>• Vitrine Nado.ma</li>
+                  <li>• Vitrine Automanager</li>
                   <li>• Reels Instagram / TikTok</li>
                   <li>• Vidéo / Short YouTube</li>
                   <li>• Gestion des rendez-vous</li>
@@ -313,7 +313,7 @@
         <!-- FREE PACK BUTTON -->
         <div class="text-center mt-4">
           <button class="btn btn-outline-primary fw-bold" id="select-free-pack" style="border-radius: 30px;">
-            Publiez gratuitement vos annonces sur Nado.ma
+            Publiez gratuitement vos annonces sur Automanager
           </button>
         </div>
       </div>

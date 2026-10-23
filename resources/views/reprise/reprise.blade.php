@@ -18,9 +18,9 @@ loo<!DOCTYPE html>
             $isAutoEnchere = request()->routeIs('nadoautoenchere.*');
 
             // Theme Colors
-            $accentColor = $isAutoEnchere ? '#F37021' : '#FDD817';
-            $buttonHoverBg = $isAutoEnchere ? '#F37021' : '#FDD817';
-            $logoText = $isAutoEnchere ? 'AUTO ENCHÈRE' : 'NADO';
+            $accentColor = $isAutoEnchere ? '#C8A24B' : '#C8A24B';
+            $buttonHoverBg = $isAutoEnchere ? '#C8A24B' : '#C8A24B';
+            $logoText = $isAutoEnchere ? 'AUTO ENCHÈRE' : 'AUTOMANAGER';
             
         @endphp
 
@@ -30,12 +30,12 @@ loo<!DOCTYPE html>
             <script src="https://unpkg.com/lucide@latest"></script>
 
             <!-- Top Bar Info -->
-            <div class="top-bar" style="background-color: #FDD817;">
+            <div class="top-bar" style="background-color: #C8A24B;">
                 <div class="container custom-container top-bar-content">
                     <div class="contact-info">
                         <div class="info-item">
                             <i data-lucide="mail"></i>
-                            <a href="mailto:contact@nado.ma">contact@nado.ma</a>
+                            <a href="mailto:contact@automanager.ma">contact@automanager.ma</a>
                         </div>
                         <div class="info-item">
                             <i data-lucide="phone-call"></i>
@@ -61,11 +61,11 @@ loo<!DOCTYPE html>
                             @if ($isAutoEnchere)
                                 <span class="logo-text">
                                     <span class="text-dark">AUTO </span>
-                                    <span style="color: #F37021;">ENCHÈRE</span>
+                                    <span style="color: #C8A24B;">ENCHÈRE</span>
                                 </span>
                             @else
                                 <img src="{{ asset('storage/logos/UAfjepY72Xe7grWDva9cqSlRFsRKNZPV3HBDbBP1.png') }}"
-                                     alt="NADO" style="height: 36px; width: auto; object-fit: contain;" />
+                                     alt="AUTOMANAGER" style="height: 36px; width: auto; object-fit: contain;" />
                             @endif
                         </a>
 
@@ -138,11 +138,11 @@ loo<!DOCTYPE html>
                         @if ($isAutoEnchere)
                             <span class="logo-text">
                                 <span class="text-dark">AUTO </span>
-                                <span style="color: #F37021;">ENCHÈRE</span>
+                                <span style="color: #C8A24B;">ENCHÈRE</span>
                             </span>
                         @else
                             <img src="{{ asset('storage/logos/UAfjepY72Xe7grWDva9cqSlRFsRKNZPV3HBDbBP1.png') }}"
-                                 alt="NADO" style="height: 30px; width: auto; object-fit: contain;" />
+                                 alt="AUTOMANAGER" style="height: 30px; width: auto; object-fit: contain;" />
                         @endif
                         <button id="closeDrawerBtn" class="close-btn">
                             <i data-lucide="x"></i>
@@ -158,7 +158,7 @@ loo<!DOCTYPE html>
                             <a href="{{ route('achat.index') }}">Achat</a>
                             <a href="{{ route('vente.form') }}">Vente</a>
                             <a href="{{ route('nadoautoenchere.prelogin') }}"
-                                style="color: #1459DD;">Auto-enchère</a>
+                                style="color: #0E0F12;">Auto-enchère</a>
                             <a href="{{ route('reprise.form') }}">Reprise</a>
                             <a href="{{ route('financement.index') }}">Auto-financement</a>
                             <a href="{{ route('about.index') }}">À propos</a>
@@ -187,7 +187,7 @@ loo<!DOCTYPE html>
                         <div class="drawer-divider"></div>
 
                         <div class="drawer-support">
-                            <p>Support NADO</p>
+                            <p>Support AUTOMANAGER</p>
                             <a href="tel:+212520070611">+212 520 070 611</a>
                         </div>
                     </div>
@@ -197,7 +197,7 @@ loo<!DOCTYPE html>
             <!-- Styles -->
             <style>
                 :root {
-                    --primary-blue: #1459DD;
+                    --primary-blue: #0E0F12;
                     --slate-900: #0f172a;
                     --slate-700: #334155;
                     --slate-50: #f8fafc;
@@ -371,11 +371,11 @@ loo<!DOCTYPE html>
 
                 .highlight-link {
                     color: var(--primary-blue);
-                    background-color: #dbeafe;
+                    background-color: #F2E9D2;
                 }
 
                 .highlight-link:hover {
-                    background-color: #bfdbfe;
+                    background-color: #E8D7A9;
                 }
 
                 /* Dropdown */
@@ -419,8 +419,8 @@ loo<!DOCTYPE html>
                 }
 
                 .nav-dropdown-menu a:hover {
-                    background-color: #fff7ed;
-                    color: #F37021;
+                    background-color: #FAF4EA;
+                    color: #C8A24B;
                 }
 
                 /* Right Section */
@@ -451,17 +451,17 @@ loo<!DOCTYPE html>
                 }
 
                 .outline-btn {
-                    background-color: rgba(253, 216, 23, 0.2);
-                    border: 1px solid rgba(253, 216, 23, 0.5);
+                    background-color: rgba(200,162,75, 0.2);
+                    border: 1px solid rgba(200,162,75, 0.5);
                     color: var(--slate-900);
                 }
 
                 .outline-btn:hover {
-                    background-color: #FDD817;
+                    background-color: #C8A24B;
                 }
 
                 /* Adjust hover for enchere mode via JS or specific classes if needed,
-                   but inline style logic handles the main color. Here we default to Nado yellow styles. */
+                   but inline style logic handles the main color. Here we default to Automanager yellow styles. */
 
                 .desktop-only {
                     display: none;
@@ -788,7 +788,7 @@ loo<!DOCTYPE html>
             <!-- Custom CSS for Reprise Section -->
             <style>
                 :root {
-                    --primary: #1459DD;
+                    --primary: #0E0F12;
                     --slate-50: #f8fafc;
                     --slate-100: #f1f5f9;
                     --slate-300: #cbd5e1;
@@ -833,7 +833,7 @@ loo<!DOCTYPE html>
                 }
 
                 .reprise-wrapper .btn-primary:hover {
-                    background-color: #1d4ed8;
+                    background-color: #A17E31;
                     transform: translateY(-2px);
                     color: var(--white);
                 }
@@ -864,7 +864,7 @@ loo<!DOCTYPE html>
                     inset: 0;
                     opacity: 0.1;
                     pointer-events: none;
-                    background-image: radial-gradient(#1459DD 1px, transparent 1px);
+                    background-image: radial-gradient(#0E0F12 1px, transparent 1px);
                     background-size: 40px 40px;
                 }
 
@@ -903,7 +903,7 @@ loo<!DOCTYPE html>
                 }
 
                 .reprise-wrapper .text-gradient {
-                    background: linear-gradient(135deg, #1459DD, #7ea9ff);
+                    background: linear-gradient(135deg, #0E0F12, #E3C178);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
@@ -966,7 +966,7 @@ loo<!DOCTYPE html>
                 .reprise-wrapper .hero-float-icon {
                     width: 3rem;
                     height: 3rem;
-                    background: #eff6ff;
+                    background: #FAF6EC;
                     border-radius: 0.75rem;
                     display: flex;
                     align-items: center;
@@ -1032,7 +1032,7 @@ loo<!DOCTYPE html>
                     align-items: center;
                     gap: 0.5rem;
                     padding: 0.5rem 1rem;
-                    background-color: #FDD817;
+                    background-color: #C8A24B;
                     color: var(--slate-900);
                     border-radius: 9999px;
                     font-weight: 900;
@@ -1174,13 +1174,13 @@ loo<!DOCTYPE html>
                 }
 
                 .reprise-wrapper .step-card:hover .step-number {
-                    color: #eff6ff;
+                    color: #FAF6EC;
                 }
 
                 .reprise-wrapper .step-icon {
                     width: 4rem;
                     height: 4rem;
-                    background-color: #eff6ff;
+                    background-color: #FAF6EC;
                     color: var(--primary);
                     border-radius: 1rem;
                     display: flex;
@@ -1293,13 +1293,13 @@ loo<!DOCTYPE html>
                 }
 
                 .reprise-wrapper .modal-left {
-                    background-color: #1459DD;
+                    background-color: #0E0F12;
                     padding: 2.5rem;
                     display: none;
                     flex-direction: column;
                     justify-content: space-between;
                     color: var(--white);
-                    background-image: linear-gradient(to bottom right, #1459DD, #7ea9ff);
+                    background-image: linear-gradient(to bottom right, #0E0F12, #E3C178);
                     position: relative;
                     overflow: hidden;
                 }
@@ -1308,7 +1308,7 @@ loo<!DOCTYPE html>
                     content: '';
                     position: absolute;
                     inset: 0;
-                    background-image: radial-gradient(#FDD817 1.5px, transparent 1.5px);
+                    background-image: radial-gradient(#C8A24B 1.5px, transparent 1.5px);
                     background-size: 28px 28px;
                     opacity: 0.25;
                     pointer-events: none;
@@ -1347,7 +1347,7 @@ loo<!DOCTYPE html>
                     display: inline-flex;
                     align-items: center;
                     gap: 0.5rem;
-                    background: #FDD817;
+                    background: #C8A24B;
                     color: #0f172a;
                     border-radius: 9999px;
                     padding: 0.4rem 1rem;
@@ -1379,7 +1379,7 @@ loo<!DOCTYPE html>
                     width: 0.5rem;
                     height: 0.5rem;
                     border-radius: 50%;
-                    background: #FDD817;
+                    background: #C8A24B;
                     flex-shrink: 0;
                 }
 
@@ -1473,7 +1473,7 @@ loo<!DOCTYPE html>
 
                 .reprise-wrapper .rp-dz:hover,
                 .reprise-wrapper .rp-dz.is-dragover {
-                    border-color: #1459DD;
+                    border-color: #0E0F12;
                     background-color: #f0f6ff;
                 }
 
@@ -1505,7 +1505,7 @@ loo<!DOCTYPE html>
 
                 .reprise-wrapper .rp-dz:hover .rp-dz-icon,
                 .reprise-wrapper .rp-dz.is-dragover .rp-dz-icon {
-                    color: #1459DD;
+                    color: #0E0F12;
                 }
 
                 .reprise-wrapper .rp-dz-title {
@@ -1536,7 +1536,7 @@ loo<!DOCTYPE html>
 
                 .reprise-wrapper .rp-dz.has-file {
                     border-style: solid;
-                    border-color: #1459DD;
+                    border-color: #0E0F12;
                 }
 
                 .reprise-wrapper .rp-dz.has-file .rp-dz-preview { display: block; }
@@ -1625,7 +1625,7 @@ loo<!DOCTYPE html>
                     width: 100%;
                     padding: 1rem;
                     background-color: var(--primary);
-                    background-image: linear-gradient(to bottom right, var(--primary), #1d4ed8);
+                    background-image: linear-gradient(to bottom right, var(--primary), #A17E31);
                     color: var(--white);
                     border-radius: 0.75rem;
                     font-weight: 800;
@@ -1640,7 +1640,7 @@ loo<!DOCTYPE html>
                 }
 
                 .reprise-wrapper .btn-submit:hover {
-                    background-image: linear-gradient(to bottom right, #1d4ed8, #1e40af);
+                    background-image: linear-gradient(to bottom right, #A17E31, #A17E31);
                     transform: translateY(-1px);
                     box-shadow: 0 10px 15px -3px rgba(20, 89, 221, 0.4);
                 }
@@ -1742,7 +1742,7 @@ loo<!DOCTYPE html>
                                 </h1>
                                 <p>
                                     Nous reprenons votre véhicule au juste prix en échange d'une voiture de votre choix
-                                    dans le stock NADO. <strong>La solution la plus simple pour changer de
+                                    dans le stock AUTOMANAGER. <strong>La solution la plus simple pour changer de
                                         voiture.</strong>
                                 </p>
                                 <button class="btn-primary" onclick="openRepriseModal()">
@@ -1809,7 +1809,7 @@ loo<!DOCTYPE html>
                         <div class="section-header">
                             <span class="subtitle">Notre Processus</span>
                             <h2 class="section-title">
-                                Le Procès <br />REPRISE NADO.
+                                Le Procès <br />REPRISE AUTOMANAGER.
                             </h2>
                         </div>
                         <div class="steps-grid">
@@ -1830,7 +1830,7 @@ loo<!DOCTYPE html>
                                     <i data-lucide="shield-check" width="32" height="32"></i>
                                 </div>
                                 <h3 class="step-title">Expertise physique</h3>
-                                <p class="step-desc">Rendez-vous dans l'un de nos showrooms NADO pour une vérification
+                                <p class="step-desc">Rendez-vous dans l'un de nos showrooms AUTOMANAGER pour une vérification
                                     de 30 min et une offre de reprise ferme.</p>
                             </div>
                             <!-- Step 3 -->
@@ -1841,7 +1841,7 @@ loo<!DOCTYPE html>
                                 </div>
                                 <h3 class="step-title">Validation & Échange</h3>
                                 <p class="step-desc">Nous rachetons votre voiture au juste prix. Ce montant est déduit
-                                    directement du prix de votre futur véhicule NADO.</p>
+                                    directement du prix de votre futur véhicule AUTOMANAGER.</p>
                             </div>
                             <!-- Step 4 -->
                             <div class="step-card">
@@ -1867,10 +1867,10 @@ loo<!DOCTYPE html>
                             <div>
                                 <div class="modal-left-badge">
                                     <i data-lucide="hand-coins" width="12" height="12"></i>
-                                    Reprise NADO
+                                    Reprise AUTOMANAGER
                                 </div>
                                 <h3>Reprise <br />Automatisée</h3>
-                                <p>Déposez votre demande pour un échange contre un véhicule NADO. Notre équipe vous contacte sous 24h.</p>
+                                <p>Déposez votre demande pour un échange contre un véhicule AUTOMANAGER. Notre équipe vous contacte sous 24h.</p>
                             </div>
                             <div class="modal-left-trust">
                                 <div class="modal-left-trust-item">

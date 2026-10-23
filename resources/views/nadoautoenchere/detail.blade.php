@@ -21,7 +21,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ $brandName }} {{ $modelName }} — Enchère NADO</title>
+<title>{{ $brandName }} {{ $modelName }} — Enchère AUTOMANAGER</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -36,10 +36,10 @@
   .card-shadow-hover { box-shadow: 0 8px 30px rgba(20,89,221,0.12); }
   .tab-panel { display: none; }
   .tab-panel.active { display: block; }
-  .tab-btn.active { color:#1459DD; border-color:#1459DD; }
+  .tab-btn.active { color:#0E0F12; border-color:#0E0F12; }
   .hero-img { transition: transform .5s ease; }
   .hero-img:hover { transform: scale(1.03); }
-  .thumb.active { outline: 3px solid #1459DD; outline-offset: 2px; }
+  .thumb.active { outline: 3px solid #0E0F12; outline-offset: 2px; }
   .halo::before {
     content:''; position:absolute; inset:-40px; border-radius:50%;
     background: radial-gradient(circle at center, rgba(20,89,221,0.35), transparent 60%);
@@ -52,11 +52,11 @@
 {{-- ===== NAVBAR (shared – same as categories) ===== --}}
 @section('na_nav_links')
   <a href="{{ route('nadoautoenchere.vendre') }}"
-     class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#F37021] hover:bg-orange-50">
+     class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#C8A24B] hover:bg-orange-50">
     Vendre
   </a>
   <a href="{{ route('nadoautoenchere.index') }}"
-     class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#1459DD] hover:bg-slate-100">
+     class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#0E0F12] hover:bg-slate-100">
     Tous les véhicules
   </a>
 @endsection
@@ -65,9 +65,9 @@
 {{-- ===== BREADCRUMB ===== --}}
 <div class="max-w-7xl mx-auto px-6 py-4">
   <nav class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-500">
-    <a href="{{ route('nadoautoenchere.categories') }}" class="hover:text-[#1459DD]">Enchères</a>
+    <a href="{{ route('nadoautoenchere.categories') }}" class="hover:text-[#0E0F12]">Enchères</a>
     <i data-lucide="chevron-right" class="w-3 h-3"></i>
-    <a href="{{ route('nadoautoenchere.index', ['category' => $enchere->phone]) }}" class="hover:text-[#1459DD]">Véhicules</a>
+    <a href="{{ route('nadoautoenchere.index', ['category' => $enchere->phone]) }}" class="hover:text-[#0E0F12]">Véhicules</a>
     <i data-lucide="chevron-right" class="w-3 h-3"></i>
     <span class="text-slate-900">{{ $brandName }} {{ $modelName }}</span>
   </nav>
@@ -86,13 +86,13 @@
             {{ $status }}
           </span>
           @if($isCert)
-          <span class="px-3 py-1.5 rounded-full bg-gradient-to-r from-[#1459DD] to-[#0f47b5] text-white text-[10px] font-black uppercase tracking-widest inline-flex items-center gap-1.5">
-            <i data-lucide="badge-check" class="w-3 h-3"></i> NADO Expert
+          <span class="px-3 py-1.5 rounded-full bg-gradient-to-r from-[#0E0F12] to-[#0f47b5] text-white text-[10px] font-black uppercase tracking-widest inline-flex items-center gap-1.5">
+            <i data-lucide="badge-check" class="w-3 h-3"></i> AUTOMANAGER Expert
           </span>
           @endif
         </div>
         <h1 class="text-4xl md:text-5xl font-black tracking-tighter leading-[0.9] text-slate-900 uppercase">
-          {{ $brandName }} <span class="text-[#1459DD]">{{ $modelName }}</span>
+          {{ $brandName }} <span class="text-[#0E0F12]">{{ $modelName }}</span>
         </h1>
         <div class="flex flex-wrap items-center gap-4 mt-4 text-sm text-slate-500 font-medium">
           <span class="flex items-center gap-1.5"><i data-lucide="calendar" class="w-4 h-4"></i> {{ $enchere->year }}</span>
@@ -104,18 +104,18 @@
       <div class="flex items-center gap-2">
         <form action="{{ route('favorite.toggle', ['id' => $enchere->id]) }}" method="POST">
           @csrf
-          <button type="submit" class="w-11 h-11 rounded-xl border border-slate-200 bg-white hover:border-[#F37021] hover:text-[#F37021] transition flex items-center justify-center" title="Favori">
+          <button type="submit" class="w-11 h-11 rounded-xl border border-slate-200 bg-white hover:border-[#C8A24B] hover:text-[#C8A24B] transition flex items-center justify-center" title="Favori">
             @if(Auth::guard('client')->check() && Auth::guard('client')->user()->favorites->contains($enchere->id))
-              <i class="fas fa-heart text-[#F37021]"></i>
+              <i class="fas fa-heart text-[#C8A24B]"></i>
             @else
               <i class="far fa-heart"></i>
             @endif
           </button>
         </form>
-        <button onclick="openSharePopup('{{ urlencode(request()->fullUrl()) }}')" class="w-11 h-11 rounded-xl border border-slate-200 bg-white hover:border-[#1459DD] hover:text-[#1459DD] transition flex items-center justify-center" title="Partager">
+        <button onclick="openSharePopup('{{ urlencode(request()->fullUrl()) }}')" class="w-11 h-11 rounded-xl border border-slate-200 bg-white hover:border-[#0E0F12] hover:text-[#0E0F12] transition flex items-center justify-center" title="Partager">
           <i data-lucide="share-2" class="w-4 h-4"></i>
         </button>
-        <button onclick="window.print()" class="w-11 h-11 rounded-xl border border-slate-200 bg-white hover:border-[#1459DD] hover:text-[#1459DD] transition flex items-center justify-center" title="Imprimer">
+        <button onclick="window.print()" class="w-11 h-11 rounded-xl border border-slate-200 bg-white hover:border-[#0E0F12] hover:text-[#0E0F12] transition flex items-center justify-center" title="Imprimer">
           <i data-lucide="printer" class="w-4 h-4"></i>
         </button>
       </div>
@@ -134,10 +134,10 @@
       <div class="bg-white rounded-3xl border border-slate-100 card-shadow overflow-hidden">
         <div class="relative bg-slate-100" style="aspect-ratio: 16/10;">
           <div id="mainDisplay" class="w-full h-full"></div>
-          <button id="prevBtn" class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/95 backdrop-blur shadow-lg hover:bg-[#1459DD] hover:text-white transition flex items-center justify-center">
+          <button id="prevBtn" class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/95 backdrop-blur shadow-lg hover:bg-[#0E0F12] hover:text-white transition flex items-center justify-center">
             <i data-lucide="chevron-left" class="w-5 h-5"></i>
           </button>
-          <button id="nextBtn" class="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/95 backdrop-blur shadow-lg hover:bg-[#1459DD] hover:text-white transition flex items-center justify-center">
+          <button id="nextBtn" class="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/95 backdrop-blur shadow-lg hover:bg-[#0E0F12] hover:text-white transition flex items-center justify-center">
             <i data-lucide="chevron-right" class="w-5 h-5"></i>
           </button>
           <button id="fullscreenBtn" class="absolute top-4 right-4 w-10 h-10 rounded-xl bg-white/90 backdrop-blur shadow hover:bg-white flex items-center justify-center" title="Plein écran">
@@ -151,9 +151,9 @@
       {{-- Tabs --}}
       <div class="bg-white rounded-3xl border border-slate-100 card-shadow">
         <div class="border-b border-slate-100 px-6 flex gap-1 overflow-x-auto">
-          <button data-tab="details" class="tab-btn active py-4 px-4 text-xs font-black uppercase tracking-widest text-slate-400 border-b-2 border-transparent hover:text-[#1459DD] whitespace-nowrap">Détails</button>
-          <button data-tab="equip" class="tab-btn py-4 px-4 text-xs font-black uppercase tracking-widest text-slate-400 border-b-2 border-transparent hover:text-[#1459DD] whitespace-nowrap">Équipements</button>
-          <button data-tab="expertise" class="tab-btn py-4 px-4 text-xs font-black uppercase tracking-widest text-slate-400 border-b-2 border-transparent hover:text-[#1459DD] whitespace-nowrap">Expertise</button>
+          <button data-tab="details" class="tab-btn active py-4 px-4 text-xs font-black uppercase tracking-widest text-slate-400 border-b-2 border-transparent hover:text-[#0E0F12] whitespace-nowrap">Détails</button>
+          <button data-tab="equip" class="tab-btn py-4 px-4 text-xs font-black uppercase tracking-widest text-slate-400 border-b-2 border-transparent hover:text-[#0E0F12] whitespace-nowrap">Équipements</button>
+          <button data-tab="expertise" class="tab-btn py-4 px-4 text-xs font-black uppercase tracking-widest text-slate-400 border-b-2 border-transparent hover:text-[#0E0F12] whitespace-nowrap">Expertise</button>
         </div>
 
         <div class="p-6 md:p-8">
@@ -181,7 +181,7 @@
                 <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
                   <div class="flex items-center gap-2 mb-2">
                     <div class="w-8 h-8 rounded-lg bg-white flex items-center justify-center">
-                      <i data-lucide="{{ $icon }}" class="w-4 h-4 text-[#1459DD]"></i>
+                      <i data-lucide="{{ $icon }}" class="w-4 h-4 text-[#0E0F12]"></i>
                     </div>
                     <span class="text-[10px] font-black uppercase tracking-widest text-slate-500">{{ $label }}</span>
                   </div>
@@ -224,7 +224,7 @@
                 <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
                   <div class="flex items-center gap-2 mb-2">
                     <div class="w-8 h-8 rounded-lg bg-white flex items-center justify-center">
-                      <i data-lucide="{{ $doc['icon'] }}" class="w-4 h-4 text-[#1459DD]"></i>
+                      <i data-lucide="{{ $doc['icon'] }}" class="w-4 h-4 text-[#0E0F12]"></i>
                     </div>
                     <span class="text-[10px] font-black uppercase tracking-widest text-slate-500">{{ $doc['label'] }}</span>
                   </div>
@@ -264,7 +264,7 @@
               <div class="rounded-2xl overflow-hidden border border-slate-200">
                 <iframe src="{{ route('nadoautoenchere.pdf', $pdfName) }}" width="100%" height="600" style="border:none;"></iframe>
               </div>
-              <a href="{{ route('nadoautoenchere.pdf', $pdfName) }}" target="_blank" class="inline-flex items-center gap-2 mt-4 text-sm font-bold text-[#1459DD] hover:underline">
+              <a href="{{ route('nadoautoenchere.pdf', $pdfName) }}" target="_blank" class="inline-flex items-center gap-2 mt-4 text-sm font-bold text-[#0E0F12] hover:underline">
                 <i data-lucide="external-link" class="w-4 h-4"></i> Ouvrir dans un nouvel onglet
               </a>
             @else
@@ -284,7 +284,7 @@
         {{-- Pricing card --}}
         <div class="bg-white rounded-3xl border border-slate-100 card-shadow overflow-hidden">
           <div class="p-6">
-            <div class="text-[10px] font-black uppercase tracking-widest text-[#F37021] mb-2">Meilleure offre actuelle</div>
+            <div class="text-[10px] font-black uppercase tracking-widest text-[#C8A24B] mb-2">Meilleure offre actuelle</div>
             <div class="flex items-baseline gap-1 mb-1">
               <span class="text-4xl font-black tracking-tighter text-slate-900">{{ number_format($prixTarget, 0, ',', ' ') }}</span>
               <span class="text-lg font-bold text-slate-500">DH</span>
@@ -296,7 +296,7 @@
             @if($endsTs)
             <div class="mt-5 p-4 rounded-2xl bg-slate-900 text-white">
               <div class="flex items-center gap-2 mb-2">
-                <i data-lucide="clock" class="w-4 h-4 text-[#F37021]"></i>
+                <i data-lucide="clock" class="w-4 h-4 text-[#C8A24B]"></i>
                 <span class="text-[10px] font-black uppercase tracking-widest opacity-70">
                   @if($status === 'À venir') Démarre dans @elseif($status === 'Terminé') Terminé @else Fin dans @endif
                 </span>
@@ -317,8 +317,8 @@
               <div class="flex gap-2">
                 <input id="bidInput" type="number" name="p" step="1000" min="{{ $minBid }}" required
                        placeholder="{{ number_format($minBid, 0, ',', ' ') }}"
-                       class="flex-1 px-4 py-3 rounded-xl border border-slate-200 text-sm font-bold focus:border-[#1459DD] focus:outline-none">
-                <button type="submit" class="px-5 py-3 rounded-xl bg-[#1459DD] text-white text-sm font-black uppercase tracking-widest hover:bg-[#0f47b5] transition">
+                       class="flex-1 px-4 py-3 rounded-xl border border-slate-200 text-sm font-bold focus:border-[#0E0F12] focus:outline-none">
+                <button type="submit" class="px-5 py-3 rounded-xl bg-[#0E0F12] text-white text-sm font-black uppercase tracking-widest hover:bg-[#0f47b5] transition">
                   Enchérir
                 </button>
               </div>
@@ -346,7 +346,7 @@
                             icon: 'error',
                             title: 'Enchère invalide',
                             text: 'Le minimum requis est de ' + min.toLocaleString('fr-FR') + ' DH.',
-                            confirmButtonColor: '#1459DD'
+                            confirmButtonColor: '#0E0F12'
                         });
                         return;
                     }
@@ -358,7 +358,7 @@
                     Swal.fire({
                         title: 'Confirmer votre enchère',
                         html: 'Vous êtes sur le point d\'enchérir à hauteur de '
-                            + '<strong style="color:#1459DD;font-size:1.3em">'
+                            + '<strong style="color:#0E0F12;font-size:1.3em">'
                             + raw.toLocaleString('fr-FR') + ' DH</strong>.'
                             + '<br><br><small style="color:#64748b">'
                             + 'L\'enchère monte automatiquement par paliers de 1000 DH jusqu\'à votre maximum.'
@@ -367,7 +367,7 @@
                         showCancelButton: true,
                         confirmButtonText: 'Oui, enchérir',
                         cancelButtonText: 'Annuler',
-                        confirmButtonColor: '#1459DD',
+                        confirmButtonColor: '#0E0F12',
                         cancelButtonColor: '#64748b',
                         reverseButtons: true,
                         focusCancel: true
@@ -386,16 +386,16 @@
 
         {{-- Où voir la voiture --}}
         @php
-          // Localisation propre à l'enchère, sinon le showroom NADO par défaut.
+          // Localisation propre à l'enchère, sinon le showroom AUTOMANAGER par défaut.
           $locLat  = $enchere->latitude  ?: 33.5275864;
           $locLng  = $enchere->longitude ?: -7.6078363;
-          $locAdr  = $enchere->adresse   ?: 'NADO.ma — Auto Enchère';
+          $locAdr  = $enchere->adresse   ?: 'AUTOMANAGER.ma — Auto Enchère';
           $locLink = $enchere->maps_url  ?: 'https://maps.app.goo.gl/77FFcz1AvqRo6aGBA';
         @endphp
         <div class="relative bg-slate-900 rounded-3xl overflow-hidden halo">
           <div class="relative z-10 p-6">
-            <div class="w-10 h-10 rounded-xl bg-[#1459DD]/20 flex items-center justify-center mb-4">
-              <i data-lucide="map-pin" class="w-5 h-5 text-[#1459DD]"></i>
+            <div class="w-10 h-10 rounded-xl bg-[#0E0F12]/20 flex items-center justify-center mb-4">
+              <i data-lucide="map-pin" class="w-5 h-5 text-[#0E0F12]"></i>
             </div>
             <h4 class="text-xl font-black tracking-tighter text-white mb-2 uppercase">Où voir la voiture</h4>
             <p class="text-xs text-slate-400 mb-4 leading-relaxed">
@@ -413,7 +413,7 @@
             </div>
 
             <a href="{{ $locLink }}" target="_blank" rel="noopener noreferrer"
-               class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-[#F37021] hover:text-[#FDD817]">
+               class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-[#C8A24B] hover:text-[#C8A24B]">
               Itinéraire <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>
           </div>
@@ -427,7 +427,7 @@
 {{-- ===== FOOTER ===== --}}
 <footer class="bg-slate-900 text-slate-400 py-10 mt-10">
   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-    <div class="text-xs font-medium">© {{ date('Y') }} NADO.ma — Tous droits réservés</div>
+    <div class="text-xs font-medium">© {{ date('Y') }} AUTOMANAGER.ma — Tous droits réservés</div>
     <div class="flex gap-5 text-xs">
       <a href="{{ route('index') }}" class="hover:text-white">Accueil</a>
       <a href="{{ route('nadoautoenchere.categories') }}" class="hover:text-white">Enchères</a>
@@ -539,7 +539,7 @@
         <a href="https://api.whatsapp.com/send?text=${url}" target="_blank" class="text-green-500"><i class="fab fa-whatsapp"></i></a>
         <a href="https://www.facebook.com/sharer/sharer.php?u=${url}" target="_blank" class="text-blue-600"><i class="fab fa-facebook"></i></a>
         <a href="https://www.messenger.com/t/?link=${url}" target="_blank" class="text-blue-500"><i class="fab fa-facebook-messenger"></i></a>
-        <a href="mailto:?subject=Annonce NADO&body=${url}" class="text-slate-700"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:?subject=Annonce AUTOMANAGER&body=${url}" class="text-slate-700"><i class="fas fa-envelope"></i></a>
       </div>`,
       showCloseButton: true, showConfirmButton: false, width: 360
     });

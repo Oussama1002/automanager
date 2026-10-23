@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Vendre en tant que professionnel B2B – NADO')
+@section('title', 'Vendre en tant que professionnel B2B – AUTOMANAGER')
 
 @section('link')
 <script src="https://unpkg.com/lucide@latest"></script>
 <style>
 :root {
-    --sp-blue   : #1459DD;
+    --sp-blue   : #0E0F12;
     --sp-slate  : #0f172a;
     --sp-muted  : #64748b;
     --sp-border : #e2e8f0;
@@ -25,7 +25,7 @@
 .sp-breadcrumb .bc-cur { color: var(--sp-slate); }
 
 /* Pill */
-.sp-pill { display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px; background: #dbeafe; color: var(--sp-blue); border-radius: 9999px; font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .2em; margin-bottom: 20px; }
+.sp-pill { display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px; background: #F2E9D2; color: var(--sp-blue); border-radius: 9999px; font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .2em; margin-bottom: 20px; }
 .sp-h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; text-transform: uppercase; letter-spacing: -.04em; line-height: .95; margin-bottom: 20px; }
 .sp-h1 .accent { color: var(--sp-blue); }
 .sp-subtitle { font-size: 1rem; color: var(--sp-muted); font-weight: 500; line-height: 1.65; max-width: 520px; margin-bottom: 32px; }
@@ -56,7 +56,7 @@
 .sp-check { color: #22c55e; flex-shrink: 0; margin-top: 1px; }
 
 /* Accompagnement card */
-.sp-accomp { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 1.5rem; padding: 32px; }
+.sp-accomp { background: #FAF6EC; border: 1px solid #E8D7A9; border-radius: 1.5rem; padding: 32px; }
 .sp-accomp-label { font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .25em; color: var(--sp-blue); margin-bottom: 10px; }
 .sp-accomp-title { font-size: 1.2rem; font-weight: 900; color: var(--sp-slate); margin-bottom: 12px; }
 .sp-accomp-desc  { font-size: 13px; color: var(--sp-muted); font-weight: 500; line-height: 1.6; }
@@ -109,9 +109,9 @@
             </div>
             <h1 class="sp-h1">
                 GÉREZ VOTRE STOCK AUTO<br>
-                AVEC <span class="accent">L'EXPERTISE NADO</span>
+                AVEC <span class="accent">L'EXPERTISE AUTOMANAGER</span>
             </h1>
-            <p class="sp-subtitle">Concessionnaire, loueur ou entreprise avec flotte — NADO vous offre une solution complète pour vendre vos véhicules rapidement et au meilleur prix.</p>
+            <p class="sp-subtitle">Concessionnaire, loueur ou entreprise avec flotte — AUTOMANAGER vous offre une solution complète pour vendre vos véhicules rapidement et au meilleur prix.</p>
         </div>
 
         {{-- Main content or success screen --}}
@@ -190,15 +190,15 @@
 
                     {{-- Conditions --}}
                     <div class="sp-cond-card">
-                        <div class="sp-cond-title">Ce que NADO vous offre</div>
+                        <div class="sp-cond-title">Ce que AUTOMANAGER vous offre</div>
                         <ul class="sp-cond-list">
                             <li class="sp-cond-item">
                                 <i data-lucide="check-circle" class="sp-check" style="width:16px;height:16px;"></i>
-                                Espace concessionnaire dédié sur NADO.ma
+                                Espace concessionnaire dédié sur AUTOMANAGER.ma
                             </li>
                             <li class="sp-cond-item">
                                 <i data-lucide="check-circle" class="sp-check" style="width:16px;height:16px;"></i>
-                                Badge certifié NADO sur toutes vos annonces
+                                Badge certifié AUTOMANAGER sur toutes vos annonces
                             </li>
                             <li class="sp-cond-item">
                                 <i data-lucide="check-circle" class="sp-check" style="width:16px;height:16px;"></i>

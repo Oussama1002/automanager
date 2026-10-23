@@ -1,11 +1,11 @@
 @extends('layouts.client')
 
-@section('title', 'Discussion | NADO')
+@section('title', 'Discussion | AUTOMANAGER')
 
 @section('client_title', 'Discussion')
 @section('client_subtitle', $role === 'seller'
     ? 'Un acheteur est intéressé par votre annonce.'
-    : ($sellerManaged ? 'Conversation avec le vendeur.' : 'Conversation avec l’équipe NADO.'))
+    : ($sellerManaged ? 'Conversation avec le vendeur.' : 'Conversation avec l’équipe AUTOMANAGER.'))
 @section('client_content')
 <style>
     /* Sidebar is provided by layouts.client */
@@ -32,7 +32,7 @@
     .bubble-wrap-client { display: flex; justify-content: flex-end; }
     .bubble-wrap-admin  { display: flex; justify-content: flex-start; }
     .bubble-client {
-        background: #1459DD; color: #fff; padding: .7rem 1rem;
+        background: #0E0F12; color: #fff; padding: .7rem 1rem;
         border-radius: 18px 18px 4px 18px;
         max-width: min(92%, 620px);
         font-size: 1.15rem; line-height: 1.6; word-break: break-word;
@@ -52,13 +52,13 @@
         flex: 1; padding: .75rem 1rem; border: 1px solid #e2e8f0;
         border-radius: 99px; font-size: 1.05rem; outline: none;
     }
-    .chat-input-area input:focus { border-color: #1459DD; box-shadow: 0 0 0 3px rgba(20,89,221,.1); }
+    .chat-input-area input:focus { border-color: #0E0F12; box-shadow: 0 0 0 3px rgba(20,89,221,.1); }
     .chat-send-btn, .chat-mic-btn {
         border: none; border-radius: 50%; width: 44px; height: 44px;
         display: flex; align-items: center; justify-content: center;
         cursor: pointer; flex-shrink: 0; transition: background .2s;
     }
-    .chat-send-btn { background: #1459DD; color: #fff; }
+    .chat-send-btn { background: #0E0F12; color: #fff; }
     .chat-send-btn:hover { background: #1248c4; }
     .chat-mic-btn { background: #e2e8f0; color: #475569; }
     .chat-mic-btn:hover { background: #cbd5e1; }
@@ -97,7 +97,7 @@
                 } elseif ($sellerManaged) {
                     $otherName = 'Vendeur (particulier)';
                 } else {
-                    $otherName = 'Support NADO';
+                    $otherName = 'Support AUTOMANAGER';
                 }
                 $ownType = $role === 'seller' ? 'seller' : 'client';
             @endphp
@@ -148,7 +148,7 @@
                     <p>
                         @if($role === 'seller') Aucun message pour le moment.
                         @elseif($sellerManaged) Envoyez votre premier message au vendeur.
-                        @else Envoyez votre premier message à l'équipe NADO.
+                        @else Envoyez votre premier message à l'équipe AUTOMANAGER.
                         @endif
                     </p>
                 </div>
@@ -266,7 +266,7 @@
         var meta = document.createElement('div');
         meta.className = 'bubble-meta';
         meta.style.textAlign = isClient ? 'right' : 'left';
-        meta.textContent = (isClient ? '' : (msg.label || 'NADO') + ' · ') + msg.time;
+        meta.textContent = (isClient ? '' : (msg.label || 'AUTOMANAGER') + ' · ') + msg.time;
 
         inner.appendChild(bubble); inner.appendChild(meta);
         outer.appendChild(inner);

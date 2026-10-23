@@ -1,7 +1,7 @@
 @php
     $client = Auth::guard('client')->user();
     $isAutoEnchere = request()->routeIs('nadoautoenchere.*');
-    $accentColor = $isAutoEnchere ? '#F37021' : '#FDD817';
+    $accentColor = $isAutoEnchere ? '#C8A24B' : '#C8A24B';
 @endphp
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
     <div class="nv-topbar">
         <div class="nv-wrap nv-topbar-inner">
             <div class="nv-contact">
-                <div class="nv-info"><i data-lucide="mail"></i><a href="mailto:contact@nado.ma">contact@nado.ma</a></div>
+                <div class="nv-info"><i data-lucide="mail"></i><a href="mailto:contact@automanager.ma">contact@automanager.ma</a></div>
                 <div class="nv-info"><i data-lucide="phone-call"></i><a href="tel:+212520070611">+212 520 070 611</a></div>
             </div>
             <div class="nv-social">
@@ -31,9 +31,9 @@
             <div class="nv-left">
                 <a href="{{ $isAutoEnchere ? route('nadoautoenchere.prelogin') : route('index') }}" class="nv-logo">
                     @if ($isAutoEnchere)
-                        <span class="nv-logo-text"><span class="nv-dark">AUTO </span><span style="color:#F37021;">ENCHÈRE</span></span>
+                        <span class="nv-logo-text"><span class="nv-dark">AUTO </span><span style="color:#C8A24B;">ENCHÈRE</span></span>
                     @else
-                        <img src="{{ asset('storage/logos/UAfjepY72Xe7grWDva9cqSlRFsRKNZPV3HBDbBP1.png') }}" alt="NADO" style="height:36px;width:auto;object-fit:contain;" />
+                        <img src="{{ asset('storage/logos/UAfjepY72Xe7grWDva9cqSlRFsRKNZPV3HBDbBP1.png') }}" alt="AUTOMANAGER" style="height:36px;width:auto;object-fit:contain;" />
                     @endif
                 </a>
 
@@ -93,9 +93,9 @@
         <div id="drawerContent" class="nv-drawer-inner">
             <div class="nv-drawer-head">
                 @if ($isAutoEnchere)
-                    <span class="nv-logo-text"><span class="nv-dark">AUTO </span><span style="color:#F37021;">ENCHÈRE</span></span>
+                    <span class="nv-logo-text"><span class="nv-dark">AUTO </span><span style="color:#C8A24B;">ENCHÈRE</span></span>
                 @else
-                    <img src="{{ asset('storage/logos/UAfjepY72Xe7grWDva9cqSlRFsRKNZPV3HBDbBP1.png') }}" alt="NADO" style="height:30px;width:auto;object-fit:contain;" />
+                    <img src="{{ asset('storage/logos/UAfjepY72Xe7grWDva9cqSlRFsRKNZPV3HBDbBP1.png') }}" alt="AUTOMANAGER" style="height:30px;width:auto;object-fit:contain;" />
                 @endif
                 <button id="closeDrawerBtn" class="nv-close"><i data-lucide="x"></i></button>
             </div>
@@ -107,7 +107,7 @@
                 @else
                     <a href="{{ route('achat.index') }}">Achat</a>
                     <a href="{{ route('vente.form') }}">Vente</a>
-                    <a href="{{ route('nadoautoenchere.prelogin') }}" style="color:#1459DD;">Auto-enchère</a>
+                    <a href="{{ route('nadoautoenchere.prelogin') }}" style="color:#0E0F12;">Auto-enchère</a>
                     <a href="{{ route('reprise.form') }}">Reprise</a>
                     <a href="{{ route('financement.index') }}">Auto-financement</a>
                     <a href="{{ route('about.index') }}">À propos</a>
@@ -129,13 +129,13 @@
                     <a href="#"><i data-lucide="linkedin"></i></a>
                 </div>
                 <div class="nv-divider"></div>
-                <div class="nv-support"><p>Support NADO</p><a href="tel:+212520070611">+212 520 070 611</a></div>
+                <div class="nv-support"><p>Support AUTOMANAGER</p><a href="tel:+212520070611">+212 520 070 611</a></div>
             </div>
         </div>
     </div>
 
     <style>
-        /* ═══ NADO NAVBAR — fully isolated with nv- prefix ═══ */
+        /* ═══ AUTOMANAGER NAVBAR — fully isolated with nv- prefix ═══ */
         .nado-navbar {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
             width: 100% !important;
@@ -151,7 +151,7 @@
 
         /* Top bar */
         .nado-navbar .nv-topbar {
-            background-color: #FDD817 !important;
+            background-color: #C8A24B !important;
             padding: 10px 0 !important;
             border-bottom: 1px solid rgba(0,0,0,.05) !important;
             color: #0f172a !important;
@@ -171,12 +171,12 @@
             font-size: 11px !important; font-weight: 900 !important;
             text-transform: uppercase !important; letter-spacing: .1em !important; opacity: .8 !important;
         }
-        .nado-navbar .nv-info i { width: 12px !important; height: 12px !important; color: #1459DD !important; }
+        .nado-navbar .nv-info i { width: 12px !important; height: 12px !important; color: #0E0F12 !important; }
         .nado-navbar .nv-info a { color: inherit !important; text-decoration: none !important; }
-        .nado-navbar .nv-info a:hover { color: #1459DD !important; opacity: 1 !important; }
+        .nado-navbar .nv-info a:hover { color: #0E0F12 !important; opacity: 1 !important; }
         .nado-navbar .nv-social { display: flex !important; gap: 20px !important; }
         .nado-navbar .nv-social a { color: #0f172a !important; opacity: .6 !important; text-decoration: none !important; }
-        .nado-navbar .nv-social a:hover { color: #1459DD !important; opacity: 1 !important; }
+        .nado-navbar .nv-social a:hover { color: #0E0F12 !important; opacity: 1 !important; }
         .nado-navbar .nv-social i { width: 20px !important; height: 20px !important; }
 
         /* Main nav */
@@ -223,10 +223,10 @@
             line-height: 1.4 !important;
         }
         .nado-navbar .nv-link:hover, .nado-navbar .nv-link:focus {
-            background-color: #f1f5f9 !important; color: #1459DD !important; text-decoration: none !important;
+            background-color: #f1f5f9 !important; color: #0E0F12 !important; text-decoration: none !important;
         }
-        .nado-navbar .nv-highlight { color: #1459DD !important; background-color: #dbeafe !important; }
-        .nado-navbar .nv-highlight:hover { background-color: #bfdbfe !important; }
+        .nado-navbar .nv-highlight { color: #0E0F12 !important; background-color: #F2E9D2 !important; }
+        .nado-navbar .nv-highlight:hover { background-color: #E8D7A9 !important; }
 
         /* Vendre dropdown */
         .nado-navbar .nv-dropdown { position: relative !important; }
@@ -243,7 +243,7 @@
             font-size: 13px !important; font-weight: 700 !important;
             text-transform: uppercase !important; color: #334155 !important; text-decoration: none !important;
         }
-        .nado-navbar .nv-dropdown-menu a:hover { background: #fff7ed !important; color: #F37021 !important; }
+        .nado-navbar .nv-dropdown-menu a:hover { background: #FAF4EA !important; color: #C8A24B !important; }
 
         /* CTA / outline button */
         .nado-navbar .nv-cta {
@@ -269,11 +269,11 @@
         }
         @media (max-width: 1280px) { .nado-navbar .nv-user-name { max-width: 100px !important; } }
         .nado-navbar .nv-outline {
-            background-color: rgba(253,216,23,.2) !important;
-            border: 1px solid rgba(253,216,23,.5) !important;
+            background-color: rgba(200,162,75,.2) !important;
+            border: 1px solid rgba(200,162,75,.5) !important;
             color: #0f172a !important;
         }
-        .nado-navbar .nv-outline:hover { background-color: #FDD817 !important; color: #0f172a !important; text-decoration: none !important; }
+        .nado-navbar .nv-outline:hover { background-color: #C8A24B !important; color: #0f172a !important; text-decoration: none !important; }
 
         /* Hamburger */
         .nado-navbar .nv-hamburger {
@@ -307,7 +307,7 @@
             text-align: left !important; background: none !important; border: none !important;
             cursor: pointer !important; text-decoration: none !important; color: #334155 !important; gap: 8px !important;
         }
-        .nado-navbar .nv-user-menu a:hover { background-color: #f8fafc !important; color: #1459DD !important; }
+        .nado-navbar .nv-user-menu a:hover { background-color: #f8fafc !important; color: #0E0F12 !important; }
         .nado-navbar .nv-user-menu i { width: 16px !important; height: 16px !important; }
         .nado-navbar .nv-logout { color: #dc2626 !important; }
         .nado-navbar .nv-logout:hover { background-color: #fef2f2 !important; color: #dc2626 !important; }
@@ -350,7 +350,7 @@
             text-transform: uppercase !important; letter-spacing: -.02em !important;
             color: #0f172a !important; text-decoration: none !important;
         }
-        .nado-navbar .nv-drawer-links a:hover { color: #1459DD !important; }
+        .nado-navbar .nv-drawer-links a:hover { color: #0E0F12 !important; }
         .nado-navbar .nv-drawer-footer { padding: 28px !important; display: flex !important; flex-direction: column !important; align-items: center !important; }
         .nado-navbar .nv-drawer-logout {
             display: flex !important; align-items: center !important; justify-content: center !important; gap: 8px !important;
@@ -375,7 +375,7 @@
         .nado-navbar .nv-support { text-align: center !important; }
         .nado-navbar .nv-support p { font-size: 12px !important; font-weight: 800 !important; text-transform: uppercase !important; letter-spacing: .05em !important; margin-bottom: 8px !important; color: #334155 !important; }
         .nado-navbar .nv-support a { font-size: 18px !important; font-weight: 900 !important; color: #0f172a !important; text-decoration: none !important; }
-        .nado-navbar .nv-support a:hover { color: #1459DD !important; }
+        .nado-navbar .nv-support a:hover { color: #0E0F12 !important; }
         .nado-navbar .nv-icon-sm { width: 15px !important; height: 15px !important; }
 
         @media (max-width: 1023px) {

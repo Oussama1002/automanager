@@ -41,7 +41,7 @@
         $remaining       = $endsAt ? $endsAt->timestamp : null;
         $endsAtFormatted = $endsAt ? $endsAt->format('d/m/Y H:i') : '—';
 
-        $companyName = $category->company ?? $category->client_name ?? 'NADO.ma';
+        $companyName = $category->company ?? $category->client_name ?? 'AUTOMANAGER.ma';
 
         $logoFile = $category->logo ?? null;
         $logoUrl  = ($logoFile && file_exists(public_path('storage/nadoautoenchere/logo/' . $logoFile)))
@@ -64,7 +64,7 @@
     <a href="{{ $href }}"
        data-ends="{{ $remaining }}"
        aria-label="Voir les enchères de {{ $companyName }}"
-       class="group bg-white rounded-3xl overflow-hidden border border-slate-100 card-shadow hover:card-shadow-hover hover:border-[#1459DD]/20 transition-all duration-300 flex flex-col no-underline {{ $ended ? 'pointer-events-none opacity-60' : 'cursor-pointer' }}">
+       class="group bg-white rounded-3xl overflow-hidden border border-slate-100 card-shadow hover:card-shadow-hover hover:border-[#0E0F12]/20 transition-all duration-300 flex flex-col no-underline {{ $ended ? 'pointer-events-none opacity-60' : 'cursor-pointer' }}">
 
         {{-- Image / logo header --}}
         <div class="relative overflow-hidden bg-slate-100 h-40">
@@ -75,7 +75,7 @@
                 <h4 class="text-2xl font-black text-white truncate max-w-[80%] drop-shadow-md">
                     {{ $companyName }}
                 </h4>
-                <div class="w-10 h-10 bg-white/20 backdrop-blur-md rounded-xl border border-white/20 flex items-center justify-center transition-all group-hover:bg-[#F37021] group-hover:border-[#F37021]">
+                <div class="w-10 h-10 bg-white/20 backdrop-blur-md rounded-xl border border-white/20 flex items-center justify-center transition-all group-hover:bg-[#C8A24B] group-hover:border-[#C8A24B]">
                     <i data-lucide="arrow-right" class="w-4 h-4 text-white"></i>
                 </div>
             </div>
@@ -97,13 +97,13 @@
             <div class="space-y-4 mb-6">
                 <div class="flex items-center gap-3">
                     <div class="w-8 h-8 rounded-lg bg-slate-50 flex items-center justify-center">
-                        <i data-lucide="map-pin" class="w-4 h-4 text-[#1459DD]"></i>
+                        <i data-lucide="map-pin" class="w-4 h-4 text-[#0E0F12]"></i>
                     </div>
                     <span class="text-sm font-medium text-slate-700">{{ $city }}</span>
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="w-8 h-8 rounded-lg bg-slate-50 flex items-center justify-center">
-                        <i data-lucide="car" class="w-4 h-4 text-[#F37021]"></i>
+                        <i data-lucide="car" class="w-4 h-4 text-[#C8A24B]"></i>
                     </div>
                     <span class="text-sm font-medium text-slate-600">
                         <span class="text-slate-900 font-bold">{{ $openCount }}</span>
@@ -114,10 +114,10 @@
 
             @if(!$ended)
                 <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span class="remaining-time text-xs font-black uppercase tracking-widest {{ $status === 'En cours' ? 'text-green-600' : 'text-[#1459DD]' }}">
+                    <span class="remaining-time text-xs font-black uppercase tracking-widest {{ $status === 'En cours' ? 'text-green-600' : 'text-[#0E0F12]' }}">
                         @if($status === 'À venir') Démarre bientôt @else Chargement… @endif
                     </span>
-                    <span class="text-[11px] font-bold uppercase tracking-widest text-[#F37021] group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                    <span class="text-[11px] font-bold uppercase tracking-widest text-[#C8A24B] group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
                         Voir véhicules <i data-lucide="arrow-up-right" class="w-3 h-3"></i>
                     </span>
                 </div>

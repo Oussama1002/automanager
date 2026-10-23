@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 
-@section('title' , 'Image slider | nado.ma')
+@section('title' , 'Image slider | automanager.ma')
 
 
 @section('content')

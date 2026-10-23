@@ -13,7 +13,7 @@
 @section('client_content')
 <style>
     :root {
-        --blue:#1459DD;
+        --blue:#0E0F12;
         --slate-50:#f8fafc; --slate-100:#f1f5f9; --slate-200:#e2e8f0;
         --slate-400:#94a3b8; --slate-500:#64748b; --slate-700:#334155; --slate-900:#0f172a;
         --radius:16px;
@@ -63,7 +63,7 @@
         color: var(--slate-900); text-decoration:none;
         font-weight: 800; font-size: 13px;
     }
-    .btnx:hover { background:#dbeafe; border-color:#bfdbfe; color: var(--blue); }
+    .btnx:hover { background:#F2E9D2; border-color:#E8D7A9; color: var(--blue); }
     .btnx.danger { background:#fef2f2; border-color:#fecaca; color:#b91c1c; }
     .btnx.danger:hover { background:#fee2e2; border-color:#fecaca; color:#991b1b; }
     .empty {

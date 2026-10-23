@@ -20,8 +20,8 @@
         opacity: 0.03;
         pointer-events: none;
         background-image:
-            linear-gradient(#1459DD 1px, transparent 1px),
-            linear-gradient(90deg, #1459DD 1px, transparent 1px);
+            linear-gradient(#0E0F12 1px, transparent 1px),
+            linear-gradient(90deg, #0E0F12 1px, transparent 1px);
         background-size: 32px 32px;
         z-index: 0;
     }
@@ -135,7 +135,7 @@
         flex-shrink: 0;
     }
     @media (min-width: 640px) { .auth-card-icon { width: 48px; height: 48px; } }
-    .auth-card-icon.yellow { background: rgba(253,216,23,0.2); color: #d97706; }
+    .auth-card-icon.yellow { background: rgba(200,162,75,0.2); color: #d97706; }
 
     .auth-card-head h2 {
         font-size: 18px;
@@ -202,7 +202,7 @@
     }
     .auth-input::placeholder { color: #94a3b8; }
     .auth-input:focus {
-        border-color: #1459DD;
+        border-color: #0E0F12;
         background: #fff;
         box-shadow: 0 0 0 3px rgba(20,89,221,0.15);
     }
@@ -220,7 +220,7 @@
         display: inline-flex;
         align-items: center;
     }
-    .auth-toggle-password:hover { color: #1459DD; }
+    .auth-toggle-password:hover { color: #0E0F12; }
     .auth-input.has-toggle { padding-right: 44px; }
 
     .auth-submit-area { padding-top: 8px; margin-top: auto; }
@@ -229,7 +229,7 @@
     .auth-btn-register {
         width: 100%;
         padding: 16px;
-        background: #FDD817;
+        background: #C8A24B;
         color: #0f172a;
         border: none;
         border-radius: 10px;
@@ -239,7 +239,7 @@
         letter-spacing: 0.08em;
         cursor: pointer;
         transition: background 0.15s, transform 0.1s;
-        box-shadow: 0 8px 20px -4px rgba(253,216,23,0.35);
+        box-shadow: 0 8px 20px -4px rgba(200,162,75,0.35);
         min-height: 48px;
         touch-action: manipulation;
         font-family: inherit;
@@ -311,7 +311,7 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h2>Bienvenue sur NADO</h2>
+                                    <h2>Bienvenue sur AUTOMANAGER</h2>
                                     <p>Remplissez le formulaire pour vous inscrire.</p>
                                 </div>
                             </div>
@@ -443,7 +443,7 @@
 
                                 <p style="text-align:center;margin-top:16px;font-size:14px;color:#475569;font-weight:500;">
                                     Déjà inscrit ?
-                                    <a href="{{ route('client.login') }}" style="color:#1459DD;font-weight:700;text-decoration:none;">Se connecter</a>
+                                    <a href="{{ route('client.login') }}" style="color:#0E0F12;font-weight:700;text-decoration:none;">Se connecter</a>
                                 </p>
                             </form>
                         </div>

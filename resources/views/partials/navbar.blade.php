@@ -20,7 +20,7 @@
                         <ul class="nav navbar-nav">
 							<li> <a href="{{ route('achat.index') }}" style="color: #1f519b !important" >Achat</a></li>
 							<li> <a href="{{ route('vente.form') }}" style="color: #1f519b !important" >Vente</a></li>
-							<li> <a href="{{ route('reprise.form') }}" style="color: #1f519b !important" >Nado reprise</a></li>
+							<li> <a href="{{ route('reprise.form') }}" style="color: #1f519b !important" >Automanager reprise</a></li>
 							<li> <a href="{{ route('financement.index') }}" style="color: #1f519b !important">Auto finance</a></li>
 							<li> <a href="{{ route('about.index') }}" style="color: #1f519b !important" >à-propos</a></li>
                             <li> <a href="{{ route('contactez-nous.index') }}" style="color: #1f519b !important" >Contactez-nous</a></li>
@@ -29,7 +29,7 @@
 								<ul class="sub-menu"> 
 									<li><a href="{{ route('services.index') }}#intermediation" >Intermediation</a></li>
 									<li><a href="{{ route('services.index') }}#reprise" >Reprise</a></li>
-									<li><a href="{{ route('services.index') }}#nadopro" >Nado pro</a></li>
+									<li><a href="{{ route('services.index') }}#nadopro" >Automanager pro</a></li>
 								</ul>
 							</li>
 							<li> <a href="{{ route('vendre.index') }}" class="hide">Vendre/Reprise</a></li> -->
@@ -41,7 +41,7 @@
     {{-- ── Publier une annonce (logged in) ── --}}
     <li class="nav-item">
         <a href="{{ route('vente.form') }}?open_modal=1"
-           style="background-color: #1459DD;
+           style="background-color: #0E0F12;
                   color: #fff !important;
                   padding: 8px 14px;
                   margin-top: 20px;
@@ -56,7 +56,7 @@
     {{-- ── User dropdown ── --}}
     <li class="nav-item nado-dropdown" style="position: relative;">
         <a href="#" class="nado-dropdown-toggle"
-           style="background-color: #FFD700;
+           style="background-color: #C8A24B;
                   color: #000 !important;
                   padding: 8px 16px;
                   border-radius: 20px;
@@ -140,7 +140,7 @@
     {{-- ── Publier une annonce (guest → login first) ── --}}
     <li class="nav-item">
         <a href="{{ route('client.login') }}?redirect={{ urlencode(route('vente.form') . '?open_modal=1') }}"
-           style="background-color: #1459DD;
+           style="background-color: #0E0F12;
                   color: #fff !important;
                   padding: 8px 14px;
                   margin-top: 20px;
@@ -155,7 +155,7 @@
     {{-- ── Espace Client ── --}}
     <li class="nav-item">
         <a href="{{ route('client.login') }}"
-           style="background-color: #FFD700;
+           style="background-color: #C8A24B;
                   color: #000 !important;
                   padding: 8px 14px;
                   margin-top: 20px;

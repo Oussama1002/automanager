@@ -3,22 +3,22 @@
 @endphp
 
 <header class="sticky top-0 z-50">
-    <div class="bg-[#F37021] text-slate-900 py-2.5 px-4 border-b border-black/5">
+    <div class="bg-[#C8A24B] text-slate-900 py-2.5 px-4 border-b border-black/5">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-4">
                 <div class="flex items-center gap-2 text-[11px] font-black uppercase tracking-widest opacity-80">
-                    <i data-lucide="mail" class="w-3 h-3 text-[#1459DD]"></i>
-                    <a href="mailto:contact@nado.ma" class="hover:text-[#1459DD] transition-colors">contact@nado.ma</a>
+                    <i data-lucide="mail" class="w-3 h-3 text-[#0E0F12]"></i>
+                    <a href="mailto:contact@automanager.ma" class="hover:text-[#0E0F12] transition-colors">contact@automanager.ma</a>
                 </div>
                 <div class="flex items-center gap-2 text-[11px] font-black uppercase tracking-widest opacity-80">
-                    <i data-lucide="phone-call" class="w-3 h-3 text-[#1459DD]"></i>
-                    <a href="tel:+212520070611" class="hover:text-[#1459DD] transition-colors">+212 520 070 611</a>
+                    <i data-lucide="phone-call" class="w-3 h-3 text-[#0E0F12]"></i>
+                    <a href="tel:+212520070611" class="hover:text-[#0E0F12] transition-colors">+212 520 070 611</a>
                 </div>
             </div>
             <div class="flex items-center gap-5">
-                <a href="#" class="hover:text-[#1459DD] transition-colors opacity-60 hover:opacity-100"><i data-lucide="facebook" class="w-5 h-5" stroke-width="1.5"></i></a>
-                <a href="#" class="hover:text-[#1459DD] transition-colors opacity-60 hover:opacity-100"><i data-lucide="instagram" class="w-5 h-5" stroke-width="1.5"></i></a>
-                <a href="#" class="hover:text-[#1459DD] transition-colors opacity-60 hover:opacity-100"><i data-lucide="linkedin" class="w-5 h-5" stroke-width="1.5"></i></a>
+                <a href="#" class="hover:text-[#0E0F12] transition-colors opacity-60 hover:opacity-100"><i data-lucide="facebook" class="w-5 h-5" stroke-width="1.5"></i></a>
+                <a href="#" class="hover:text-[#0E0F12] transition-colors opacity-60 hover:opacity-100"><i data-lucide="instagram" class="w-5 h-5" stroke-width="1.5"></i></a>
+                <a href="#" class="hover:text-[#0E0F12] transition-colors opacity-60 hover:opacity-100"><i data-lucide="linkedin" class="w-5 h-5" stroke-width="1.5"></i></a>
             </div>
         </div>
     </div>
@@ -27,18 +27,18 @@
         <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between gap-3">
             <div class="flex items-center gap-10">
                 <a href="{{ route('nadoautoenchere.categories') }}" class="flex items-center hover:scale-105 transition-transform no-underline">
-                    <img src="{{ asset('assets/images/logoenchere.jpg') }}" alt="NADO Auto Enchère" class="h-10 w-auto object-contain" />
+                    <img src="{{ asset('assets/images/logoenchere.jpg') }}" alt="AUTOMANAGER Auto Enchère" class="h-10 w-auto object-contain" />
                 </a>
                 <div class="hidden lg:flex items-center gap-2">
                     @hasSection('na_nav_links')
                         @yield('na_nav_links')
                     @else
                         <a href="{{ route('nadoautoenchere.categories') }}"
-                           class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#1459DD] hover:bg-slate-100">
+                           class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#0E0F12] hover:bg-slate-100">
                             Catégories
                         </a>
                         <a href="{{ route('nadoautoenchere.index') }}"
-                           class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#1459DD] hover:bg-slate-100">
+                           class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#0E0F12] hover:bg-slate-100">
                             Tous les véhicules
                         </a>
                     @endif
@@ -51,8 +51,8 @@
                     <div class="na-account" style="position:relative;">
                         <button type="button" id="naAccountBtn" aria-haspopup="true" aria-expanded="false"
                             class="flex items-center gap-2 px-3 py-2 rounded-2xl bg-slate-50 border border-slate-200 hover:bg-slate-100 transition-all cursor-pointer">
-                            <span class="w-7 h-7 rounded-full bg-[#1459DD]/10 flex items-center justify-center shrink-0">
-                                <i data-lucide="user" class="w-3.5 h-3.5 text-[#1459DD]"></i>
+                            <span class="w-7 h-7 rounded-full bg-[#0E0F12]/10 flex items-center justify-center shrink-0">
+                                <i data-lucide="user" class="w-3.5 h-3.5 text-[#0E0F12]"></i>
                             </span>
                             <span class="hidden md:inline text-[12px] font-bold uppercase tracking-wide text-slate-700 truncate max-w-[140px]"
                                   title="{{ $authClient->company ?? $authClient->name }}">
@@ -80,11 +80,11 @@
                     </div>
                 @else
                     <a href="{{ route('nadoautoenchere.login') }}"
-                        class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl border border-slate-200 hover:border-[#1459DD] hover:text-[#1459DD] text-slate-900 font-extrabold text-[13px] uppercase tracking-widest transition-all">
+                        class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl border border-slate-200 hover:border-[#0E0F12] hover:text-[#0E0F12] text-slate-900 font-extrabold text-[13px] uppercase tracking-widest transition-all">
                         Connexion
                     </a>
                     <a href="{{ route('nadoautoenchere.register') }}"
-                        class="flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-[#F37021]/20 border border-[#F37021]/50 hover:bg-[#F37021] text-slate-900 font-extrabold text-[13px] uppercase tracking-widest transition-all active:scale-95">
+                        class="flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-[#C8A24B]/20 border border-[#C8A24B]/50 hover:bg-[#C8A24B] text-slate-900 font-extrabold text-[13px] uppercase tracking-widest transition-all active:scale-95">
                         <span class="whitespace-nowrap">Créez un compte</span>
                     </a>
                 @endif

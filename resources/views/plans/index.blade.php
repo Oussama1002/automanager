@@ -19,7 +19,7 @@
                         $features = [
                             'Renouvellement 1 fois/jour',
                             'Réseaux sociaux & sites de vente',
-                            'Vitrine Nado.ma',
+                            'Vitrine Automanager',
                             'Afficher votre numéro',
                         ];
                         break;
@@ -30,7 +30,7 @@
                         $features = [
                             'Renouvellement 1 fois/jour',
                             'Réseaux sociaux & sites de vente',
-                            'Vitrine Nado.ma',
+                            'Vitrine Automanager',
                             'Afficher votre numéro',
                         ];
                         break;
@@ -41,7 +41,7 @@
                         $features = [
                             'Renouvellement 2 fois/jour',
                             'Réseaux sociaux & sites de vente',
-                            'Vitrine Nado.ma',
+                            'Vitrine Automanager',
                             'Reels Instagram / TikTok',
                             'Vidéo / Short YouTube',
                             'Qualifications des appels',
@@ -86,7 +86,7 @@
     @if($pack1)
     <div class="text-center mt-5 pt-5">
         <a href="{{ route('client.register') }}" class="btn btn-outline-primary fw-bold fs-3 py-4 px-5" style="border-radius: 40px;">
-            Publiez gratuitement vos annonces sur Nado.ma
+            Publiez gratuitement vos annonces sur Automanager
         </a>
     </div>
     @endif

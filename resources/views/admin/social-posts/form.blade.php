@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 
-@section('title', ($post->exists ? 'Modifier' : 'Nouvelle') . ' publication sociale | nado.ma')
+@section('title', ($post->exists ? 'Modifier' : 'Nouvelle') . ' publication sociale | automanager.ma')
 
 @section('content')
 <div id="main-content">
@@ -43,7 +43,7 @@
                                 <label class="form-label">Lien de la publication / story</label>
                                 <input type="url" name="url" class="form-control"
                                        value="{{ old('url', $post->url) }}"
-                                       placeholder="https://www.tiktok.com/@nado.ma/video/..."
+                                       placeholder="https://www.tiktok.com/@automanager.ma/video/..."
                                        required>
                                 <small class="text-muted">Collez ici l'URL complète du post (TikTok, Reel Instagram, story publique, etc.).</small>
                             </div>
@@ -60,7 +60,7 @@
                                 <label class="form-label">Nom du compte (optionnel)</label>
                                 <input type="text" name="handle" class="form-control"
                                        value="{{ old('handle', $post->handle) }}"
-                                       placeholder="Ex : @nado.ma">
+                                       placeholder="Ex : @automanager.ma">
                             </div>
 
                             <div class="mb-3">

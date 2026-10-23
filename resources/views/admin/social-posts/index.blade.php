@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 
-@section('title', 'Publications sociales | nado.ma')
+@section('title', 'Publications sociales | automanager.ma')
 
 @section('content')
 <div id="main-content">

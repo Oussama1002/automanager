@@ -12,7 +12,7 @@
 
 <style>
     .cs-profile { padding-top: 24px; }
-    /* removed NADO logo block per request */
+    /* removed AUTOMANAGER logo block per request */
 
     .cs-profile { padding: 18px 22px; display:flex; align-items:center; gap: 12px; border-bottom: 1px solid rgba(255,255,255,.07); }
     .cs-avatar { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255,255,255,.2); flex-shrink:0; }

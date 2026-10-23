@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 
-@section('title' , 'Vente | nado.ma')
+@section('title' , 'Vente | automanager.ma')
 
 
 @section('content')

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NADO Connect - Financez votre voiture</title>
+    <title>AUTOMANAGER Connect - Financez votre voiture</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
@@ -58,7 +58,7 @@
         }
 
         .logo-accent {
-            color: #1459DD;
+            color: #0E0F12;
         }
 
         .nav-links {
@@ -77,12 +77,12 @@
         }
 
         .nav-links a:hover {
-            color: #1459DD;
+            color: #0E0F12;
         }
 
         .btn-header {
             padding: 0.75rem 1.5rem;
-            background-color: #1459DD;
+            background-color: #0E0F12;
             color: white;
             border-radius: 0.5rem;
             font-weight: 700;
@@ -92,7 +92,7 @@
         }
 
         .btn-header:hover {
-            background-color: #1d4ed8;
+            background-color: #A17E31;
             transform: translateY(-2px);
         }
 
@@ -157,7 +157,7 @@
             padding: 0.5rem 1rem;
             background-color: rgba(59, 130, 246, 0.1);
             border: 1px solid rgba(59, 130, 246, 0.2);
-            color: #60a5fa;
+            color: #E3C178;
             border-radius: 9999px;
             font-weight: 900;
             font-size: 0.625rem;
@@ -177,11 +177,11 @@
         }
 
         .hero-title-blue {
-            color: #1459DD;
+            color: #0E0F12;
         }
 
         .hero-title-yellow {
-            color: #FDD817;
+            color: #C8A24B;
         }
 
         .hero p {
@@ -189,7 +189,7 @@
             color: #94a3b8;
             font-weight: 500;
             line-height: 1.75;
-            border-left: 4px solid #1459DD;
+            border-left: 4px solid #0E0F12;
             padding-left: 2rem;
         }
 
@@ -236,8 +236,8 @@
         .icon-box {
             width: 3rem;
             height: 3rem;
-            background-color: #eff6ff;
-            color: #1459DD;
+            background-color: #FAF6EC;
+            color: #0E0F12;
             border-radius: 1rem;
             display: flex;
             align-items: center;
@@ -297,9 +297,9 @@
         }
 
         .profile-btn.active {
-            border-color: #1459DD;
-            background-color: #eff6ff;
-            color: #1459DD;
+            border-color: #0E0F12;
+            background-color: #FAF6EC;
+            color: #0E0F12;
         }
 
         .slider-group {
@@ -330,7 +330,7 @@
             height: 24px;
             width: 24px;
             border-radius: 50%;
-            background: #1459DD;
+            background: #0E0F12;
             cursor: pointer;
             border: 4px solid white;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -340,7 +340,7 @@
             height: 24px;
             width: 24px;
             border-radius: 50%;
-            background: #1459DD;
+            background: #0E0F12;
             cursor: pointer;
             border: 4px solid white;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -375,9 +375,9 @@
         }
 
         .duration-btn.active {
-            border-color: #1459DD;
-            background-color: #eff6ff;
-            color: #1459DD;
+            border-color: #0E0F12;
+            background-color: #FAF6EC;
+            color: #0E0F12;
         }
 
         .simulator-result {
@@ -393,7 +393,7 @@
         .result-label {
             font-size: 0.625rem;
             font-weight: 900;
-            color: #1459DD;
+            color: #0E0F12;
             text-transform: uppercase;
             letter-spacing: 0.3em;
             margin-bottom: 1rem;
@@ -424,7 +424,7 @@
         .btn-primary {
             width: 100%;
             padding: 1.5rem;
-            background-color: #1459DD;
+            background-color: #0E0F12;
             color: white;
             border-radius: 2rem;
             font-weight: 900;
@@ -442,7 +442,7 @@
         }
 
         .btn-primary:hover {
-            background-color: #1d4ed8;
+            background-color: #A17E31;
         }
 
         .btn-primary:active {
@@ -508,7 +508,7 @@
         }
 
         .profile-item.active {
-            border-color: #1459DD;
+            border-color: #0E0F12;
             background-color: white;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
             color: #0f172a;
@@ -555,7 +555,7 @@
         .doc-item:hover {
             background-color: white;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            border-color: #dbeafe;
+            border-color: #F2E9D2;
         }
 
         .check-icon {
@@ -580,9 +580,9 @@
         .info-box {
             margin-top: 4rem;
             padding: 2rem;
-            background-color: rgba(253, 216, 23, 0.1);
+            background-color: rgba(200,162,75, 0.1);
             border-radius: 1.5rem;
-            border: 1px solid rgba(253, 216, 23, 0.2);
+            border: 1px solid rgba(200,162,75, 0.2);
             display: flex;
             align-items: center;
             gap: 1.5rem;
@@ -597,7 +597,7 @@
         .info-icon {
             width: 3.5rem;
             height: 3.5rem;
-            background-color: #FDD817;
+            background-color: #C8A24B;
             border-radius: 1rem;
             display: flex;
             align-items: center;
@@ -651,8 +651,8 @@
         .step-icon {
             width: 5rem;
             height: 5rem;
-            background-color: #eff6ff;
-            color: #1459DD;
+            background-color: #FAF6EC;
+            color: #0E0F12;
             border-radius: 1.5rem;
             display: flex;
             align-items: center;
@@ -704,7 +704,7 @@
             width: 3.5rem;
             height: 3.5rem;
             background-color: #f8fafc;
-            color: #1459DD;
+            color: #0E0F12;
             border-radius: 1rem;
             display: flex;
             align-items: center;
@@ -715,7 +715,7 @@
         }
 
         .benefit-item:hover .benefit-icon {
-            background-color: #1459DD;
+            background-color: #0E0F12;
             color: white;
         }
 
@@ -753,7 +753,7 @@
             position: absolute;
             inset: 0;
             opacity: 0.1;
-            background-image: radial-gradient(#1459DD 1px, transparent 1px);
+            background-image: radial-gradient(#0E0F12 1px, transparent 1px);
             background-size: 30px 30px;
         }
 
@@ -789,7 +789,7 @@
 
         .btn-phone {
             padding: 1.25rem 3rem;
-            background-color: #1459DD;
+            background-color: #0E0F12;
             color: white;
             border-radius: 1rem;
             font-weight: 900;
@@ -866,8 +866,8 @@
             align-items: center;
             padding: 0.25rem 0.75rem;
             border-radius: 9999px;
-            background-color: #eff6ff;
-            color: #1459DD;
+            background-color: #FAF6EC;
+            color: #0E0F12;
             font-weight: 900;
             font-size: 0.625rem;
             text-transform: uppercase;
@@ -897,7 +897,7 @@
         .section-badge {
             font-size: 0.625rem;
             font-weight: 900;
-            color: #1459DD;
+            color: #0E0F12;
             text-transform: uppercase;
             letter-spacing: 0.5em;
             margin-bottom: 1rem;
@@ -938,9 +938,9 @@
         $isAutoEnchere = request()->routeIs('nadoautoenchere.*');
 
         // Theme Colors
-        $accentColor = $isAutoEnchere ? '#F37021' : '#FDD817';
-        $buttonHoverBg = $isAutoEnchere ? '#F37021' : '#FDD817';
-        $logoText = $isAutoEnchere ? 'AUTO ENCHÈRE' : 'NADO';
+        $accentColor = $isAutoEnchere ? '#C8A24B' : '#C8A24B';
+        $buttonHoverBg = $isAutoEnchere ? '#C8A24B' : '#C8A24B';
+        $logoText = $isAutoEnchere ? 'AUTO ENCHÈRE' : 'AUTOMANAGER';
     @endphp
 
 
@@ -950,12 +950,12 @@
         <script src="https://unpkg.com/lucide@latest"></script>
 
         <!-- Top Bar Info -->
-        <div class="top-bar" style="background-color: #FDD817;">
+        <div class="top-bar" style="background-color: #C8A24B;">
             <div class="container custom-container top-bar-content">
                 <div class="contact-info">
                     <div class="info-item">
                         <i data-lucide="mail"></i>
-                        <a href="mailto:contact@nado.ma">contact@nado.ma</a>
+                        <a href="mailto:contact@automanager.ma">contact@automanager.ma</a>
                     </div>
                     <div class="info-item">
                         <i data-lucide="phone-call"></i>
@@ -981,11 +981,11 @@
                         @if ($isAutoEnchere)
                             <span class="logo-text">
                                 <span class="text-dark">AUTO </span>
-                                <span style="color: #F37021;">ENCHÈRE</span>
+                                <span style="color: #C8A24B;">ENCHÈRE</span>
                             </span>
                         @else
                             <img src="{{ asset('storage/logos/UAfjepY72Xe7grWDva9cqSlRFsRKNZPV3HBDbBP1.png') }}"
-                                 alt="NADO" style="height: 36px; width: auto; object-fit: contain;" />
+                                 alt="AUTOMANAGER" style="height: 36px; width: auto; object-fit: contain;" />
                         @endif
                     </a>
 
@@ -1072,11 +1072,11 @@
                     @if ($isAutoEnchere)
                         <span class="logo-text">
                             <span class="text-dark">AUTO </span>
-                            <span style="color: #F37021;">ENCHÈRE</span>
+                            <span style="color: #C8A24B;">ENCHÈRE</span>
                         </span>
                     @else
                         <img src="{{ asset('storage/logos/UAfjepY72Xe7grWDva9cqSlRFsRKNZPV3HBDbBP1.png') }}"
-                             alt="NADO" style="height: 30px; width: auto; object-fit: contain;" />
+                             alt="AUTOMANAGER" style="height: 30px; width: auto; object-fit: contain;" />
                     @endif
                     <button id="closeDrawerBtn" class="close-btn">
                         <i data-lucide="x"></i>
@@ -1091,7 +1091,7 @@
                     @else
                         <a href="{{ route('achat.index') }}">Achat</a>
                         <a href="{{ route('vente.form') }}">Vente</a>
-                        <a href="{{ route('nadoautoenchere.prelogin') }}" style="color: #1459DD;">Auto-enchère</a>
+                        <a href="{{ route('nadoautoenchere.prelogin') }}" style="color: #0E0F12;">Auto-enchère</a>
                         <a href="{{ route('reprise.form') }}">Reprise</a>
                         <a href="{{ route('financement.index') }}">Auto-financement</a>
                         <a href="{{ route('about.index') }}">À propos</a>
@@ -1127,7 +1127,7 @@
                     <div class="drawer-divider"></div>
 
                     <div class="drawer-support">
-                        <p>Support NADO</p>
+                        <p>Support AUTOMANAGER</p>
                         <a href="tel:+212520070611">+212 520 070 611</a>
                     </div>
                 </div>
@@ -1137,7 +1137,7 @@
         <!-- Styles -->
         <style>
             :root {
-                --primary-blue: #1459DD;
+                --primary-blue: #0E0F12;
                 --slate-900: #0f172a;
                 --slate-700: #334155;
                 --slate-50: #f8fafc;
@@ -1311,11 +1311,11 @@
 
             .highlight-link {
                 color: var(--primary-blue);
-                background-color: #dbeafe;
+                background-color: #F2E9D2;
             }
 
             .highlight-link:hover {
-                background-color: #bfdbfe;
+                background-color: #E8D7A9;
             }
 
             /* Dropdown */
@@ -1359,8 +1359,8 @@
             }
 
             .nav-dropdown-menu a:hover {
-                background-color: #fff7ed;
-                color: #F37021;
+                background-color: #FAF4EA;
+                color: #C8A24B;
             }
 
             /* Right Section */
@@ -1396,17 +1396,17 @@
             }
 
             .outline-btn {
-                background-color: rgba(253, 216, 23, 0.2);
-                border: 1px solid rgba(253, 216, 23, 0.5);
+                background-color: rgba(200,162,75, 0.2);
+                border: 1px solid rgba(200,162,75, 0.5);
                 color: var(--slate-900);
             }
 
             .outline-btn:hover {
-                background-color: #FDD817;
+                background-color: #C8A24B;
             }
 
             /* Adjust hover for enchere mode via JS or specific classes if needed,
-                   but inline style logic handles the main color. Here we default to Nado yellow styles. */
+                   but inline style logic handles the main color. Here we default to Automanager yellow styles. */
 
             .desktop-only {
                 display: none;
@@ -1831,7 +1831,7 @@
                     <span class="hero-title-blue">VOITURE</span> <span class="hero-title-yellow">SANS ATTENDRE.</span>
                 </h1>
                 <p>
-                    NADO Connect s'associe aux plus grandes banques du Royaume pour vous offrir un crédit automobile
+                    AUTOMANAGER Connect s'associe aux plus grandes banques du Royaume pour vous offrir un crédit automobile
                     souple, rapide et transparent.
                 </p>
             </div>
@@ -1990,7 +1990,7 @@
     <!-- STEPS SECTION -->
     <section class="steps-section" id="process">
         <div class="container">
-            <h2 class="main-title">Le parcours <span style="color: #1459DD;">Digital.</span></h2>
+            <h2 class="main-title">Le parcours <span style="color: #0E0F12;">Digital.</span></h2>
             <div class="steps-grid">
                 <div class="step-item">
                     <div class="step-icon">
@@ -2089,7 +2089,7 @@
         <div class="cta-bg"></div>
         <div class="cta-content">
             <h2 class="cta-title">
-                Besoin d'un <br><span style="color: #FDD817;">Conseil Pro</span> ?
+                Besoin d'un <br><span style="color: #C8A24B;">Conseil Pro</span> ?
             </h2>
             <p class="cta-desc">Nos conseillers en financement sont disponibles du Lundi au Vendredi pour vous
                 accompagner.</p>
@@ -2110,7 +2110,7 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>NADO CONNECT • SOLUTIONS DE FINANCEMENT PREMIUM • 2025</p>
+        <p>AUTOMANAGER CONNECT • SOLUTIONS DE FINANCEMENT PREMIUM • 2025</p>
     </footer>
 
     <script>

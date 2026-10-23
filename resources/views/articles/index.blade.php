@@ -81,14 +81,14 @@
 .article-meta { font-size: 12px; color: #999; margin-bottom: 10px; }
 
 .btn-read-article {
-    display: inline-block; background: #1e40af; color: #fff;
+    display: inline-block; background: #A17E31; color: #fff;
     padding: 8px 20px; border-radius: 8px; text-decoration: none;
     font-weight: 700; font-size: 13px; align-self: start; transition: .3s;
 }
 .btn-read-article:hover { background: #1e3a8a; }
 
 .btn-all-articles {
-    display: inline-block; background: #1e40af; color: #fff;
+    display: inline-block; background: #A17E31; color: #fff;
     padding: 14px 32px; border-radius: 10px; font-weight: 700;
     text-decoration: none; transition: .3s; margin-top: 15px;
 }

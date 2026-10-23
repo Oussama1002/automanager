@@ -21,7 +21,7 @@
     .vw-grid {
         position: fixed; inset: 0;
         opacity: 0.03; pointer-events: none;
-        background-image: linear-gradient(#1459DD 1px, transparent 1px), linear-gradient(90deg, #1459DD 1px, transparent 1px);
+        background-image: linear-gradient(#0E0F12 1px, transparent 1px), linear-gradient(90deg, #0E0F12 1px, transparent 1px);
         background-size: 32px 32px;
     }
 
@@ -44,7 +44,7 @@
         border-radius: 50%;
         display: flex; align-items: center; justify-content: center;
         margin: 0 auto 24px;
-        color: #1459DD;
+        color: #0E0F12;
     }
 
     .vw-card h1 {
@@ -83,10 +83,10 @@
         background: #f8fafc;
         outline: none;
         transition: border-color 0.15s, box-shadow 0.15s;
-        caret-color: #1459DD;
+        caret-color: #0E0F12;
     }
     .vw-otp-box:focus {
-        border-color: #1459DD;
+        border-color: #0E0F12;
         background: #fff;
         box-shadow: 0 0 0 3px rgba(20,89,221,0.15);
     }
@@ -99,7 +99,7 @@
 
     .vw-btn-submit {
         width: 100%; padding: 16px;
-        background: #1459DD; color: #fff;
+        background: #0E0F12; color: #fff;
         border: none; border-radius: 10px;
         font-size: 14px; font-weight: 700; text-transform: uppercase;
         letter-spacing: 0.08em; cursor: pointer;
@@ -117,7 +117,7 @@
     }
     .vw-resend-btn {
         background: none; border: none; cursor: pointer;
-        color: #1459DD; font-weight: 700; font-size: 13px;
+        color: #0E0F12; font-weight: 700; font-size: 13px;
         font-family: inherit; padding: 0; transition: color 0.15s;
     }
     .vw-resend-btn:hover { color: #0d47b4; }
@@ -132,7 +132,7 @@
 
     /* Timer */
     .vw-timer { font-size: 12px; color: #94a3b8; font-weight: 600; }
-    #countdown { color: #1459DD; font-weight: 800; }
+    #countdown { color: #0E0F12; font-weight: 800; }
 </style>
 
 <div class="vw-page">

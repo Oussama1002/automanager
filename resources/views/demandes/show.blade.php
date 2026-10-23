@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Demande #' . $demande->id . ' — NADO')
+@section('title', 'Demande #' . $demande->id . ' — AUTOMANAGER')
 
 @section('content')
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -8,7 +8,7 @@
 <style>
     .dmd-show { max-width:960px; margin:40px auto 60px; padding:0 20px; font-family:'Inter',sans-serif; color:#0f172a; }
     .dmd-back { display:inline-flex; align-items:center; gap:6px; font-size:14px; color:#64748b; text-decoration:none; margin-bottom:16px; }
-    .dmd-back:hover { color:#1459DD; }
+    .dmd-back:hover { color:#0E0F12; }
 
     .dmd-main {
         background:#fff; border:1px solid #e2e8f0; border-radius:20px; padding:28px;
@@ -17,7 +17,7 @@
     .dmd-top { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap; }
     .dmd-top h1 { font-size:26px; font-weight:800; margin:0 0 6px; letter-spacing:-0.02em; }
     .dmd-top .dmd-sub { color:#64748b; font-size:14px; }
-    .dmd-badge { display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:700; padding:5px 12px; border-radius:999px; background:#dbeafe; color:#1459DD; text-transform:uppercase; letter-spacing:.03em; }
+    .dmd-badge { display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:700; padding:5px 12px; border-radius:999px; background:#F2E9D2; color:#0E0F12; text-transform:uppercase; letter-spacing:.03em; }
 
     .dmd-specs { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:14px; margin:22px 0 10px; }
     .dmd-spec { background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:14px; }
@@ -28,29 +28,29 @@
     .dmd-note strong { color:#92400e; }
 
     .dmd-contact-box {
-        margin-top:24px; padding:20px; background:linear-gradient(135deg,#f8fafc,#eff6ff);
+        margin-top:24px; padding:20px; background:linear-gradient(135deg,#f8fafc,#FAF6EC);
         border:1px solid #c7d2fe; border-radius:16px;
         display:flex; align-items:center; gap:16px; flex-wrap:wrap; justify-content:space-between;
     }
     .dmd-user { display:flex; align-items:center; gap:14px; min-width:0; }
     .dmd-avatar {
         width:52px; height:52px; border-radius:50%;
-        background:linear-gradient(135deg,#1459DD,#F37021);
+        background:linear-gradient(135deg,#0E0F12,#C8A24B);
         color:#fff; display:flex; align-items:center; justify-content:center;
         font-weight:700; font-size:20px; flex-shrink:0;
     }
     .dmd-user-info { min-width:0; }
     .dmd-user-info .lbl { font-size:11px; color:#64748b; text-transform:uppercase; letter-spacing:.04em; font-weight:600; }
     .dmd-user-info .nm { font-size:17px; font-weight:700; color:#0f172a; }
-    .dmd-user-info .ph { font-size:14px; color:#1459DD; font-weight:600; font-variant-numeric:tabular-nums; margin-top:2px; }
+    .dmd-user-info .ph { font-size:14px; color:#0E0F12; font-weight:600; font-variant-numeric:tabular-nums; margin-top:2px; }
 
     .dmd-reveal-btn {
-        padding:10px 18px; background:#1459DD; color:#fff; border:0; border-radius:10px;
+        padding:10px 18px; background:#0E0F12; color:#fff; border:0; border-radius:10px;
         font-weight:700; cursor:pointer; font-family:inherit; font-size:13px;
         display:inline-flex; align-items:center; gap:6px; transition:transform .15s, box-shadow .15s;
     }
     .dmd-reveal-btn:hover { transform:translateY(-1px); box-shadow:0 8px 20px rgba(20,89,221,.3); }
-    .dmd-login-link { font-size:13px; color:#1459DD; text-decoration:none; font-weight:600; }
+    .dmd-login-link { font-size:13px; color:#0E0F12; text-decoration:none; font-weight:600; }
     .dmd-login-link:hover { text-decoration:underline; }
 
     .dmd-section { margin-top:30px; }
@@ -61,7 +61,7 @@
         display:block; background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:14px;
         text-decoration:none; color:#0f172a; transition:transform .15s, border-color .15s;
     }
-    .dmd-match:hover { transform:translateY(-2px); border-color:#1459DD; }
+    .dmd-match:hover { transform:translateY(-2px); border-color:#0E0F12; }
     .dmd-match strong { display:block; font-size:14px; margin-bottom:2px; }
     .dmd-match small { color:#64748b; font-size:12px; }
 
@@ -72,11 +72,11 @@
         width:100%; padding:11px 14px; border:1px solid #e2e8f0; border-radius:10px;
         font-family:inherit; font-size:14px; outline:none; background:#fff;
     }
-    .dmd-reply-form textarea:focus, .dmd-reply-form input:focus { border-color:#1459DD; box-shadow:0 0 0 3px rgba(20,89,221,.1); }
+    .dmd-reply-form textarea:focus, .dmd-reply-form input:focus { border-color:#0E0F12; box-shadow:0 0 0 3px rgba(20,89,221,.1); }
     .dmd-reply-row { display:flex; gap:10px; margin-top:10px; flex-wrap:wrap; }
     .dmd-reply-row input { flex:1; min-width:200px; }
     .dmd-reply-row button {
-        padding:11px 20px; background:#1459DD; color:#fff; border:0; border-radius:10px;
+        padding:11px 20px; background:#0E0F12; color:#fff; border:0; border-radius:10px;
         font-weight:700; cursor:pointer; font-family:inherit; font-size:14px;
     }
     .dmd-reply-row button:hover { background:#1047b8; }
@@ -204,7 +204,7 @@
                 <div class="meta">{{ $r->created_at->locale('fr')->diffForHumans() }} · {{ $r->client?->name ?? 'Membre' }}</div>
                 <p>{{ $r->message }}</p>
                 @if($r->annonce)
-                    <a href="{{ route('achat.detail', ['marque' => $r->annonce->mark, 'modele' => $r->annonce->modele, 'id' => $r->annonce->id]) }}" style="font-size:13px;color:#1459DD;">Voir l’annonce proposée →</a>
+                    <a href="{{ route('achat.detail', ['marque' => $r->annonce->mark, 'modele' => $r->annonce->modele, 'id' => $r->annonce->id]) }}" style="font-size:13px;color:#0E0F12;">Voir l’annonce proposée →</a>
                 @endif
             </div>
         @empty
@@ -366,7 +366,7 @@
                 <div id="proposeDropzone" style="position:relative;border:2px dashed #cbd5e1;border-radius:12px;background:#f8fafc;padding:26px 20px;text-align:center;cursor:pointer;transition:border-color .15s, background .15s;">
                     <input type="file" name="images[]" multiple accept="image/*" id="proposeImages"
                            style="position:absolute;inset:0;opacity:0;cursor:pointer;">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1459DD" stroke-width="1.8" style="margin:0 auto 8px;display:block;">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0E0F12" stroke-width="1.8" style="margin:0 auto 8px;display:block;">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                         <polyline points="17 8 12 3 7 8"/>
                         <line x1="12" y1="3" x2="12" y2="15"/>
@@ -375,7 +375,7 @@
                         Glissez-déposez vos photos ici
                     </div>
                     <div style="font-size:12px;color:#64748b;margin-top:2px;">
-                        ou <span style="color:#1459DD;font-weight:600;text-decoration:underline;">cliquez pour parcourir</span>
+                        ou <span style="color:#0E0F12;font-weight:600;text-decoration:underline;">cliquez pour parcourir</span>
                     </div>
                     <div id="proposeCount" style="font-size:11px;color:#94a3b8;margin-top:6px;"></div>
                 </div>
@@ -389,7 +389,7 @@
         </form>
 
         <style>
-            #proposeDropzone.dz-hover { border-color:#1459DD !important; background:#eff6ff !important; }
+            #proposeDropzone.dz-hover { border-color:#0E0F12 !important; background:#FAF6EC !important; }
             .dz-thumb { position:relative; width:76px; height:76px; }
             .dz-thumb img { width:100%; height:100%; object-fit:cover; border-radius:8px; border:1px solid #e2e8f0; display:block; }
             .dz-thumb .dz-remove {
@@ -475,7 +475,7 @@
             {{ session('propose_success') }}
         </p>
         <button type="button" onclick="document.getElementById('proposeSuccess').remove();"
-                style="padding:12px 28px;background:#1459DD;color:#fff;border:0;border-radius:10px;font-weight:700;font-size:14px;cursor:pointer;font-family:inherit;box-shadow:0 6px 18px rgba(20,89,221,.3);">
+                style="padding:12px 28px;background:#0E0F12;color:#fff;border:0;border-radius:10px;font-weight:700;font-size:14px;cursor:pointer;font-family:inherit;box-shadow:0 6px 18px rgba(20,89,221,.3);">
             D’accord
         </button>
     </div>

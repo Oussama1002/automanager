@@ -2,7 +2,7 @@
     // Self-contained: works on every page even when the parent didn't pass these in.
     $client        = $client        ?? Auth::guard('client')->user();
     $isAutoEnchere = $isAutoEnchere ?? (request()->routeIs('nadoautoenchere.*'));
-    $accentColor   = $accentColor   ?? ($isAutoEnchere ? '#F37021' : '#FDD817');
+    $accentColor   = $accentColor   ?? ($isAutoEnchere ? '#C8A24B' : '#C8A24B');
 @endphp
 
 <header class="nado-navbar sticky-top">
@@ -10,12 +10,12 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- Top Bar Info -->
-    <div class="top-bar" style="background-color: #FDD817;">
+    <div class="top-bar" style="background-color: #0E0F12;">
         <div class="container custom-container top-bar-content">
             <div class="contact-info">
                 <div class="info-item">
                     <i data-lucide="mail"></i>
-                    <a href="mailto:contact@nado.ma">contact@nado.ma</a>
+                    <a href="mailto:contact@automanager.ma">contact@automanager.ma</a>
                 </div>
                 <div class="info-item">
                     <i data-lucide="phone-call"></i>
@@ -35,15 +35,13 @@
         <div class="container custom-container nav-content">
             <div class="left-section">
                 <a href="{{ $isAutoEnchere ? route('nadoautoenchere.prelogin') : route('index') }}" class="logo-link">
-                    @if ($isAutoEnchere)
-                        <span class="logo-text">
-                            <span class="text-dark">AUTO </span>
-                            <span style="color: #F37021;">ENCHÈRE</span>
-                        </span>
-                    @else
-                        <img src="{{ asset('storage/logos/UAfjepY72Xe7grWDva9cqSlRFsRKNZPV3HBDbBP1.png') }}"
-                             alt="NADO" style="height: 36px; width: auto; object-fit: contain;" />
-                    @endif
+                    <span class="brand-wordmark">
+                        @if ($isAutoEnchere)
+                            <span class="bw-dark">AUTO</span><span class="bw-gold">ENCHÈRE</span>
+                        @else
+                            <span class="bw-dark">AUTO</span><span class="bw-gold">MANAGER</span>
+                        @endif
+                    </span>
                 </a>
 
                 <div class="desktop-menu">
@@ -116,11 +114,11 @@
         <div id="drawerBackdrop" class="drawer-backdrop"></div>
         <div id="drawerContent" class="drawer-content">
             <div class="drawer-header">
-                <span class="logo-text">
+                <span class="brand-wordmark">
                     @if ($isAutoEnchere)
-                        <span class="text-dark">AUTO </span><span style="color:#F37021;">ENCHÈRE</span>
+                        <span class="bw-dark">AUTO</span><span class="bw-gold">ENCHÈRE</span>
                     @else
-                        <span style="color:#1459DD;">NA</span><span style="color:#FDD817;">DO</span>
+                        <span class="bw-dark">AUTO</span><span class="bw-gold">MANAGER</span>
                     @endif
                 </span>
                 <button id="closeDrawerBtn" class="close-btn"><i data-lucide="x"></i></button>
@@ -134,7 +132,7 @@
                 @else
                     <a href="{{ route('achat.index') }}">Achat</a>
                     <a href="{{ route('vente.form') }}">Vente</a>
-                    <a href="{{ route('nadoautoenchere.prelogin') }}" style="color:#1459DD;">Auto-enchère</a>
+                    <a href="{{ route('nadoautoenchere.prelogin') }}" style="color:#0E0F12;">Auto-enchère</a>
                     <a href="{{ route('reprise.form') }}">Reprise</a>
                     <a href="{{ route('financement.index') }}">Auto-financement</a>
                     <a href="{{ route('about.index') }}">À propos</a>
@@ -166,7 +164,7 @@
                 </div>
                 <div class="drawer-divider"></div>
                 <div class="drawer-support">
-                    <p>Support NADO</p>
+                    <p>Support Automanager</p>
                     <a href="tel:+212520070611">+212 520 070 611</a>
                 </div>
             </div>
@@ -175,7 +173,12 @@
 
     <style>
         :root {
-            --primary-blue: #1459DD;
+            --primary-blue: #C8A24B;   /* accent is now champagne gold */
+            --nav-gold: #C8A24B;
+            --nav-gold-bright: #E3C178;
+            --nav-obsidian: #0E0F12;
+            --nav-obsidian-800: #17181C;
+            --nav-ivory: #F7F5F1;
             --slate-900: #0f172a;
             --slate-700: #334155;
             --slate-50: #f8fafc;
@@ -183,7 +186,10 @@
         }
         .nado-navbar { font-family: 'Inter', sans-serif; width: 100%; z-index: 1000; position: relative; direction: ltr; }
         .sticky-top { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; }
-        .top-bar { padding: 10px 16px; border-bottom: 1px solid rgba(0,0,0,.05); color: var(--slate-900); }
+        .top-bar { padding: 10px 16px; border-bottom: 1px solid rgba(200,162,75,.16); color: var(--nav-ivory); }
+        .brand-wordmark { font-family: 'Inter', sans-serif; font-size: 1.7rem; font-weight: 800; text-transform: uppercase; line-height: 1; letter-spacing: .04em; display: inline-flex; }
+        .brand-wordmark .bw-dark { color: var(--nav-ivory); }
+        .brand-wordmark .bw-gold { color: var(--nav-gold); margin-left: .12em; }
         .custom-container { max-width: 1280px; margin: 0 auto; padding: 0 16px; display: flex; justify-content: space-between; align-items: center; width: 100%; }
         .contact-info { display: flex; gap: 12px; }
         .info-item { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: .1em; opacity: .8; }
@@ -191,10 +197,10 @@
         .info-item a { color: inherit; text-decoration: none; transition: color .2s; }
         .info-item a:hover { color: var(--primary-blue); }
         .social-links { display: flex; gap: 20px; }
-        .social-links a { color: var(--slate-900); opacity: .6; transition: opacity .2s, color .2s; }
-        .social-links a:hover { color: var(--primary-blue); opacity: 1; }
+        .social-links a { color: var(--nav-ivory); opacity: .55; transition: opacity .2s, color .2s; }
+        .social-links a:hover { color: var(--nav-gold); opacity: 1; }
         .social-links i { width: 20px; height: 20px; }
-        .main-nav { background: white; border-bottom: 1px solid var(--border-color); height: 96px; display: flex; align-items: center; }
+        .main-nav { background: var(--nav-obsidian-800); border-bottom: 1px solid rgba(200,162,75,.22); height: 96px; display: flex; align-items: center; }
         .nav-content { height: 100%; width: 100%; display: flex; justify-content: space-between; align-items: center; }
         .left-section { display: flex; align-items: center; gap: 64px; }
         .logo-link { text-decoration: none; transition: transform .2s; }
@@ -203,16 +209,16 @@
         .text-dark { color: var(--slate-900); }
         .desktop-menu { display: none; align-items: center; gap: 12px; }
         @media (min-width: 1024px) { .desktop-menu { display: flex; } }
-        .nav-link { font-size: 14.4px; font-weight: 700; text-transform: uppercase; letter-spacing: .025em; padding: 8px 12px; border-radius: 16px; color: var(--slate-700); text-decoration: none; transition: all .2s; background: transparent; border: none; cursor: pointer; }
-        .nav-link:hover { background-color: #f1f5f9; color: var(--primary-blue); }
-        .highlight-link { color: var(--primary-blue); background-color: #dbeafe; }
-        .highlight-link:hover { background-color: #bfdbfe; }
+        .nav-link { font-size: 13.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; padding: 8px 14px; border-radius: 10px; color: rgba(247,245,241,.72); text-decoration: none; transition: all .2s; background: transparent; border: none; cursor: pointer; }
+        .nav-link:hover { background-color: rgba(200,162,75,.1); color: var(--nav-gold); }
+        .highlight-link { color: var(--nav-gold); background-color: rgba(200,162,75,.12); box-shadow: inset 0 -2px 0 var(--nav-gold); }
+        .highlight-link:hover { background-color: rgba(200,162,75,.2); }
         .nav-dropdown-wrapper { position: relative; }
         .dropdown-trigger { display: flex; align-items: center; gap: 8px; }
-        .nav-dropdown-menu { position: absolute; top: 100%; left: 0; margin-top: 8px; background: white; border-radius: 16px; box-shadow: 0 20px 25px -5px rgba(0,0,0,.1); border: 1px solid var(--border-color); min-width: 200px; overflow: hidden; display: none; }
+        .nav-dropdown-menu { position: absolute; top: 100%; left: 0; margin-top: 8px; background: var(--nav-obsidian-800); border-radius: 12px; box-shadow: 0 24px 40px -12px rgba(0,0,0,.6); border: 1px solid rgba(200,162,75,.2); min-width: 200px; overflow: hidden; display: none; }
         .nav-dropdown-wrapper:hover .nav-dropdown-menu { display: block; }
-        .nav-dropdown-menu a { display: block; padding: 16px 20px; font-size: 14px; font-weight: 700; text-transform: uppercase; color: var(--slate-700); text-decoration: none; transition: background .2s; }
-        .nav-dropdown-menu a:hover { background-color: #fff7ed; color: #F37021; }
+        .nav-dropdown-menu a { display: block; padding: 14px 20px; font-size: 13px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: rgba(247,245,241,.75); text-decoration: none; transition: background .2s, color .2s; }
+        .nav-dropdown-menu a:hover { background-color: rgba(200,162,75,.12); color: var(--nav-gold); }
         .right-section { margin-left: auto; display: flex; align-items: center; gap: 20px; }
         @media (max-width: 1023px) {
             .main-nav { height: 72px; }
@@ -223,9 +229,11 @@
         }
         .cta-button { display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 16px; font-size: 15px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; text-decoration: none; cursor: pointer; transition: all .2s; border: none; font-family: inherit; }
         .cta-button:active { transform: scale(.95); }
-        .outline-btn { background-color: rgba(253,216,23,.2); border: 1px solid rgba(253,216,23,.5); color: var(--slate-900); }
-        .outline-btn:hover { background-color: #FDD817; }
-        .mobile-menu-btn { display: block; padding: 12px; background-color: var(--slate-50); border: none; border-radius: 12px; cursor: pointer; color: var(--slate-900); }
+        .outline-btn { background-color: rgba(200,162,75,.1); border: 1px solid rgba(200,162,75,.45); color: var(--nav-ivory); }
+        .outline-btn:hover { background-color: rgba(200,162,75,.22); border-color: var(--nav-gold); }
+        .cta-publish { background-color: var(--nav-gold); border: 1px solid var(--nav-gold); color: var(--nav-obsidian); box-shadow: 0 6px 18px -6px rgba(200,162,75,.6); }
+        .cta-publish:hover { background-color: var(--nav-gold-bright); border-color: var(--nav-gold-bright); }
+        .mobile-menu-btn { display: block; padding: 12px; background-color: rgba(200,162,75,.12); border: none; border-radius: 12px; cursor: pointer; color: var(--nav-ivory); }
         @media (min-width: 1024px) { .mobile-menu-btn { display: none; } }
         .user-dropdown-wrapper { position: relative; display: block; flex-shrink: 0; }
         @media (max-width: 1023px) {
@@ -250,6 +258,8 @@
         .drawer-content { position: fixed; top: 0; right: 0; bottom: 0; height: 100vh; width: 85%; max-width: 420px; background: white; box-shadow: -10px 0 50px rgba(0,0,0,.3); transform: translateX(100%); transition: transform .3s cubic-bezier(.4,0,.2,1); display: flex; flex-direction: column; overflow-y: auto; }
         .mobile-drawer.visible .drawer-content { transform: translateX(0); }
         .drawer-header { padding: 32px; display: flex; justify-content: space-between; align-items: center; }
+        .drawer-header .brand-wordmark { font-size: 1.5rem; }
+        .drawer-header .brand-wordmark .bw-dark { color: var(--nav-obsidian); }
         .close-btn { background: none; border: none; color: #94a3b8; cursor: pointer; }
         .close-btn:hover { color: var(--slate-900); }
         .drawer-links { flex: 1; overflow-y: auto; padding: 16px 32px; display: flex; flex-direction: column; gap: 24px; }

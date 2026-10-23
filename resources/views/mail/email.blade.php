@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>nado.ma</title>
+    <title>automanager.ma</title>
 </head>
 <body>
     <h1>Subject: {{ $data['subject'] }}</h1>

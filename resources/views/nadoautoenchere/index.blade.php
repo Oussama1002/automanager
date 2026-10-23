@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $company->name ?? 'Véhicules' }} — Auto Enchères | NADO</title>
+    <title>{{ $company->name ?? 'Véhicules' }} — Auto Enchères | AUTOMANAGER</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,20 +14,20 @@
         tailwind.config = {
             theme: { extend: {
                 fontFamily: { inter: ['Inter', 'sans-serif'] },
-                colors:    { primary: '#1459DD', accent: '#F37021' },
+                colors:    { primary: '#0E0F12', accent: '#C8A24B' },
             }}
         }
     </script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body { font-family: 'Inter', sans-serif; }
-        ::selection { background-color: #F37021; color: white; }
+        ::selection { background-color: #C8A24B; color: white; }
         .sidebar-shadow { box-shadow: 0 8px 30px rgb(0 0 0 / 0.04); }
         .select-reset   { -webkit-appearance: none; -moz-appearance: none; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem; }
         .line-clamp-2   { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     </style>
 </head>
-<body class="min-h-screen bg-slate-50 pb-12 font-inter selection:bg-[#F37021] selection:text-white">
+<body class="min-h-screen bg-slate-50 pb-12 font-inter selection:bg-[#C8A24B] selection:text-white">
 
     @php
         $currentCategory = request('category');
@@ -41,15 +41,15 @@
         {{-- ── Hero ── --}}
         <header class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
             <div>
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[#F37021]/10 rounded-full mb-4">
-                    <i data-lucide="car" class="w-[14px] h-[14px] text-[#F37021]"></i>
-                    <span class="text-[10px] font-black uppercase tracking-[0.2em] text-[#F37021]">Véhicules aux enchères</span>
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[#C8A24B]/10 rounded-full mb-4">
+                    <i data-lucide="car" class="w-[14px] h-[14px] text-[#C8A24B]"></i>
+                    <span class="text-[10px] font-black uppercase tracking-[0.2em] text-[#C8A24B]">Véhicules aux enchères</span>
                 </div>
                 <h1 class="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter">
                     @if($company)
-                        Flotte de <span class="text-[#1459DD]">{{ $company->name }}</span>
+                        Flotte de <span class="text-[#0E0F12]">{{ $company->name }}</span>
                     @else
-                        Tous les <span class="text-[#1459DD]">véhicules</span>
+                        Tous les <span class="text-[#0E0F12]">véhicules</span>
                     @endif
                 </h1>
                 @if($company)
@@ -82,8 +82,8 @@
                     @endif
 
                     <div class="flex items-center gap-3 mb-7 border-b border-slate-100 pb-4">
-                        <div class="w-9 h-9 rounded-xl bg-[#1459DD]/10 flex items-center justify-center">
-                            <i data-lucide="filter" class="w-4 h-4 text-[#1459DD]"></i>
+                        <div class="w-9 h-9 rounded-xl bg-[#0E0F12]/10 flex items-center justify-center">
+                            <i data-lucide="filter" class="w-4 h-4 text-[#0E0F12]"></i>
                         </div>
                         <h2 class="text-lg font-black uppercase tracking-tight text-slate-900">Recherche avancée</h2>
                     </div>
@@ -95,14 +95,14 @@
                             <div class="relative">
                                 <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none"></i>
                                 <input type="text" name="q" value="{{ request('q') }}" placeholder="Marque, modèle…"
-                                    class="w-full pl-11 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 placeholder:text-slate-400 focus:ring-2 focus:ring-[#1459DD]/20 focus:border-[#1459DD] transition-all outline-none">
+                                    class="w-full pl-11 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 placeholder:text-slate-400 focus:ring-2 focus:ring-[#0E0F12]/20 focus:border-[#0E0F12] transition-all outline-none">
                             </div>
                         </div>
 
                         {{-- Marque --}}
                         <div>
                             <label class="block text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Marque</label>
-                            <select name="mark" class="select-reset nado-marks w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:ring-2 focus:ring-[#1459DD]/20 focus:border-[#1459DD] transition-all outline-none cursor-pointer">
+                            <select name="mark" class="select-reset nado-marks w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:ring-2 focus:ring-[#0E0F12]/20 focus:border-[#0E0F12] transition-all outline-none cursor-pointer">
                                 <option value="">Toutes les marques</option>
                                 @foreach($brands as $brand)
                                     <option value="{{ $brand->id }}" data-id="{{ $brand->id }}" {{ request('mark') == $brand->id ? 'selected' : '' }}>{{ $brand->name }}</option>
@@ -113,7 +113,7 @@
                         {{-- Modèle --}}
                         <div>
                             <label class="block text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Modèle</label>
-                            <select name="modele" class="select-reset nado-models w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:ring-2 focus:ring-[#1459DD]/20 focus:border-[#1459DD] transition-all outline-none cursor-pointer">
+                            <select name="modele" class="select-reset nado-models w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:ring-2 focus:ring-[#0E0F12]/20 focus:border-[#0E0F12] transition-all outline-none cursor-pointer">
                                 <option value="">Tous les modèles</option>
                                 @foreach($modeles as $model)
                                     <option value="{{ $model->id }}" {{ request('modele') == $model->id ? 'selected' : '' }}>{{ $model->name }}</option>
@@ -126,7 +126,7 @@
                             <label class="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">
                                 <i data-lucide="calendar" class="w-3 h-3"></i> Année
                             </label>
-                            <select name="year" class="select-reset w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:ring-2 focus:ring-[#1459DD]/20 focus:border-[#1459DD] transition-all outline-none cursor-pointer">
+                            <select name="year" class="select-reset w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:ring-2 focus:ring-[#0E0F12]/20 focus:border-[#0E0F12] transition-all outline-none cursor-pointer">
                                 <option value="">Toutes les années</option>
                                 @for ($i = date('Y'); $i >= 1992; $i--)
                                     <option value="{{ $i }}" {{ request('year') == $i ? 'selected' : '' }}>{{ $i }}</option>
@@ -139,7 +139,7 @@
                             <label class="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">
                                 <i data-lucide="fuel" class="w-3 h-3"></i> Carburant
                             </label>
-                            <select name="carburant" class="select-reset w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:ring-2 focus:ring-[#1459DD]/20 focus:border-[#1459DD] transition-all outline-none cursor-pointer">
+                            <select name="carburant" class="select-reset w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:ring-2 focus:ring-[#0E0F12]/20 focus:border-[#0E0F12] transition-all outline-none cursor-pointer">
                                 <option value="">Tous</option>
                                 @foreach(['Essence','Diesel','Hybride','Electrique'] as $fuel)
                                     <option value="{{ $fuel }}" {{ request('carburant') == $fuel ? 'selected' : '' }}>{{ $fuel }}</option>
@@ -152,7 +152,7 @@
                             <label class="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">
                                 <i data-lucide="settings" class="w-3 h-3"></i> Boîte de vitesse
                             </label>
-                            <select name="box" class="select-reset w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:ring-2 focus:ring-[#1459DD]/20 focus:border-[#1459DD] transition-all outline-none cursor-pointer">
+                            <select name="box" class="select-reset w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:ring-2 focus:ring-[#0E0F12]/20 focus:border-[#0E0F12] transition-all outline-none cursor-pointer">
                                 <option value="">Toutes</option>
                                 <option value="Manuelle"    {{ request('box') == 'Manuelle' ? 'selected' : '' }}>Manuelle</option>
                                 <option value="Automatique" {{ request('box') == 'Automatique' ? 'selected' : '' }}>Automatique</option>
@@ -164,7 +164,7 @@
                             <label class="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">
                                 <i data-lucide="alert-circle" class="w-3 h-3"></i> État
                             </label>
-                            <select name="etat" class="select-reset w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:ring-2 focus:ring-[#1459DD]/20 focus:border-[#1459DD] transition-all outline-none cursor-pointer">
+                            <select name="etat" class="select-reset w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:ring-2 focus:ring-[#0E0F12]/20 focus:border-[#0E0F12] transition-all outline-none cursor-pointer">
                                 <option value="">Tous</option>
                                 <option value="Neuf"     {{ request('etat') == 'Neuf' ? 'selected' : '' }}>Neuf</option>
                                 <option value="Occasion" {{ request('etat') == 'Occasion' ? 'selected' : '' }}>Occasion</option>
@@ -176,7 +176,7 @@
                             <label class="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">
                                 <i data-lucide="map-pin" class="w-3 h-3"></i> Ville
                             </label>
-                            <select name="city" class="select-reset w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:ring-2 focus:ring-[#1459DD]/20 focus:border-[#1459DD] transition-all outline-none cursor-pointer">
+                            <select name="city" class="select-reset w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:ring-2 focus:ring-[#0E0F12]/20 focus:border-[#0E0F12] transition-all outline-none cursor-pointer">
                                 <option value="">Toutes les villes</option>
                                 @foreach($cities as $city)
                                     <option value="{{ $city }}" {{ request('city') == $city ? 'selected' : '' }}>{{ $city }}</option>
@@ -186,7 +186,7 @@
 
                         <div class="pt-2 flex flex-col gap-2">
                             <button type="submit"
-                                class="w-full py-3 rounded-xl bg-[#1459DD] hover:bg-[#0f47b3] text-white text-[11px] font-black uppercase tracking-widest transition-all active:scale-95">
+                                class="w-full py-3 rounded-xl bg-[#0E0F12] hover:bg-[#0f47b3] text-white text-[11px] font-black uppercase tracking-widest transition-all active:scale-95">
                                 Rechercher
                             </button>
                             <a href="{{ route('nadoautoenchere.index', $currentCategory ? ['category' => $currentCategory] : []) }}"
@@ -220,7 +220,7 @@
                             $isExpired = $endTs && $endTs < time();
                             // Classes communes de la carte, variables selon l'état.
                             $cardBase = 'bg-white rounded-3xl overflow-hidden border shadow-sm flex flex-col no-underline';
-                            $cardLive = 'group border-slate-100 hover:shadow-xl hover:border-[#1459DD]/20 transition-all duration-300 cursor-pointer';
+                            $cardLive = 'group border-slate-100 hover:shadow-xl hover:border-[#0E0F12]/20 transition-all duration-300 cursor-pointer';
                             $cardDead = 'border-slate-200 opacity-60 grayscale cursor-not-allowed pointer-events-none select-none';
                         @endphp
 
@@ -239,9 +239,9 @@
                                      class="w-full h-full object-cover transition-transform duration-500 {{ $isExpired ? '' : 'group-hover:scale-105' }}">
 
                                 @if($certified && !$isExpired)
-                                    <span aria-label="Certifié NADO Expert"
-                                          class="absolute top-4 left-4 px-3 py-1.5 bg-white/95 backdrop-blur-sm text-[#1459DD] rounded-lg text-xs font-black uppercase tracking-wider shadow-sm flex items-center gap-1">
-                                        <i data-lucide="alert-circle" class="w-3 h-3"></i> NADO Expert
+                                    <span aria-label="Certifié AUTOMANAGER Expert"
+                                          class="absolute top-4 left-4 px-3 py-1.5 bg-white/95 backdrop-blur-sm text-[#0E0F12] rounded-lg text-xs font-black uppercase tracking-wider shadow-sm flex items-center gap-1">
+                                        <i data-lucide="alert-circle" class="w-3 h-3"></i> AUTOMANAGER Expert
                                     </span>
                                 @endif
 
@@ -262,7 +262,7 @@
                                     <div class="text-xs font-black uppercase tracking-widest text-slate-400 mb-1">
                                         {{ $brandName ?: '—' }}
                                     </div>
-                                    <h3 class="text-lg font-black text-slate-900 leading-tight group-hover:text-[#1459DD] transition-colors line-clamp-2">
+                                    <h3 class="text-lg font-black text-slate-900 leading-tight group-hover:text-[#0E0F12] transition-colors line-clamp-2">
                                         {{ $modelName ?: ($enchere->titre ?? 'Véhicule') }}
                                     </h3>
                                 </div>
@@ -289,13 +289,13 @@
                                 <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
                                     <div>
                                         <div class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-0.5">Mise à prix</div>
-                                        <div class="text-xl font-black text-[#F37021]">
+                                        <div class="text-xl font-black text-[#C8A24B]">
                                             <span class="sr-only">Prix&nbsp;:</span>
                                             {{ number_format($enchere->prix ?? 0, 0, ',', ' ') }}
                                             <span class="text-sm">DH</span>
                                         </div>
                                     </div>
-                                    <div class="w-10 h-10 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center transition-all group-hover:bg-[#1459DD] group-hover:border-[#1459DD]">
+                                    <div class="w-10 h-10 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center transition-all group-hover:bg-[#0E0F12] group-hover:border-[#0E0F12]">
                                         <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 group-hover:text-white transition-colors"></i>
                                     </div>
                                 </div>

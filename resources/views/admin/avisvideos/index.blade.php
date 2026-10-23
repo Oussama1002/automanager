@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 
-@section('title' , 'Avis videos | nado.ma')
+@section('title' , 'Avis videos | automanager.ma')
 
 
 @section('content')

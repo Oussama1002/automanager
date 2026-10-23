@@ -44,8 +44,8 @@
                         inter: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        primary: '#1459DD',
-                        accent: '#F37021',
+                        primary: '#0E0F12',
+                        accent: '#C8A24B',
                     }
                 }
             }
@@ -61,7 +61,7 @@
         }
 
         ::selection {
-            background-color: #F37021;
+            background-color: #C8A24B;
             color: white;
         }
 
@@ -95,11 +95,11 @@
                 : route('nadoautoenchere.register');
         @endphp
         <a href="{{ $acheterUrl }}"
-           class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#1459DD] hover:bg-slate-100">
+           class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#0E0F12] hover:bg-slate-100">
             Acheter
         </a>
         <a href="{{ route('nadoautoenchere.vendre') }}"
-           class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#F37021] hover:bg-orange-50">
+           class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#C8A24B] hover:bg-orange-50">
             Vendre
         </a>
     @endsection
@@ -123,13 +123,13 @@
                 Ventes aux enchères de véhicules d'occasion
             </h1>
 
-            <p class="text-sm md:text-base font-black uppercase tracking-[0.25em] text-[#F37021] mb-6">
+            <p class="text-sm md:text-base font-black uppercase tracking-[0.25em] text-[#C8A24B] mb-6">
                 Transparence • Professionnalisme • Tranquillité
             </p>
 
             <!-- CTA SCROLL BUTTON -->
             <button onclick="document.getElementById('comment-ca-marche').scrollIntoView({ behavior: 'smooth' })"
-                class="inline-flex items-center gap-3 px-8 py-4 mb-12 bg-[#F37021]/20 text-[#F37021] rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-[#F37021] hover:text-white transition-all shadow-md active:scale-95 cursor-pointer border-none backdrop-blur-sm">
+                class="inline-flex items-center gap-3 px-8 py-4 mb-12 bg-[#C8A24B]/20 text-[#C8A24B] rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-[#C8A24B] hover:text-white transition-all shadow-md active:scale-95 cursor-pointer border-none backdrop-blur-sm">
                 Comment ça marche
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </button>
@@ -150,7 +150,7 @@
                     }
                 @endphp
                 <a href="{{ $participerUrl }}"
-                    class="px-10 py-5 bg-[#F37021] text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:scale-105 transition-all shadow-xl shadow-[#F37021]/20 active:scale-95 flex items-center gap-3 cursor-pointer border-none decoration-transparent">
+                    class="px-10 py-5 bg-[#C8A24B] text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:scale-105 transition-all shadow-xl shadow-[#C8A24B]/20 active:scale-95 flex items-center gap-3 cursor-pointer border-none decoration-transparent">
                     Participer aux enchères <i data-lucide="arrow-up-right" class="w-[18px] h-[18px]"></i>
                 </a>
 
@@ -162,7 +162,7 @@
                 @endphp
                 <a href="{{ $voirVehiculesUrl }}"
                    class="px-10 py-5 bg-white/90 backdrop-blur-sm text-slate-900 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white transition-all flex items-center gap-3 cursor-pointer border-none decoration-transparent active:scale-95">
-                    <i data-lucide="eye" class="w-[18px] h-[18px] text-[#1459DD]"></i>
+                    <i data-lucide="eye" class="w-[18px] h-[18px] text-[#0E0F12]"></i>
                     Voir les véhicules
                 </a>
             </div>
@@ -172,15 +172,15 @@
 
     <!-- EXPERTISE SECTION -->
     <section class="py-32 bg-white relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-96 h-96 bg-[#1459DD]/5 blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-[#0E0F12]/5 blur-[120px] pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-20">
 
                 <div class="text-left">
                     <div
-                        class="inline-flex items-center gap-2 px-4 py-2 bg-[#F37021]/10 border border-[#F37021]/20 rounded-full mb-8">
-                        <i data-lucide="sparkles" class="w-4 h-4 text-[#F37021]"></i>
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-[#C8A24B]/10 border border-[#C8A24B]/20 rounded-full mb-8">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-[#C8A24B]"></i>
                         <span class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-600">NOTRE
                             EXPERTISE</span>
                     </div>
@@ -188,8 +188,8 @@
                     <h2
                         class="text-4xl md:text-6xl font-black text-slate-900 leading-[0.9] tracking-tighter uppercase mb-8">
                         Bénéficiez de <br />
-                        <span class="text-[#1459DD]">notre expertise</span> <br />
-                        pour vos <span class="text-[#F37021]">profits</span>
+                        <span class="text-[#0E0F12]">notre expertise</span> <br />
+                        pour vos <span class="text-[#C8A24B]">profits</span>
                     </h2>
 
                     <p class="text-xl text-slate-600 font-medium leading-relaxed mb-12">
@@ -200,8 +200,8 @@
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
                             <div
-                                class="w-12 h-12 bg-[#1459DD]/10 rounded-2xl flex items-center justify-center shrink-0">
-                                <i data-lucide="shield-check" class="w-6 h-6 text-[#1459DD]"></i>
+                                class="w-12 h-12 bg-[#0E0F12]/10 rounded-2xl flex items-center justify-center shrink-0">
+                                <i data-lucide="shield-check" class="w-6 h-6 text-[#0E0F12]"></i>
                             </div>
                             <div>
                                 <h3 class="text-lg font-black text-slate-900 uppercase mb-2">Véhicules certifiés</h3>
@@ -212,8 +212,8 @@
 
                         <div class="flex items-start gap-4">
                             <div
-                                class="w-12 h-12 bg-[#F37021]/10 rounded-2xl flex items-center justify-center shrink-0">
-                                <i data-lucide="trending-up" class="w-6 h-6 text-[#F37021]"></i>
+                                class="w-12 h-12 bg-[#C8A24B]/10 rounded-2xl flex items-center justify-center shrink-0">
+                                <i data-lucide="trending-up" class="w-6 h-6 text-[#C8A24B]"></i>
                             </div>
                             <div>
                                 <h3 class="text-lg font-black text-slate-900 uppercase mb-2">Prix compétitifs</h3>
@@ -224,8 +224,8 @@
 
                         <div class="flex items-start gap-4">
                             <div
-                                class="w-12 h-12 bg-[#F37021]/20 rounded-2xl flex items-center justify-center shrink-0">
-                                <i data-lucide="award" class="w-6 h-6 text-[#F37021]"></i>
+                                class="w-12 h-12 bg-[#C8A24B]/20 rounded-2xl flex items-center justify-center shrink-0">
+                                <i data-lucide="award" class="w-6 h-6 text-[#C8A24B]"></i>
                             </div>
                             <div>
                                 <h3 class="text-lg font-black text-slate-900 uppercase mb-2">Accompagnement premium
@@ -244,7 +244,7 @@
                             class="rounded-[2.5rem] w-full h-auto object-cover" alt="Expertise Auto Enchère" />
                     </div>
                     <div
-                        class="absolute -bottom-8 -left-8 w-32 h-32 bg-[#1459DD] rounded-[2rem] flex items-center justify-center -rotate-12 shadow-2xl border-[6px] border-white">
+                        class="absolute -bottom-8 -left-8 w-32 h-32 bg-[#0E0F12] rounded-[2rem] flex items-center justify-center -rotate-12 shadow-2xl border-[6px] border-white">
                         <i data-lucide="gavel" class="w-12 h-12 text-white"></i>
                     </div>
                 </div>
@@ -259,12 +259,12 @@
             <div class="text-center mb-16">
                 <div
                     class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 rounded-full mb-6">
-                    <i data-lucide="users" class="w-4 h-4 text-[#1459DD]"></i>
+                    <i data-lucide="users" class="w-4 h-4 text-[#0E0F12]"></i>
                     <span class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-600">NOS
                         PARTENAIRES</span>
                 </div>
                 <h2 class="text-3xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
-                    Ils nous ont fait <span class="text-[#1459DD]">confiance</span>
+                    Ils nous ont fait <span class="text-[#0E0F12]">confiance</span>
                 </h2>
                 <p class="text-slate-600 font-medium text-lg max-w-3xl mx-auto leading-relaxed">
                     Chaque enchère, les experts AUTO ENCHÈRE répondent à ces principes, et c’est aussi pour cela que nos clients sont plus que de simples clients, ce sont nos partenaires de confiance.
@@ -294,19 +294,19 @@
 
     <!-- COMMENT ÇA MARCHE SECTION -->
     <section id="comment-ca-marche" class="py-32 bg-white relative overflow-hidden">
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#F37021]/5 blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#C8A24B]/5 blur-[120px] pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center mb-20">
                 <div
-                    class="inline-flex items-center gap-2 px-4 py-2 bg-[#1459DD]/10 border border-[#1459DD]/20 rounded-full mb-6">
-                    <i data-lucide="check-circle-2" class="w-4 h-4 text-[#1459DD]"></i>
+                    class="inline-flex items-center gap-2 px-4 py-2 bg-[#0E0F12]/10 border border-[#0E0F12]/20 rounded-full mb-6">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-[#0E0F12]"></i>
                     <span class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-600">PROCESSUS
                         SIMPLE</span>
                 </div>
                 <h2
                     class="text-4xl md:text-7xl font-black text-slate-900 uppercase tracking-tighter leading-[0.85] mb-6">
-                    Comment <span class="text-[#1459DD]">ça marche</span>
+                    Comment <span class="text-[#0E0F12]">ça marche</span>
                 </h2>
                 <p class="text-xl text-slate-600 font-medium max-w-3xl mx-auto">
                     8 étapes simples pour participer à nos enchères et acquérir le véhicule de vos rêves
@@ -316,13 +316,13 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Step 1 -->
                 <div
-                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#1459DD]/30 transition-all text-left">
+                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#0E0F12]/30 transition-all text-left">
                     <div
-                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#1459DD] rounded-2xl flex items-center justify-center shadow-xl">
+                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#0E0F12] rounded-2xl flex items-center justify-center shadow-xl">
                         <span class="text-white font-black text-xl">1</span>
                     </div>
                     <div
-                        class="w-16 h-16 bg-[#F37021]/10 text-[#F37021] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#F37021] group-hover:text-white transition-all">
+                        class="w-16 h-16 bg-[#C8A24B]/10 text-[#C8A24B] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#C8A24B] group-hover:text-white transition-all">
                         <i data-lucide="user-plus" class="w-7 h-7"></i>
                     </div>
                     <h3 class="text-xl font-black text-slate-900 uppercase tracking-tight mb-3 leading-tight">Créez un
@@ -333,13 +333,13 @@
 
                 <!-- Step 2 -->
                 <div
-                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#1459DD]/30 transition-all text-left">
+                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#0E0F12]/30 transition-all text-left">
                     <div
-                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#1459DD] rounded-2xl flex items-center justify-center shadow-xl">
+                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#0E0F12] rounded-2xl flex items-center justify-center shadow-xl">
                         <span class="text-white font-black text-xl">2</span>
                     </div>
                     <div
-                        class="w-16 h-16 bg-[#F37021]/10 text-[#F37021] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#F37021] group-hover:text-white transition-all">
+                        class="w-16 h-16 bg-[#C8A24B]/10 text-[#C8A24B] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#C8A24B] group-hover:text-white transition-all">
                         <i data-lucide="file-text" class="w-7 h-7"></i>
                     </div>
                     <h3 class="text-xl font-black text-slate-900 uppercase tracking-tight mb-3 leading-tight">Parcourez
@@ -350,13 +350,13 @@
 
                 <!-- Step 3 -->
                 <div
-                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#1459DD]/30 transition-all text-left">
+                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#0E0F12]/30 transition-all text-left">
                     <div
-                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#1459DD] rounded-2xl flex items-center justify-center shadow-xl">
+                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#0E0F12] rounded-2xl flex items-center justify-center shadow-xl">
                         <span class="text-white font-black text-xl">3</span>
                     </div>
                     <div
-                        class="w-16 h-16 bg-[#F37021]/10 text-[#F37021] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#F37021] group-hover:text-white transition-all">
+                        class="w-16 h-16 bg-[#C8A24B]/10 text-[#C8A24B] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#C8A24B] group-hover:text-white transition-all">
                         <i data-lucide="heart" class="w-7 h-7"></i>
                     </div>
                     <h3 class="text-xl font-black text-slate-900 uppercase tracking-tight mb-3 leading-tight">Ajoutez à
@@ -367,13 +367,13 @@
 
                 <!-- Step 4 -->
                 <div
-                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#1459DD]/30 transition-all text-left">
+                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#0E0F12]/30 transition-all text-left">
                     <div
-                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#1459DD] rounded-2xl flex items-center justify-center shadow-xl">
+                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#0E0F12] rounded-2xl flex items-center justify-center shadow-xl">
                         <span class="text-white font-black text-xl">4</span>
                     </div>
                     <div
-                        class="w-16 h-16 bg-[#F37021]/10 text-[#F37021] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#F37021] group-hover:text-white transition-all">
+                        class="w-16 h-16 bg-[#C8A24B]/10 text-[#C8A24B] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#C8A24B] group-hover:text-white transition-all">
                         <i data-lucide="map-pin" class="w-7 h-7"></i>
                     </div>
                     <h3 class="text-xl font-black text-slate-900 uppercase tracking-tight mb-3 leading-tight">Visitez
@@ -384,13 +384,13 @@
 
                 <!-- Step 5 -->
                 <div
-                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#1459DD]/30 transition-all text-left">
+                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#0E0F12]/30 transition-all text-left">
                     <div
-                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#1459DD] rounded-2xl flex items-center justify-center shadow-xl">
+                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#0E0F12] rounded-2xl flex items-center justify-center shadow-xl">
                         <span class="text-white font-black text-xl">5</span>
                     </div>
                     <div
-                        class="w-16 h-16 bg-[#F37021]/10 text-[#F37021] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#F37021] group-hover:text-white transition-all">
+                        class="w-16 h-16 bg-[#C8A24B]/10 text-[#C8A24B] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#C8A24B] group-hover:text-white transition-all">
                         <i data-lucide="banknote" class="w-7 h-7"></i>
                     </div>
                     <h3 class="text-xl font-black text-slate-900 uppercase tracking-tight mb-3 leading-tight">Déposez
@@ -401,13 +401,13 @@
 
                 <!-- Step 6 -->
                 <div
-                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#1459DD]/30 transition-all text-left">
+                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#0E0F12]/30 transition-all text-left">
                     <div
-                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#1459DD] rounded-2xl flex items-center justify-center shadow-xl">
+                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#0E0F12] rounded-2xl flex items-center justify-center shadow-xl">
                         <span class="text-white font-black text-xl">6</span>
                     </div>
                     <div
-                        class="w-16 h-16 bg-[#F37021]/10 text-[#F37021] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#F37021] group-hover:text-white transition-all">
+                        class="w-16 h-16 bg-[#C8A24B]/10 text-[#C8A24B] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#C8A24B] group-hover:text-white transition-all">
                         <i data-lucide="gavel" class="w-7 h-7"></i>
                     </div>
                     <h3 class="text-xl font-black text-slate-900 uppercase tracking-tight mb-3 leading-tight">Placez
@@ -418,13 +418,13 @@
 
                 <!-- Step 7 -->
                 <div
-                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#1459DD]/30 transition-all text-left">
+                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#0E0F12]/30 transition-all text-left">
                     <div
-                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#1459DD] rounded-2xl flex items-center justify-center shadow-xl">
+                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#0E0F12] rounded-2xl flex items-center justify-center shadow-xl">
                         <span class="text-white font-black text-xl">7</span>
                     </div>
                     <div
-                        class="w-16 h-16 bg-[#F37021]/10 text-[#F37021] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#F37021] group-hover:text-white transition-all">
+                        class="w-16 h-16 bg-[#C8A24B]/10 text-[#C8A24B] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#C8A24B] group-hover:text-white transition-all">
                         <i data-lucide="file-check" class="w-7 h-7"></i>
                     </div>
                     <h3 class="text-xl font-black text-slate-900 uppercase tracking-tight mb-3 leading-tight">Signez
@@ -435,13 +435,13 @@
 
                 <!-- Step 8 -->
                 <div
-                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#1459DD]/30 transition-all text-left">
+                    class="group relative bg-white border border-slate-100 rounded-[2.5rem] p-8 hover:shadow-2xl hover:border-[#0E0F12]/30 transition-all text-left">
                     <div
-                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#1459DD] rounded-2xl flex items-center justify-center shadow-xl">
+                        class="absolute -top-4 -right-4 w-12 h-12 bg-[#0E0F12] rounded-2xl flex items-center justify-center shadow-xl">
                         <span class="text-white font-black text-xl">8</span>
                     </div>
                     <div
-                        class="w-16 h-16 bg-[#F37021]/10 text-[#F37021] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#F37021] group-hover:text-white transition-all">
+                        class="w-16 h-16 bg-[#C8A24B]/10 text-[#C8A24B] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#C8A24B] group-hover:text-white transition-all">
                         <i data-lucide="car" class="w-7 h-7"></i>
                     </div>
                     <h3 class="text-xl font-black text-slate-900 uppercase tracking-tight mb-3 leading-tight">Récupérez
@@ -456,13 +456,13 @@
     <!-- CONTACT SECTION -->
     <section class="py-24 bg-[#0F172A] relative overflow-hidden">
         <div
-            class="absolute top-0 right-0 w-1/2 h-full bg-[#1459DD]/10 skew-x-[-15deg] translate-x-32 pointer-events-none">
+            class="absolute top-0 right-0 w-1/2 h-full bg-[#0E0F12]/10 skew-x-[-15deg] translate-x-32 pointer-events-none">
         </div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter mb-6">
-                    Pour plus <span class="text-[#F37021]">d'infos</span>
+                    Pour plus <span class="text-[#C8A24B]">d'infos</span>
                 </h2>
                 <p class="text-xl text-slate-400 font-medium max-w-2xl mx-auto">
                     Notre équipe est à votre disposition pour répondre à toutes vos questions
@@ -473,13 +473,13 @@
                 <a href="tel:+212663339072"
                     class="group bg-white/5 backdrop-blur-md border border-white/10 rounded-[2.5rem] p-10 hover:bg-white/10 hover:border-white/20 transition-all text-left decoration-transparent">
                     <div
-                        class="w-16 h-16 bg-[#1459DD]/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#1459DD] transition-all">
+                        class="w-16 h-16 bg-[#0E0F12]/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#0E0F12] transition-all">
                         <i data-lucide="phone"
-                            class="w-7 h-7 text-[#1459DD] group-hover:text-white transition-colors"></i>
+                            class="w-7 h-7 text-[#0E0F12] group-hover:text-white transition-colors"></i>
                     </div>
                     <span class="block text-[10px] font-black text-white/60 uppercase tracking-widest mb-3">TÉLÉPHONE
                         1</span>
-                    <span class="text-2xl font-black text-white group-hover:text-[#F37021] transition-colors">
+                    <span class="text-2xl font-black text-white group-hover:text-[#C8A24B] transition-colors">
                         +212 6 63 33 90 72
                     </span>
                 </a>
@@ -487,13 +487,13 @@
                 <a href="tel:+212669559315"
                     class="group bg-white/5 backdrop-blur-md border border-white/10 rounded-[2.5rem] p-10 hover:bg-white/10 hover:border-white/20 transition-all text-left decoration-transparent">
                     <div
-                        class="w-16 h-16 bg-[#F37021]/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#F37021] transition-all">
+                        class="w-16 h-16 bg-[#C8A24B]/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#C8A24B] transition-all">
                         <i data-lucide="phone"
-                            class="w-7 h-7 text-[#F37021] group-hover:text-white transition-colors"></i>
+                            class="w-7 h-7 text-[#C8A24B] group-hover:text-white transition-colors"></i>
                     </div>
                     <span class="block text-[10px] font-black text-white/60 uppercase tracking-widest mb-3">TÉLÉPHONE
                         2</span>
-                    <span class="text-2xl font-black text-white group-hover:text-[#F37021] transition-colors">
+                    <span class="text-2xl font-black text-white group-hover:text-[#C8A24B] transition-colors">
                         +212 6 69 55 93 15
                     </span>
                 </a>
@@ -502,12 +502,12 @@
             <div class="mt-12 text-center">
                 <div class="max-w-4xl mx-auto bg-white/5 backdrop-blur-md border border-white/10 rounded-[2.5rem] overflow-hidden">
                     <div class="px-8 py-6 flex items-start gap-4">
-                        <div class="w-12 h-12 rounded-2xl bg-[#F37021]/20 flex items-center justify-center shrink-0">
-                            <i data-lucide="map-pin" class="w-6 h-6 text-[#F37021]"></i>
+                        <div class="w-12 h-12 rounded-2xl bg-[#C8A24B]/20 flex items-center justify-center shrink-0">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-[#C8A24B]"></i>
                         </div>
                         <div class="text-left">
                             <span class="block text-[10px] font-black text-white/60 uppercase tracking-widest mb-2">NOTRE PARKING</span>
-                            <div class="text-xl font-black text-white leading-tight">NADO.MA - AUTO ENCHÈRE</div>
+                            <div class="text-xl font-black text-white leading-tight">AUTOMANAGER.MA - AUTO ENCHÈRE</div>
                             <div class="text-sm font-bold text-white/75 leading-relaxed mt-2">
                                 N°11, Sakan Mounawar, Rue 93<br>
                                 Bd Haifa, Casablanca 20300
@@ -516,12 +516,12 @@
                     </div>
                     <div class="bg-white">
                         <iframe
-                            title="NADO.MA - AUTO ENCHÈRE (Google Maps)"
+                            title="AUTOMANAGER.MA - AUTO ENCHÈRE (Google Maps)"
                             class="w-full"
                             style="height:360px;border:0;"
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"
-                            src="https://www.google.com/maps?q={{ urlencode('NADO.MA - AUTO ENCHÈRE, N°11, Sakan Mounawar, Rue 93, Bd Haifa, Casablanca 20300') }}&output=embed">
+                            src="https://www.google.com/maps?q={{ urlencode('AUTOMANAGER.MA - AUTO ENCHÈRE, N°11, Sakan Mounawar, Rue 93, Bd Haifa, Casablanca 20300') }}&output=embed">
                         </iframe>
                     </div>
                 </div>

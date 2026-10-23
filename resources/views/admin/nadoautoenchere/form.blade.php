@@ -344,7 +344,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Collez le lien de partage : la latitude et la longitude se remplissent
             automatiquement si le lien les contient. Sinon, saisissez-les à la main
             (dans Google Maps, clic droit sur le point → les coordonnées sont copiées).
-            Laissez vide pour utiliser le showroom NADO par défaut.
+            Laissez vide pour utiliser le showroom AUTOMANAGER par défaut.
         </small>
         @error('maps_url')
             <div class="invalid-feedback">{{ $message }}</div>
@@ -359,7 +359,7 @@ document.addEventListener("DOMContentLoaded", function () {
                id="adresse"
                name="adresse"
                class="form-control @error('adresse') is-invalid @enderror"
-               placeholder="ex: NADO.ma — Auto Enchère, Casablanca"
+               placeholder="ex: AUTOMANAGER.ma — Auto Enchère, Casablanca"
                value="{{ old('adresse', $encheres->adresse) }}">
         @error('adresse')
             <div class="invalid-feedback">{{ $message }}</div>

@@ -18,7 +18,7 @@
               <ul class="navbar-nav ms-3">
                 <li class="nav-item">
                     <a class="nav-link fw-semibold text-dark" style="color:black!important;" href="{{ route('admin.dashboard') }}">
-                        Nado
+                        Automanager
                     </a>
                 </li>
             </ul>

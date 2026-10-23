@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         {{ $annonce->titre ?: $vehicleName }}
-        | Nado.ma
+        | Automanager
     </title>
 
     {{-- Open Graph Meta Tags --}}
@@ -41,9 +41,9 @@
 <style>
     :root {
         --bg-light: #f8fafc;
-        --blue-primary: #1459DD;
+        --blue-primary: #0E0F12;
         --slate-900: #0f172a;
-        --active-color: #1459DD;
+        --active-color: #0E0F12;
         --slate-700: #334155;
         --slate-500: #64748b;
         --slate-200: #e2e8f0;
@@ -71,7 +71,7 @@
 
     /* Top Bar */
     .top-bar {
-        background-color: #FDD817;
+        background-color: #C8A24B;
         color: var(--slate-900);
         padding: 0.625rem 1rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -190,7 +190,7 @@
     }
 
     .logo-text .yellow {
-        color: #FDD817;
+        color: #C8A24B;
     }
 
     .logo-link img {
@@ -230,7 +230,7 @@
 
     .nav-menu a.highlighted {
         color: var(--blue-primary);
-        background: #eff6ff;
+        background: #FAF6EC;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     }
 
@@ -398,7 +398,7 @@
     .drawer-cta {
         width: 100%;
         padding: 1.5rem;
-        background: #FDD817;
+        background: #C8A24B;
         color: var(--slate-900);
         border: none;
         border-radius: 2rem;
@@ -412,7 +412,7 @@
         justify-content: center;
         gap: 0.75rem;
         text-decoration: none;
-        box-shadow: 0 20px 40px -10px rgba(253, 216, 23, 0.4);
+        box-shadow: 0 20px 40px -10px rgba(200,162,75, 0.4);
         margin-bottom: 3rem;
         transition: transform 0.2s;
     }
@@ -540,15 +540,15 @@
     }
 
     .certified-badge {
-        background: #eff6ff;
+        background: #FAF6EC;
         color: var(--blue-primary);
-        border: 1px solid #dbeafe;
+        border: 1px solid #F2E9D2;
     }
 
     .particulier-badge {
-        background: #eff6ff;
-        color: #1d4ed8;
-        border: 1px solid #bfdbfe;
+        background: #FAF6EC;
+        color: #A17E31;
+        border: 1px solid #E8D7A9;
     }
 
     .pro-badge {
@@ -879,8 +879,8 @@
     }
 
     .expertise-hero {
-        background: #eff6ff;
-        border: 1px solid #dbeafe;
+        background: #FAF6EC;
+        border: 1px solid #F2E9D2;
         padding: 1.5rem;
         border-radius: 1rem;
         display: flex;
@@ -961,7 +961,7 @@
         height: 2.25rem;
         flex-shrink: 0;
         background: white;
-        border: 2px solid #3b82f6;
+        border: 2px solid #C8A24B;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -972,7 +972,7 @@
         content: '';
         width: 0.5rem;
         height: 0.5rem;
-        background: #3b82f6;
+        background: #C8A24B;
         border-radius: 50%;
     }
 
@@ -989,7 +989,7 @@
     .shield-icon-circle {
         width: 5rem;
         height: 5rem;
-        background: #eff6ff;
+        background: #FAF6EC;
         color: var(--blue-primary);
         border-radius: 50%;
         display: flex;
@@ -1016,7 +1016,7 @@
     }
 
     .secondary-button:hover {
-        background: #1d4ed8;
+        background: #A17E31;
     }
 
     /* Finance Simulator */
@@ -1040,7 +1040,7 @@
     }
 
     .finance-icon {
-        background: #eff6ff;
+        background: #FAF6EC;
         width: 48px;
         height: 48px;
         display: flex;
@@ -1206,13 +1206,13 @@
 
     .duration-btn.active {
         border-color: var(--blue-primary);
-        background: #eff6ff;
+        background: #FAF6EC;
         color: var(--blue-primary);
     }
 
     .profile-btn.active {
         border-color: var(--blue-primary);
-        background: #eff6ff;
+        background: #FAF6EC;
         color: var(--blue-primary);
     }
 
@@ -1277,7 +1277,7 @@
     }
 
     .chat-btn:hover {
-        background: #1d4ed8;
+        background: #A17E31;
     }
 
     .chat-btn:active {
@@ -1340,7 +1340,7 @@
         align-items: center;
         gap: 0.5rem;
         padding: 0.5rem 1rem;
-        background: #eff6ff;
+        background: #FAF6EC;
         color: var(--blue-primary);
         border-radius: 0.5rem;
         font-weight: 700;
@@ -1384,7 +1384,7 @@
     }
 
     .btn-call {
-        background: #FDD817;
+        background: #C8A24B;
         color: var(--slate-900);
         font-size: 1.125rem;
         /* Match chat button size */
@@ -1560,7 +1560,7 @@
     .trust-icon-box {
         width: 80px;
         height: 80px;
-        background: #eff6ff;
+        background: #FAF6EC;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -1897,7 +1897,7 @@
     }
 
     .chat-bubble.user {
-        background: var(--blue-primary, #1459DD);
+        background: var(--blue-primary, #0E0F12);
         color: white;
         align-self: flex-end;
         border-radius: 18px 18px 4px 18px;
@@ -1994,19 +1994,19 @@
 </style>
 
 <body>
-    {{-- ════════════════ NADO NAVBAR (matches front blade) ════════════════ --}}
+    {{-- ════════════════ AUTOMANAGER NAVBAR (matches front blade) ════════════════ --}}
     @php $navClient = Auth::guard('client')->user(); @endphp
 
     <header class="nado-navbar sticky-top">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <script src="https://unpkg.com/lucide@latest"></script>
 
-        <div class="nv-top-bar" style="background-color: #FDD817;">
+        <div class="nv-top-bar" style="background-color: #C8A24B;">
             <div class="nv-container nv-top-bar-content">
                 <div class="nv-contact-info">
                     <div class="nv-info-item">
                         <i data-lucide="mail"></i>
-                        <a href="mailto:contact@nado.ma">contact@nado.ma</a>
+                        <a href="mailto:contact@automanager.ma">contact@automanager.ma</a>
                     </div>
                     <div class="nv-info-item">
                         <i data-lucide="phone-call"></i>
@@ -2026,7 +2026,7 @@
                 <div class="nv-left-section">
                     <a href="{{ route('index') }}" class="nv-logo-link">
                         <img src="{{ asset('storage/logos/UAfjepY72Xe7grWDva9cqSlRFsRKNZPV3HBDbBP1.png') }}"
-                             alt="NADO" style="height: 36px; width: auto; object-fit: contain;" />
+                             alt="AUTOMANAGER" style="height: 36px; width: auto; object-fit: contain;" />
                     </a>
 
                     <div class="nv-desktop-menu">
@@ -2087,21 +2087,21 @@
             <div class="nv-drawer-content">
                 <div class="nv-drawer-header">
                     <span class="nv-logo-text">
-                        <span style="color: #1459DD;">NA</span><span style="color: #FDD817;">DO</span>
+                        <span style="color: #0E0F12;">NA</span><span style="color: #C8A24B;">DO</span>
                     </span>
                     <button id="nvCloseDrawerBtn" class="nv-close-btn"><i data-lucide="x"></i></button>
                 </div>
                 <div class="nv-drawer-links">
                     <a href="{{ route('achat.index') }}">Achat</a>
                     <a href="{{ route('vente.form') }}">Vente</a>
-                    <a href="{{ route('nadoautoenchere.prelogin') }}" style="color:#1459DD;">Auto-enchère</a>
+                    <a href="{{ route('nadoautoenchere.prelogin') }}" style="color:#0E0F12;">Auto-enchère</a>
                     <a href="{{ route('reprise.form') }}">Reprise</a>
                     <a href="{{ route('financement.index') }}">Auto-financement</a>
                     <a href="{{ route('about.index') }}">À propos</a>
                 </div>
                 <div class="nv-drawer-footer">
                     @if ($navClient)
-                        <a href="{{ route('client.dashboard') }}" class="nv-drawer-cta" style="background-color:#FDD817;">
+                        <a href="{{ route('client.dashboard') }}" class="nv-drawer-cta" style="background-color:#C8A24B;">
                             <i data-lucide="layout-dashboard"></i> Mon espace
                         </a>
                         <form method="POST" action="{{ route('logout') }}" style="margin:10px 0 0;">
@@ -2112,7 +2112,7 @@
                             </button>
                         </form>
                     @else
-                        <a href="{{ route('client.login') }}" class="nv-drawer-cta" style="background-color:#FDD817;">
+                        <a href="{{ route('client.login') }}" class="nv-drawer-cta" style="background-color:#C8A24B;">
                             <i data-lucide="user"></i> Publier une annonce
                         </a>
                     @endif
@@ -2132,12 +2132,12 @@
             .nv-container { max-width: 1280px; margin: 0 auto; padding: 0 16px; display: flex; justify-content: space-between; align-items: center; width: 100%; }
             .nv-contact-info { display: flex; gap: 12px; }
             .nv-info-item { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: .1em; opacity: .8; }
-            .nv-info-item i { width: 12px; height: 12px; color: #1459DD; }
+            .nv-info-item i { width: 12px; height: 12px; color: #0E0F12; }
             .nv-info-item a { color: inherit; text-decoration: none; transition: color .2s; }
-            .nv-info-item a:hover { color: #1459DD; }
+            .nv-info-item a:hover { color: #0E0F12; }
             .nv-social-links { display: flex; gap: 20px; }
             .nv-social-links a { color: #0f172a; opacity: .6; transition: .2s; }
-            .nv-social-links a:hover { color: #1459DD; opacity: 1; }
+            .nv-social-links a:hover { color: #0E0F12; opacity: 1; }
             .nv-social-links i { width: 20px; height: 20px; }
 
             .nv-main-nav { background: #fff; border-bottom: 1px solid #e2e8f0; height: 96px; display: flex; align-items: center; }
@@ -2150,9 +2150,9 @@
             .nv-desktop-menu { display: none; align-items: center; gap: 12px; }
             @media (min-width: 1024px) { .nv-desktop-menu { display: flex; } }
             .nv-nav-link { font-size: 14.4px; font-weight: 700; text-transform: uppercase; letter-spacing: .025em; padding: 8px 12px; border-radius: 16px; color: #334155; text-decoration: none; transition: .2s; background: transparent; border: none; cursor: pointer; }
-            .nv-nav-link:hover { background-color: #f1f5f9; color: #1459DD; }
-            .nv-highlight-link { color: #1459DD; background-color: #dbeafe; }
-            .nv-highlight-link:hover { background-color: #bfdbfe; }
+            .nv-nav-link:hover { background-color: #f1f5f9; color: #0E0F12; }
+            .nv-highlight-link { color: #0E0F12; background-color: #F2E9D2; }
+            .nv-highlight-link:hover { background-color: #E8D7A9; }
 
             .nv-right-section { margin-left: auto; display: flex; align-items: center; gap: 12px; }
             .nv-cta-button { display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 16px; font-size: 15px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; text-decoration: none; cursor: pointer; transition: .2s; }
@@ -2170,8 +2170,8 @@
                 vertical-align: middle;
             }
             @media (max-width: 1280px) { .nv-user-name { max-width: 100px; } }
-            .nv-outline-btn { background-color: rgba(253,216,23,.2); border: 1px solid rgba(253,216,23,.5); color: #0f172a; }
-            .nv-outline-btn:hover { background-color: #FDD817; }
+            .nv-outline-btn { background-color: rgba(200,162,75,.2); border: 1px solid rgba(200,162,75,.5); color: #0f172a; }
+            .nv-outline-btn:hover { background-color: #C8A24B; }
 
             .nv-mobile-menu-btn { display: block; padding: 12px; background-color: #f8fafc; border: none; border-radius: 12px; cursor: pointer; color: #0f172a; }
             @media (min-width: 1024px) { .nv-mobile-menu-btn { display: none; } }
@@ -2215,7 +2215,7 @@
                 height: 14px;
             }
             .nv-user-dropdown-menu a, .nv-user-dropdown-menu button { display: flex; align-items: center; width: 100%; padding: 12px 16px; font-size: 14px; font-weight: 700; text-align: left; background: none; border: none; cursor: pointer; text-decoration: none; color: #334155; }
-            .nv-user-dropdown-menu a:hover { background-color: #f8fafc; color: #1459DD; }
+            .nv-user-dropdown-menu a:hover { background-color: #f8fafc; color: #0E0F12; }
             .nv-user-dropdown-menu i { width: 16px; height: 16px; margin-right: 8px; }
             .nv-logout-btn { color: #dc2626 !important; }
             .nv-logout-btn:hover { background-color: #fef2f2 !important; }
@@ -2231,7 +2231,7 @@
             .nv-close-btn:hover { color: #0f172a; }
             .nv-drawer-links { flex: 1; overflow-y: auto; padding: 16px 32px; display: flex; flex-direction: column; gap: 24px; }
             .nv-drawer-links a { font-size: 18px; font-weight: 900; text-transform: uppercase; letter-spacing: -.025em; color: #0f172a; text-decoration: none; transition: .2s; }
-            .nv-drawer-links a:hover { color: #1459DD; }
+            .nv-drawer-links a:hover { color: #0E0F12; }
             .nv-drawer-footer { padding: 40px; display: flex; flex-direction: column; align-items: center; }
             .nv-drawer-cta { width: 100%; padding: 24px; border-radius: 32px; font-size: 14px; font-weight: 900; text-transform: uppercase; letter-spacing: .2em; color: #0f172a; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 48px; transition: transform .2s; }
             .nv-drawer-cta:active { transform: scale(.95); }
@@ -2286,7 +2286,7 @@
                     <div class="badge-row">
                         <span class="badge id-badge">Réf: VC{{ $annonce->id }}</span>
                         @if(!empty($annonce->certifie))
-                            <span class="badge certified-badge">Certifié NADO Expert</span>
+                            <span class="badge certified-badge">Certifié AUTOMANAGER Expert</span>
                         @elseif(!empty($annonce->particulie))
                             <span class="badge particulier-badge">Vendeur Particulier</span>
                         @elseif(!empty($annonce->pro))
@@ -2422,16 +2422,16 @@
                             </div>
 
                             {{-- Inline Offer Panel --}}
-                            <div id="offerPanel" style="display:none; margin-top:14px; background:#f0f6ff; border:1.5px solid #1459DD; border-radius:14px; padding:18px 20px; animation: fadeInPanel .25s ease;">
+                            <div id="offerPanel" style="display:none; margin-top:14px; background:#f0f6ff; border:1.5px solid #0E0F12; border-radius:14px; padding:18px 20px; animation: fadeInPanel .25s ease;">
                                 <style>
                                     @keyframes fadeInPanel { from { opacity:0; transform:translateY(-8px); } to { opacity:1; transform:translateY(0); } }
                                     #offerPanel .op-label { font-size:13px; color:#475569; margin-bottom:6px; font-weight:500; }
                                     #offerPanel .op-ref   { font-size:12px; color:#94a3b8; margin-bottom:12px; }
                                     #offerPanel .op-row   { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
                                     #offerPanel .op-input { flex:1; border:1.5px solid #cbd5e1; border-radius:9px; padding:9px 14px; font-size:15px; font-weight:600; color:#0f172a; outline:none; transition:border .2s; min-width: 160px; }
-                                    #offerPanel .op-input:focus { border-color:#1459DD; }
+                                    #offerPanel .op-input:focus { border-color:#0E0F12; }
                                     #offerPanel .op-currency { font-size:14px; color:#64748b; font-weight:600; white-space:nowrap; }
-                                    #offerPanel .op-submit { background:#1459DD; color:#fff; border:none; border-radius:9px; padding:9px 20px; font-size:14px; font-weight:600; cursor:pointer; transition:background .2s; white-space:nowrap; }
+                                    #offerPanel .op-submit { background:#0E0F12; color:#fff; border:none; border-radius:9px; padding:9px 20px; font-size:14px; font-weight:600; cursor:pointer; transition:background .2s; white-space:nowrap; }
                                     #offerPanel .op-submit:hover { background:#0e47b3; }
                                     #offerPanel .op-cancel { font-size:12px; color:#94a3b8; text-align:center; margin-top:10px; cursor:pointer; }
                                     #offerPanel .op-cancel:hover { color:#475569; }
@@ -2448,7 +2448,7 @@
                                 </style>
 
                                 @auth('client')
-                                <p class="op-label"><i class="fas fa-tag" style="color:#1459DD;margin-right:5px;"></i>Proposer votre prix</p>
+                                <p class="op-label"><i class="fas fa-tag" style="color:#0E0F12;margin-right:5px;"></i>Proposer votre prix</p>
                                 <p class="op-ref">Prix affiché : <strong>{{ number_format($annonce->prix, 0, ' ', ' ') }} MAD</strong></p>
                                 <form id="offerForm" method="POST" action="{{ route('annonces.proposerPrix', $annonce->id) }}" style="width:100%;">
                                     @csrf
@@ -2466,7 +2466,7 @@
                                 @else
                                 <div style="text-align:center; padding:8px 0;">
                                     <p style="font-size:13px; color:#475569; margin-bottom:12px;">Connectez-vous pour proposer un prix.</p>
-                                    <a href="{{ route('client.login') }}?redirect={{ urlencode(url()->current()) }}" class="op-submit" style="text-decoration:none; display:inline-block; background:#1459DD; color:#fff; border-radius:9px; padding:9px 20px; font-size:14px; font-weight:600;">
+                                    <a href="{{ route('client.login') }}?redirect={{ urlencode(url()->current()) }}" class="op-submit" style="text-decoration:none; display:inline-block; background:#0E0F12; color:#fff; border-radius:9px; padding:9px 20px; font-size:14px; font-weight:600;">
                                         <i class="fas fa-sign-in-alt"></i> Se connecter
                                     </a>
                                     <p class="op-cancel" onclick="toggleOfferPanel()">✕ Annuler</p>
@@ -2482,7 +2482,7 @@
                             </div>
                         </div>
                         <div class="trust-badge-footer">
-                            <span>PROGRAMME DE CONFIANCE NADO</span>
+                            <span>PROGRAMME DE CONFIANCE AUTOMANAGER</span>
                         </div>
                     </div>
                 </div>
@@ -2519,7 +2519,7 @@
                             ce véhicule affiche <strong class="desc-hl">{{ number_format($annonce->km ?? 0, 0, ',', ' ') }} km</strong> au compteur.
                             Il est équipé d'une boîte de vitesses <strong class="desc-hl">{{ ucfirst($annonce->box ?? $annonce->transmission ?? '') ?: 'N/A' }}</strong> et d'une
                             puissance fiscale de <strong class="desc-hl">{{ $annonce->cv ?? 'N/A' }} CV</strong>.
-                            Ce véhicule <strong class="desc-hl">{{ $annonce->nb_Door ?? '' }} portes</strong> est <strong class="desc-hl">certifié par NADO</strong>@if ($annonce->garantie ?? false), bénéficie d'une <strong class="desc-hl">garantie</strong>@endif.
+                            Ce véhicule <strong class="desc-hl">{{ $annonce->nb_Door ?? '' }} portes</strong> est <strong class="desc-hl">certifié par AUTOMANAGER</strong>@if ($annonce->garantie ?? false), bénéficie d'une <strong class="desc-hl">garantie</strong>@endif.
                             Disponible à <strong class="desc-hl">Casablanca</strong>, il est proposé au prix de
                             <strong class="desc-hl">{{ number_format($annonce->prix, 0, ',', ' ') }} DH</strong>.
                         </p>
@@ -2544,7 +2544,7 @@
                             Détails techniques</button>
                         <button class="tab-btn" data-tab="equipment"><i class="fas fa-list"></i> Équipements</button>
                         <button class="tab-btn" data-tab="expertise"><i class="fas fa-file-alt"></i>
-                            Expertise NADO</button>
+                            Expertise AUTOMANAGER</button>
                         <button class="tab-btn" data-tab="history"><i class="fas fa-history"></i> Historique</button>
                         <button class="tab-btn" data-tab="warranty"><i class="fas fa-shield-alt"></i>
                             Garantie</button>
@@ -2759,7 +2759,7 @@
                                 <div class="shield-icon-circle">
                                     <i class="fas fa-shield-alt" style="font-size:3rem;"></i>
                                 </div>
-                                <h3 style="font-size:1.5rem;font-weight:800;color:var(--slate-900);margin-bottom:0.5rem;">Garantie NADO Sérénité</h3>
+                                <h3 style="font-size:1.5rem;font-weight:800;color:var(--slate-900);margin-bottom:0.5rem;">Garantie AUTOMANAGER Sérénité</h3>
                                 <p style="color:var(--slate-500);font-size:0.875rem;margin-bottom:1.5rem;">Garantie de 1
                                     mois couvrant pièces et main d'œuvre, dans la limite de 1 000 km.</p>
                                 <button class="secondary-button">Consulter les conditions</button>
@@ -2843,7 +2843,7 @@
                 {{-- Trust Section --}}
                 <section class="trust-section">
                     <div class="trust-header">
-                        <h2 class="trust-main-title">POURQUOI FAIRE CONFIANCE À NADO ?</h2>
+                        <h2 class="trust-main-title">POURQUOI FAIRE CONFIANCE À AUTOMANAGER ?</h2>
                         <p class="trust-subtitle">Plus de 20 ans d'expertise dans l'automobile premium au Maroc. Nous
                             ne vendons pas seulement des voitures, nous offrons la tranquillité d'esprit.</p>
                     </div>
@@ -2863,7 +2863,7 @@
                         <div class="trust-item">
                             <div class="trust-icon-box"><i class="fas fa-trophy"></i></div>
                             <h3 class="trust-item-title">GARANTIE INCLUSE</h3>
-                            <p class="trust-item-desc">Roulez serein avec notre garantie NADO Sérénité couvrant pièces
+                            <p class="trust-item-desc">Roulez serein avec notre garantie AUTOMANAGER Sérénité couvrant pièces
                                 et main d'œuvre pendant 12 mois.</p>
                         </div>
                         <div class="trust-item">
@@ -3085,7 +3085,7 @@
             <div style="display:flex;justify-content:center;gap:1.5rem;font-size:2rem;">
                 <a href="https://api.whatsapp.com/send?text=${url}" target="_blank" style="color:#25D366;"><i class="fab fa-whatsapp"></i></a>
                 <a href="https://www.facebook.com/sharer/sharer.php?u=${url}" target="_blank" style="color:#1877F2;"><i class="fab fa-facebook"></i></a>
-                <a href="mailto:?subject=Annonce Nado.ma&body=Voici une annonce intéressante : ${url}" style="color:#EA4335;"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:?subject=Annonce Automanager&body=Voici une annonce intéressante : ${url}" style="color:#EA4335;"><i class="fas fa-envelope"></i></a>
             </div>
         `,
                 showCloseButton: true,
@@ -3364,7 +3364,7 @@
 
                 const meta = document.createElement('div');
                 meta.style.cssText = 'font-size:10px;opacity:.55;margin-top:3px;text-align:' + (isClient ? 'right' : 'left');
-                meta.textContent = (isClient ? '' : (msg.label || 'NADO') + ' · ') + msg.time;
+                meta.textContent = (isClient ? '' : (msg.label || 'AUTOMANAGER') + ' · ') + msg.time;
 
                 const outer = document.createElement('div');
                 outer.style.cssText = 'display:flex;flex-direction:column;align-items:' + (isClient ? 'flex-end' : 'flex-start') + ';margin-bottom:8px;';
@@ -3677,7 +3677,7 @@
                     '<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>';
 
                 row.appendChild(mk('https://wa.me/212770080009', 'WhatsApp 07 70 08 00 09', '#25D366', waIcon));
-                row.appendChild(mk('https://maps.app.goo.gl/RuP9P8wv898XNAAJ9', 'Voir l\'agence', '#1459DD', pinIcon));
+                row.appendChild(mk('https://maps.app.goo.gl/RuP9P8wv898XNAAJ9', 'Voir l\'agence', '#0E0F12', pinIcon));
 
                 chatBody.appendChild(row);
                 chatBody.scrollTop = chatBody.scrollHeight;
@@ -3863,7 +3863,7 @@
             const val = parseInt(apportRange.value) || 0;
             const percentage = ((val - min) / (max - min)) * 100;
             apportRange.style.background =
-                `linear-gradient(to right, #1459DD 0%, #1459DD ${percentage}%, #e2e8f0 ${percentage}%, #e2e8f0 100%)`;
+                `linear-gradient(to right, #0E0F12 0%, #0E0F12 ${percentage}%, #e2e8f0 ${percentage}%, #e2e8f0 100%)`;
         }
 
         apportRange?.addEventListener('input', calculateFinance);
@@ -3924,11 +3924,11 @@
         <div
             style="display:flex;align-items:center;gap:10px;padding:16px 18px;border-bottom:1px solid #e2e8f0;background:#f8fafc;">
             <div
-                style="width:36px;height:36px;border-radius:50%;background:#1459DD;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px;flex-shrink:0;">
+                style="width:36px;height:36px;border-radius:50%;background:#0E0F12;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px;flex-shrink:0;">
                 N</div>
             <div style="flex:1;min-width:0;">
                 <div style="font-weight:800;color:#0f172a;font-size:14px;line-height:1.2;">Assistant financement</div>
-                <div style="font-size:11px;color:#64748b;">Simulateur NADO</div>
+                <div style="font-size:11px;color:#64748b;">Simulateur AUTOMANAGER</div>
             </div>
             <button type="button" onclick="closeFinanceBot()" aria-label="Fermer"
                 style="width:34px;height:34px;border:0;border-radius:50%;background:#e2e8f0;color:#475569;cursor:pointer;font-size:20px;line-height:1;display:flex;align-items:center;justify-content:center;">&times;</button>
@@ -3944,7 +3944,7 @@
                 placeholder="Posez votre question (prix, options...)"
                 style="flex:1;min-width:0;border:1.5px solid #cbd5e1;border-radius:999px;padding:10px 16px;font-size:13px;outline:none;font-family:inherit;">
             <button type="button" id="financeBotSend" aria-label="Envoyer"
-                style="flex-shrink:0;width:38px;height:38px;border:0;border-radius:50%;background:#1459DD;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;">
+                style="flex-shrink:0;width:38px;height:38px;border:0;border-radius:50%;background:#0E0F12;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;">
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round">
                     <line x1="22" y1="2" x2="11" y2="13" />
@@ -3974,13 +3974,13 @@
             const b = document.createElement('div');
             window.nadoSetTextWithLinks(b, text);
             b.style.cssText = fromClient
-                ? 'background:#1459DD;color:#fff;border-radius:18px 18px 4px 18px;padding:12px 14px;' +
+                ? 'background:#0E0F12;color:#fff;border-radius:18px 18px 4px 18px;padding:12px 14px;' +
                   'font-size:13.5px;line-height:1.55;white-space:pre-line;overflow-wrap:anywhere;max-width:88%;'
                 : 'background:#f1f5f9;color:#0f172a;border-radius:18px 18px 18px 4px;padding:12px 14px;' +
                   'font-size:13.5px;line-height:1.55;white-space:pre-line;overflow-wrap:anywhere;max-width:88%;';
 
             const meta = document.createElement('div');
-            meta.textContent = (fromClient ? '' : 'NADO Bot · ') +
+            meta.textContent = (fromClient ? '' : 'AUTOMANAGER Bot · ') +
                 new Date().toTimeString().slice(0, 5);
             meta.style.cssText = 'font-size:10px;opacity:.55;margin-top:3px;';
 
@@ -4031,7 +4031,7 @@
                 '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>';
 
             row.appendChild(mk('https://wa.me/212770080009', 'WhatsApp 07 70 08 00 09', '#25D366', waIcon));
-            row.appendChild(mk('https://maps.app.goo.gl/RuP9P8wv898XNAAJ9', 'Voir l\'agence', '#1459DD', pinIcon));
+            row.appendChild(mk('https://maps.app.goo.gl/RuP9P8wv898XNAAJ9', 'Voir l\'agence', '#0E0F12', pinIcon));
 
             botBody.appendChild(row);
             scroll();

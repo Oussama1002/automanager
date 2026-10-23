@@ -56,10 +56,10 @@
 
 <div class="reprise-container">
     <div class="box">
-        <h3>Reprise de votre véhicule avec Nado.ma :<br>Simple, Rapide, Transparent !</h3>
+        <h3>Reprise de votre véhicule avec Automanager :<br>Simple, Rapide, Transparent !</h3>
         <p>
             Vous envisagez d’acheter un nouveau véhicule et souhaitez vous séparer de votre voiture actuelle sans traces ?<br>
-            Chez Nado.ma, nous vous facilitons la vie grâce à notre service de reprise simple, rapide et entièrement transparent.<br>
+            Chez Automanager, nous vous facilitons la vie grâce à notre service de reprise simple, rapide et entièrement transparent.<br>
             Oubliez les annonces, les rendez-vous avec des inconnus et les négociations interminables !
         </p>
     </div>
@@ -67,7 +67,7 @@
     <div class="box right">
         <h3>Rendez-vous dans notre show-room<br>pour une expertise détaillée</h3>
         <p>
-            Un expert Nado.ma procédera à une inspection approfondie et gratuite de votre véhicule :
+            Un expert Automanager procédera à une inspection approfondie et gratuite de votre véhicule :
             <ul>
                 <li>✔️ Vérification technique (moteur, boîte, freins, pneus, etc.)</li>
                 <li>✔️ Examen de la carrosserie et de l’intérieur</li>

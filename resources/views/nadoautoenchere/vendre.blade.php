@@ -14,22 +14,22 @@
         tailwind.config = {
             theme: { extend: {
                 fontFamily: { inter: ['Inter', 'sans-serif'] },
-                colors: { primary: '#1459DD', accent: '#F37021' },
+                colors: { primary: '#0E0F12', accent: '#C8A24B' },
             } }
         }
     </script>
     <style>
         body { font-family: 'Inter', sans-serif; }
-        ::selection { background-color: #F37021; color: #fff; }
+        ::selection { background-color: #C8A24B; color: #fff; }
         .modal-overlay { transition: opacity 0.2s ease; }
         .modal-box { transition: transform 0.25s ease, opacity 0.25s ease; }
         .profile-btn .icon-wrap { background-color: #e2e8f0; transition: background-color .2s; }
         .profile-btn .btn-label  { color: #334155; transition: color .2s; }
         .profile-btn svg         { color: #64748b; transition: color .2s; }
-        .profile-btn.is-selected              { border-color: #1459DD !important; background-color: rgb(20 89 221 / .05) !important; }
+        .profile-btn.is-selected              { border-color: #0E0F12 !important; background-color: rgb(20 89 221 / .05) !important; }
         .profile-btn.is-selected .icon-wrap   { background-color: rgb(20 89 221 / .1); }
-        .profile-btn.is-selected .btn-label   { color: #1459DD; }
-        .profile-btn.is-selected svg          { color: #1459DD; }
+        .profile-btn.is-selected .btn-label   { color: #0E0F12; }
+        .profile-btn.is-selected svg          { color: #0E0F12; }
     </style>
 </head>
 <body class="min-h-screen bg-slate-50 font-inter">
@@ -49,11 +49,11 @@
                 : route('nadoautoenchere.register');
         @endphp
         <a href="{{ $acheterUrl }}"
-           class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#1459DD] hover:bg-slate-100">
+           class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#0E0F12] hover:bg-slate-100">
             Acheter
         </a>
         <a href="{{ route('nadoautoenchere.vendre') }}"
-           class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-[#F37021] bg-orange-50">
+           class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-[#C8A24B] bg-orange-50">
             Vendre
         </a>
     @endsection
@@ -61,23 +61,23 @@
 
     <main class="max-w-7xl mx-auto px-6 py-12">
         <section class="bg-white border border-slate-100 rounded-3xl shadow-sm p-8 md:p-12">
-            <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#F37021]/10 border border-[#F37021]/20 rounded-full mb-6">
-                <i data-lucide="badge-check" class="w-4 h-4 text-[#F37021]"></i>
-                <span class="text-[10px] font-black uppercase tracking-[0.2em] text-[#F37021]">Vendeurs</span>
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#C8A24B]/10 border border-[#C8A24B]/20 rounded-full mb-6">
+                <i data-lucide="badge-check" class="w-4 h-4 text-[#C8A24B]"></i>
+                <span class="text-[10px] font-black uppercase tracking-[0.2em] text-[#C8A24B]">Vendeurs</span>
             </div>
 
             <h1 class="text-4xl md:text-5xl font-black tracking-tighter text-slate-900 uppercase">
-                Vendez vos véhicules <span class="text-[#1459DD]">au meilleur prix</span>.
+                Vendez vos véhicules <span class="text-[#0E0F12]">au meilleur prix</span>.
             </h1>
 
             <p class="mt-5 text-slate-600 text-lg font-medium max-w-3xl leading-relaxed">
-                NADO réunit jusqu'à <strong>200 acheteurs qualifiés</strong> par session — en présentiel et en ligne.
+                AUTOMANAGER réunit jusqu'à <strong>200 acheteurs qualifiés</strong> par session — en présentiel et en ligne.
                 Résultat : une vraie mise en concurrence, un prix juste, et un paiement sous <strong>7 jours</strong>.
             </p>
 
             <div class="mt-8">
                 <button id="btnOpenModal"
-                    class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-[#1459DD] text-white font-black text-xs uppercase tracking-widest hover:bg-[#0f47b5] transition active:scale-95 shadow-lg shadow-[#1459DD]/20">
+                    class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-[#0E0F12] text-white font-black text-xs uppercase tracking-widest hover:bg-[#0f47b5] transition active:scale-95 shadow-lg shadow-[#0E0F12]/20">
                     <i data-lucide="send" class="w-4 h-4"></i>
                     Vendre mes véhicules
                 </button>
@@ -86,7 +86,7 @@
 
         <section class="mt-10 bg-white border border-slate-100 rounded-3xl shadow-sm p-8 md:p-12">
             <h2 class="text-2xl md:text-3xl font-black tracking-tighter uppercase text-slate-900">
-                Ils nous font <span class="text-[#1459DD]">confiance</span>
+                Ils nous font <span class="text-[#0E0F12]">confiance</span>
             </h2>
 
             <div class="mt-6 flex flex-wrap gap-3">
@@ -101,15 +101,15 @@
         <section class="mt-10 bg-white border border-slate-100 rounded-3xl shadow-sm p-8 md:p-12">
             <div class="flex items-end justify-between gap-6 flex-wrap">
                 <div>
-                    <div class="text-[10px] font-black uppercase tracking-[0.2em] text-[#F37021] mb-2">Comment ça marche</div>
+                    <div class="text-[10px] font-black uppercase tracking-[0.2em] text-[#C8A24B] mb-2">Comment ça marche</div>
                     <h2 class="text-3xl md:text-4xl font-black tracking-tighter uppercase text-slate-900">Comment ça marche</h2>
                 </div>
             </div>
 
             <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="p-6 rounded-3xl bg-slate-50 border border-slate-100">
-                    <div class="w-12 h-12 rounded-2xl bg-[#1459DD]/10 flex items-center justify-center mb-4">
-                        <i data-lucide="wrench" class="w-6 h-6 text-[#1459DD]"></i>
+                    <div class="w-12 h-12 rounded-2xl bg-[#0E0F12]/10 flex items-center justify-center mb-4">
+                        <i data-lucide="wrench" class="w-6 h-6 text-[#0E0F12]"></i>
                     </div>
                     <h3 class="text-lg font-black uppercase tracking-tight text-slate-900 mb-2">Expertise &amp; Préparation</h3>
                     <p class="text-slate-600 font-medium leading-relaxed">
@@ -117,8 +117,8 @@
                     </p>
                 </div>
                 <div class="p-6 rounded-3xl bg-slate-50 border border-slate-100">
-                    <div class="w-12 h-12 rounded-2xl bg-[#F37021]/10 flex items-center justify-center mb-4">
-                        <i data-lucide="gavel" class="w-6 h-6 text-[#F37021]"></i>
+                    <div class="w-12 h-12 rounded-2xl bg-[#C8A24B]/10 flex items-center justify-center mb-4">
+                        <i data-lucide="gavel" class="w-6 h-6 text-[#C8A24B]"></i>
                     </div>
                     <h3 class="text-lg font-black uppercase tracking-tight text-slate-900 mb-2">Mise en Vente aux Enchères</h3>
                     <p class="text-slate-600 font-medium leading-relaxed">
@@ -131,7 +131,7 @@
                     </div>
                     <h3 class="text-lg font-black uppercase tracking-tight text-slate-900 mb-2">Paiement Rapide</h3>
                     <p class="text-slate-600 font-medium leading-relaxed">
-                        L'acheteur paie sous 48h après adjudication. Vous recevez votre règlement sous 7 jours. NADO gère toute la documentation et les formalités de sortie.
+                        L'acheteur paie sous 48h après adjudication. Vous recevez votre règlement sous 7 jours. AUTOMANAGER gère toute la documentation et les formalités de sortie.
                     </p>
                 </div>
             </div>
@@ -155,10 +155,10 @@
                     </ul>
                 </div>
 
-                <div class="p-6 rounded-3xl border border-[#1459DD]/25 bg-[#1459DD]/5">
-                    <h3 class="text-lg font-black uppercase tracking-tight text-slate-900 mb-4">Vente aux enchères NADO</h3>
+                <div class="p-6 rounded-3xl border border-[#0E0F12]/25 bg-[#0E0F12]/5">
+                    <h3 class="text-lg font-black uppercase tracking-tight text-slate-900 mb-4">Vente aux enchères AUTOMANAGER</h3>
                     <ul class="space-y-3 text-slate-700 font-semibold">
-                        <li class="flex gap-2"><span class="text-emerald-600 font-black">✓</span> Transfert de mandat — NADO organise le processus de vente</li>
+                        <li class="flex gap-2"><span class="text-emerald-600 font-black">✓</span> Transfert de mandat — AUTOMANAGER organise le processus de vente</li>
                         <li class="flex gap-2"><span class="text-emerald-600 font-black">✓</span> Mise en concurrence structurée, prix fixé par le marché</li>
                         <li class="flex gap-2"><span class="text-emerald-600 font-black">✓</span> Paiement sécurisé sous 7 jours</li>
                         <li class="flex gap-2"><span class="text-emerald-600 font-black">✓</span> Documentation, formalités et traçabilité prises en charge</li>
@@ -174,8 +174,8 @@
 
         <section class="mt-10 bg-white border border-slate-100 rounded-3xl shadow-sm p-8 md:p-12">
             <div class="text-center">
-                <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#1459DD]/10 border border-[#1459DD]/20 rounded-full mb-5">
-                    <i data-lucide="shield-check" class="w-4 h-4 text-[#1459DD]"></i>
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#0E0F12]/10 border border-[#0E0F12]/20 rounded-full mb-5">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-[#0E0F12]"></i>
                     <span class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-700">Nos garanties</span>
                 </div>
                 <h2 class="text-3xl md:text-4xl font-black tracking-tighter uppercase text-slate-900">Votre sécurité, notre engagement.</h2>
@@ -210,9 +210,9 @@
         <div class="modal-box bg-white rounded-3xl shadow-2xl w-full max-w-md p-8 scale-95 opacity-0">
 
             <div class="flex items-center justify-between mb-6">
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[#F37021]/10 rounded-full">
-                    <i data-lucide="user-plus" class="w-4 h-4 text-[#F37021]"></i>
-                    <span class="text-[10px] font-black uppercase tracking-widest text-[#F37021]">Créer un compte vendeur</span>
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[#C8A24B]/10 rounded-full">
+                    <i data-lucide="user-plus" class="w-4 h-4 text-[#C8A24B]"></i>
+                    <span class="text-[10px] font-black uppercase tracking-widest text-[#C8A24B]">Créer un compte vendeur</span>
                 </div>
                 <button class="modal-close p-2 rounded-xl hover:bg-slate-100 transition text-slate-400 hover:text-slate-700">
                     <i data-lucide="x" class="w-5 h-5"></i>
@@ -220,7 +220,7 @@
             </div>
 
             <h2 class="text-2xl font-black tracking-tighter text-slate-900 uppercase mb-2">
-                Rejoignez NADO
+                Rejoignez AUTOMANAGER
             </h2>
             <p class="text-slate-500 font-medium text-sm mb-7">
                 Pour soumettre vos véhicules, créez un compte vendeur. Choisissez votre profil :
@@ -244,14 +244,14 @@
             </div>
 
             <a id="btnGoRegister" href="{{ route('nadoautoenchere.register') }}"
-                class="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-[#1459DD] text-white font-black text-xs uppercase tracking-widest hover:bg-[#0f47b5] transition active:scale-95 opacity-40 pointer-events-none">
+                class="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-[#0E0F12] text-white font-black text-xs uppercase tracking-widest hover:bg-[#0f47b5] transition active:scale-95 opacity-40 pointer-events-none">
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 Créer mon compte
             </a>
 
             <div class="mt-4 text-center">
                 <span class="text-sm text-slate-500 font-medium">Déjà un compte ?</span>
-                <a href="{{ route('client.login') }}" class="ml-1 text-sm font-black text-[#1459DD] hover:underline">Se connecter</a>
+                <a href="{{ route('client.login') }}" class="ml-1 text-sm font-black text-[#0E0F12] hover:underline">Se connecter</a>
             </div>
         </div>
     </div>
@@ -298,14 +298,14 @@
                 <div>
                     <div class="flex items-center justify-between mb-3">
                         <label class="text-xs font-black uppercase tracking-widest text-slate-600">Véhicules</label>
-                        <span id="vehiculeCount" class="text-xs font-black text-[#1459DD] bg-[#1459DD]/10 px-2 py-1 rounded-full">0 véhicule</span>
+                        <span id="vehiculeCount" class="text-xs font-black text-[#0E0F12] bg-[#0E0F12]/10 px-2 py-1 rounded-full">0 véhicule</span>
                     </div>
                     <div id="vehiculesList" class="space-y-4"></div>
                 </div>
 
                 {{-- Bouton ajouter véhicule --}}
                 <button type="button" id="btnAddVehicule"
-                    class="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl border-2 border-dashed border-[#1459DD]/30 bg-[#1459DD]/5 text-[#1459DD] font-black text-xs uppercase tracking-widest hover:border-[#1459DD]/60 hover:bg-[#1459DD]/10 transition active:scale-95">
+                    class="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl border-2 border-dashed border-[#0E0F12]/30 bg-[#0E0F12]/5 text-[#0E0F12] font-black text-xs uppercase tracking-widest hover:border-[#0E0F12]/60 hover:bg-[#0E0F12]/10 transition active:scale-95">
                     <i data-lucide="plus-circle" class="w-4 h-4"></i>
                     Ajouter un véhicule
                 </button>
@@ -396,7 +396,7 @@
         /* ── ajouter véhicule ── */
         document.getElementById('btnAddVehicule').addEventListener('click', addVehicule);
 
-        var selectCls = 'w-full px-4 py-3 rounded-2xl border border-slate-200 bg-white text-slate-900 font-semibold text-sm focus:outline-none focus:ring-2 focus:ring-[#1459DD]/30 focus:border-[#1459DD] transition';
+        var selectCls = 'w-full px-4 py-3 rounded-2xl border border-slate-200 bg-white text-slate-900 font-semibold text-sm focus:outline-none focus:ring-2 focus:ring-[#0E0F12]/30 focus:border-[#0E0F12] transition';
         var inputCls  = selectCls;
 
         function buildMarqueOptions() {
@@ -431,7 +431,7 @@
 
             card.innerHTML =
                 '<div class="flex items-center justify-between">' +
-                    '<span class="text-xs font-black uppercase tracking-widest text-[#1459DD]">Véhicule ' + idx + '</span>' +
+                    '<span class="text-xs font-black uppercase tracking-widest text-[#0E0F12]">Véhicule ' + idx + '</span>' +
                     '<button type="button" class="btn-remove-vehicule p-1.5 rounded-xl hover:bg-red-50 text-slate-400 hover:text-red-500 transition">' +
                         '<i data-lucide="trash-2" class="w-4 h-4"></i>' +
                     '</button>' +
@@ -505,7 +505,7 @@
             var tel = document.getElementById('waTel').value.trim();
             var msg = document.getElementById('waMessage').value.trim();
 
-            var text = '🚗 *Demande vendeur NADO*\n\n'
+            var text = '🚗 *Demande vendeur AUTOMANAGER*\n\n'
                      + '👤 Nom : ' + nom + '\n'
                      + '📞 Téléphone : ' + tel + '\n';
 

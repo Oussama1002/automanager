@@ -2,18 +2,18 @@
      to the normal layout if that file is missing instead of crashing the page --}}
 @extends(request()->boolean('embed') && view()->exists('layouts.embed') ? 'layouts.embed' : 'layouts.app')
 
-@section('title', 'Vendre ma voiture – NADO')
+@section('title', 'Vendre ma voiture – AUTOMANAGER')
 
 @section('link')
 <script src="https://unpkg.com/lucide@latest"></script>
 <style>
 /* =============================================
    VENTE MARKETING PAGE — DESIGN SYSTEM
-   Primary : #1459DD | Accent : #FDD817
+   Primary : #0E0F12 | Accent : #C8A24B
 ============================================= */
 :root {
-    --vp-blue   : #1459DD;
-    --vp-yellow : #FDD817;
+    --vp-blue   : #0E0F12;
+    --vp-yellow : #C8A24B;
     --vp-slate  : #0f172a;
     --vp-muted  : #64748b;
     --vp-slate50: #f8fafc;
@@ -59,7 +59,7 @@
 .vp-hero-dots {
     position: absolute; inset: 0;
     opacity: .03;
-    background-image: radial-gradient(#1459DD 1px, transparent 1px);
+    background-image: radial-gradient(#0E0F12 1px, transparent 1px);
     background-size: 40px 40px;
     pointer-events: none;
 }
@@ -96,7 +96,7 @@
     margin-bottom: 24px;
 }
 .vp-h1-grad {
-    background: linear-gradient(135deg, var(--vp-blue) 0%, #7ea9ff 100%);
+    background: linear-gradient(135deg, var(--vp-blue) 0%, #E3C178 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -137,7 +137,7 @@
     box-shadow: 0 25px 50px -12px rgba(0,0,0,.2);
     border: 1px solid var(--vp-border);
     aspect-ratio: 4/3;
-    background: linear-gradient(135deg, #dbeafe 0%, #e0f2fe 100%);
+    background: linear-gradient(135deg, #F2E9D2 0%, #e0f2fe 100%);
     position: relative;
 }
 .vp-visual-overlay {
@@ -168,7 +168,7 @@
     width: 100%; max-width: 1000px; height: 100px;
     margin: 48px auto;
     border-radius: 1.5rem;
-    background: linear-gradient(135deg, var(--vp-blue) 0%, #7ea9ff 100%);
+    background: linear-gradient(135deg, var(--vp-blue) 0%, #E3C178 100%);
     display: flex; align-items: center; justify-content: center;
     color: rgba(255,255,255,.5);
     font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: .2em;
@@ -211,7 +211,7 @@
     font-size: 9px; font-weight: 900; text-transform: uppercase; letter-spacing: .15em;
     margin-bottom: 14px;
 }
-.badge-particulier { background: #dbeafe; color: var(--vp-blue); }
+.badge-particulier { background: #F2E9D2; color: var(--vp-blue); }
 .badge-certifie    { background: #dcfce7; color: #166534; }
 .badge-nado        { background: #fef9c3; color: #854d0e; }
 .vp-card-title { font-size: 1.35rem; font-weight: 900; text-transform: uppercase; letter-spacing: -.02em; margin-bottom: 10px; }
@@ -392,7 +392,7 @@
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     gap: 8px; cursor: pointer; color: var(--vp-muted); transition: all .2s;
 }
-.vm-upload-box:hover { background: #eff6ff; border-color: rgba(20,89,221,.3); color: var(--vp-blue); }
+.vm-upload-box:hover { background: #FAF6EC; border-color: rgba(20,89,221,.3); color: var(--vp-blue); }
 .vm-upload-box.has-file { border-color: #22c55e; background: #f0fdf4; color: #22c55e; }
 .vm-upload-text { font-size: 9px; font-weight: 900; text-transform: uppercase; letter-spacing: .1em; }
 
@@ -446,7 +446,7 @@
     font-family: 'Inter', sans-serif;
     transition: border-color .2s, color .2s, background .2s;
 }
-.vm-free-btn:hover { border-color: var(--vp-blue); color: var(--vp-blue); background: #eff6ff; }
+.vm-free-btn:hover { border-color: var(--vp-blue); color: var(--vp-blue); background: #FAF6EC; }
 
 /* ── Confirmation page (full modal replacement) ── */
 .vm-confirm-page {
@@ -506,7 +506,7 @@
 .vm-cp-pack-badge {
     display: flex; width: fit-content; align-items: center; gap: 8px;
     padding: 8px 20px;
-    background: #dbeafe; color: var(--vp-blue);
+    background: #F2E9D2; color: var(--vp-blue);
     border-radius: 9999px;
     font-size: 12px; font-weight: 900;
     text-transform: uppercase; letter-spacing: .12em;
@@ -567,11 +567,11 @@
                         Vendez votre voiture
                     </div>
                     <h1 class="vp-h1">
-                        NADO achète<br>
+                        AUTOMANAGER achète<br>
                         <span class="vp-h1-grad">VOTRE VOITURE</span>
                     </h1>
                     <p class="vp-subtitle">
-                        Que vous soyez particulier, société ou loueur, NADO achète votre véhicule directement.
+                        Que vous soyez particulier, société ou loueur, AUTOMANAGER achète votre véhicule directement.
                         Paiement rapide, processus simplifié, expertise professionnelle.
                     </p>
                     <div class="vp-props">
@@ -589,7 +589,7 @@
                 <div class="vp-hero-visual">
                     <div class="vp-visual-card">
                         <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=900&q=80"
-                             alt="Voiture premium NADO"
+                             alt="Voiture premium AUTOMANAGER"
                              style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease;"
                              onmouseover="this.style.transform='scale(1.04)'"
                              onmouseout="this.style.transform='scale(1)'">
@@ -627,7 +627,7 @@
             <div style="text-align:center; margin-bottom:64px;">
                 <p class="vp-section-eyebrow">Pour tous</p>
                 <h2 class="vp-section-title">QUEL EST<br>VOTRE PROFIL ?</h2>
-                <p class="vp-section-sub">Particulier, professionnel ou reprise — NADO a la solution adaptée à votre situation.</p>
+                <p class="vp-section-sub">Particulier, professionnel ou reprise — AUTOMANAGER a la solution adaptée à votre situation.</p>
             </div>
 
             <div class="vp-clients-grid">
@@ -666,7 +666,7 @@
                             <i data-lucide="shield-check" style="width:10px;height:10px;"></i> CERTIFIÉ
                         </span>
                         <h3 class="vp-card-title">Concessionnaire / Pro</h3>
-                        <p class="vp-card-desc">Gérez tout votre stock depuis votre espace et profitez du badge certifié NADO.</p>
+                        <p class="vp-card-desc">Gérez tout votre stock depuis votre espace et profitez du badge certifié AUTOMANAGER.</p>
                     </div>
                 </div>
 
@@ -682,10 +682,10 @@
                     </div>
                     <div class="vp-card-body">
                         <span class="vp-card-badge badge-nado">
-                            <i data-lucide="refresh-cw" style="width:10px;height:10px;"></i> NADO
+                            <i data-lucide="refresh-cw" style="width:10px;height:10px;"></i> AUTOMANAGER
                         </span>
-                        <h3 class="vp-card-title">Reprise NADO</h3>
-                        <p class="vp-card-desc">NADO rachète directement votre véhicule. Estimation immédiate, paiement rapide, zéro contrainte.</p>
+                        <h3 class="vp-card-title">Reprise AUTOMANAGER</h3>
+                        <p class="vp-card-desc">AUTOMANAGER rachète directement votre véhicule. Estimation immédiate, paiement rapide, zéro contrainte.</p>
                     </div>
                 </div>
 
@@ -711,7 +711,7 @@
             <div class="vp-how-grid">
 
                 {{-- Canal 1: À distance --}}
-                <div class="vp-how-card" style="background:linear-gradient(160deg,#eff6ff 0%,white 100%);border-color:#bfdbfe;">
+                <div class="vp-how-card" style="background:linear-gradient(160deg,#FAF6EC 0%,white 100%);border-color:#E8D7A9;">
                     <div style="display:flex;align-items:flex-start;gap:16px;margin-bottom:28px;">
                         <div class="vp-how-canal-num">01</div>
                         <div>
@@ -721,7 +721,7 @@
                     </div>
                     <div class="vp-how-card-media" style="overflow:hidden;">
                         <img src="https://img.freepik.com/photos-gratuite/portrait-vendeur-dans-concessionnaire-voitures_23-2148130107.jpg?w=1480"
-                             alt="Service à distance NADO" loading="lazy"
+                             alt="Service à distance AUTOMANAGER" loading="lazy"
                              style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s;">
                     </div>
                     <ul class="vp-how-check-list">
@@ -755,7 +755,7 @@
                     </div>
                     <div class="vp-how-card-media" style="overflow:hidden;">
                         <img src="https://img.freepik.com/photos-gratuite/couple-phares-voiture-faisant-affaire-concessionnaire-automobile-derriere_651396-1187.jpg?t=st=1771690179~exp=1771693779~hmac=c23a1102c38f7373c3c86a5a6d1ae8053f456eaf99876c9dfe57964b4ce567ac&w=1480"
-                             alt="Showroom NADO" loading="lazy"
+                             alt="Showroom AUTOMANAGER" loading="lazy"
                              style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s;">
                     </div>
                     <ul class="vp-how-check-list">
@@ -765,7 +765,7 @@
                         </li>
                         <li class="vp-how-check-item">
                             <i data-lucide="check-circle-2" class="vp-how-check-icon" style="width:18px;height:18px;"></i>
-                            Vidéo YouTube professionnelle + badge Garantie NADO
+                            Vidéo YouTube professionnelle + badge Garantie AUTOMANAGER
                         </li>
                         <li class="vp-how-check-item">
                             <i data-lucide="check-circle-2" class="vp-how-check-icon" style="width:18px;height:18px;"></i>
@@ -775,11 +775,11 @@
                     <div class="vp-address-card">
                         <i data-lucide="map-pin" class="vp-address-pin" style="width:20px;height:20px;"></i>
                         <div>
-                            <div style="font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:var(--vp-slate);margin-bottom:4px;">Showroom NADO</div>
+                            <div style="font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:var(--vp-slate);margin-bottom:4px;">Showroom AUTOMANAGER</div>
                             <div style="font-size:13px;font-weight:500;color:var(--vp-muted);">Casablanca, Maroc — Ouvert du Lun. au Sam. 9h–18h</div>
                         </div>
                     </div>
-                    <button class="vp-how-cta-btn" style="background:#0f172a;" onmouseover="this.style.background='#1459DD'" onmouseout="this.style.background='#0f172a'" onclick="openVenteModal()">
+                    <button class="vp-how-cta-btn" style="background:#0f172a;" onmouseover="this.style.background='#0E0F12'" onmouseout="this.style.background='#0f172a'" onclick="openVenteModal()">
                         <i data-lucide="map-pin" style="width:16px;height:16px;"></i>
                         Prendre rendez-vous au showroom
                     </button>
@@ -789,12 +789,12 @@
         </div>
     </section>
 
-    {{-- ════════ LES PROPOSITIONS NADO ════════ --}}
+    {{-- ════════ LES PROPOSITIONS AUTOMANAGER ════════ --}}
     <section class="vp-solutions">
         <div class="vmkt-wrap">
             <div style="text-align:center; margin-bottom:80px;">
                 <p class="vp-section-eyebrow">Nos Solutions</p>
-                <h2 class="vp-section-title">LES PROPOSITIONS<br>NADO</h2>
+                <h2 class="vp-section-title">LES PROPOSITIONS<br>AUTOMANAGER</h2>
                 <p class="vp-section-sub">Cinq façons de vendre ou valoriser votre véhicule — choisissez celle qui vous convient.</p>
             </div>
             <div class="vp-solutions-list">
@@ -803,17 +803,17 @@
                 <div class="vp-solution-item">
                     <div class="vp-sol-media">
                         <img src="https://img.freepik.com/photos-gratuite/gros-plan-client-homme-affaires-chez-concessionnaire-automobile_23-2149117137.jpg?t=st=1771691293~exp=1771694893~hmac=0a859f7b4f543627103588a1670b426206883df89b96be592b1316a616d672ec&w=1480"
-                             alt="Achat direct NADO" loading="lazy">
-                        <span class="vp-sol-float-badge" style="background:#1459DD;">ACHAT DIRECT</span>
+                             alt="Achat direct AUTOMANAGER" loading="lazy">
+                        <span class="vp-sol-float-badge" style="background:#0E0F12;">ACHAT DIRECT</span>
                     </div>
                     <div class="vp-sol-body">
                         <p class="vp-sol-eyebrow">Solution 01</p>
                         <h3 class="vp-sol-title">ACHAT DIRECT</h3>
-                        <p class="vp-sol-desc">NADO rachète votre véhicule immédiatement au juste prix. Estimation en ligne, paiement le jour même, zéro contrainte.</p>
+                        <p class="vp-sol-desc">AUTOMANAGER rachète votre véhicule immédiatement au juste prix. Estimation en ligne, paiement le jour même, zéro contrainte.</p>
                         <ul class="vp-sol-feats">
-                            <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#1459DD;flex-shrink:0;"></i> Estimation gratuite en ligne</li>
-                            <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#1459DD;flex-shrink:0;"></i> Paiement sécurisé le jour même</li>
-                            <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#1459DD;flex-shrink:0;"></i> Aucune démarche administrative</li>
+                            <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#0E0F12;flex-shrink:0;"></i> Estimation gratuite en ligne</li>
+                            <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#0E0F12;flex-shrink:0;"></i> Paiement sécurisé le jour même</li>
+                            <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#0E0F12;flex-shrink:0;"></i> Aucune démarche administrative</li>
                         </ul>
                         <button class="vp-sol-cta-btn" onclick="openVenteModal()">
                             Obtenir mon offre <i data-lucide="arrow-right" class="vp-sol-cta-arrow" style="width:16px;height:16px;"></i>
@@ -825,7 +825,7 @@
                 <div class="vp-solution-item">
                     <div class="vp-sol-body" style="order:1;">
                         <p class="vp-sol-eyebrow">Solution 02</p>
-                        <h3 class="vp-sol-title">REPRISE NADO</h3>
+                        <h3 class="vp-sol-title">REPRISE AUTOMANAGER</h3>
                         <p class="vp-sol-desc">Échangez votre ancien véhicule contre un crédit pour votre prochain achat dans notre parc. La solution idéale pour changer de voiture facilement.</p>
                         <ul class="vp-sol-feats">
                             <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#d97706;flex-shrink:0;"></i> Reprise estimée en 24h</li>
@@ -838,8 +838,8 @@
                     </div>
                     <div class="vp-sol-media" style="order:2;">
                         <img src="https://img.freepik.com/photos-gratuite/jeune-couple-choisissant-voiture-dans-exposition-voitures_1303-22835.jpg?t=st=1771692792~exp=1771696392~hmac=68ad7274e0d7d0d7ab054019b6ab1bb64b4fcb543ca0a99200c4ea86f9da1750&w=1060"
-                             alt="Reprise NADO" loading="lazy">
-                        <span class="vp-sol-float-badge badge-yellow" style="background:#FDD817;">REPRISE</span>
+                             alt="Reprise AUTOMANAGER" loading="lazy">
+                        <span class="vp-sol-float-badge badge-yellow" style="background:#C8A24B;">REPRISE</span>
                     </div>
                 </div>
 
@@ -847,13 +847,13 @@
                 <div class="vp-solution-item">
                     <div class="vp-sol-media">
                         <img src="https://img.freepik.com/photos-gratuite/homme-femme-chez-concessionnaire-automobile_23-2148333017.jpg?t=st=1771691462~exp=1771695062~hmac=805c99a2054d96155f61b9bbc07fadd8f76de7108b81afac3337021021d084a7&w=1480"
-                             alt="Dépôt-vente NADO" loading="lazy">
+                             alt="Dépôt-vente AUTOMANAGER" loading="lazy">
                         <span class="vp-sol-float-badge" style="background:#16a34a;">DÉPÔT-VENTE</span>
                     </div>
                     <div class="vp-sol-body">
                         <p class="vp-sol-eyebrow">Solution 03</p>
                         <h3 class="vp-sol-title">DÉPÔT-VENTE</h3>
-                        <p class="vp-sol-desc">Confiez votre véhicule à NADO. Nous gérons visites, négociation et paperasse. Vous récupérez le prix net une fois vendu.</p>
+                        <p class="vp-sol-desc">Confiez votre véhicule à AUTOMANAGER. Nous gérons visites, négociation et paperasse. Vous récupérez le prix net une fois vendu.</p>
                         <ul class="vp-sol-feats">
                             <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#16a34a;flex-shrink:0;"></i> Exposition dans notre showroom</li>
                             <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#16a34a;flex-shrink:0;"></i> Gestion des visites et des appels</li>
@@ -870,11 +870,11 @@
                     <div class="vp-sol-body" style="order:1;">
                         <p class="vp-sol-eyebrow">Solution 04</p>
                         <h3 class="vp-sol-title">PACK ANNONCES</h3>
-                        <p class="vp-sol-desc">Diffusion premium de votre annonce sur NADO et nos plateformes partenaires. Photos pro, vidéo YouTube, badge Certifié NADO pour maximiser la visibilité.</p>
+                        <p class="vp-sol-desc">Diffusion premium de votre annonce sur AUTOMANAGER et nos plateformes partenaires. Photos pro, vidéo YouTube, badge Certifié AUTOMANAGER pour maximiser la visibilité.</p>
                         <ul class="vp-sol-feats">
-                            <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#7c3aed;flex-shrink:0;"></i> Diffusion NADO + Avito + partenaires</li>
+                            <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#7c3aed;flex-shrink:0;"></i> Diffusion AUTOMANAGER + Avito + partenaires</li>
                             <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#7c3aed;flex-shrink:0;"></i> Vidéo YouTube professionnelle</li>
-                            <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#7c3aed;flex-shrink:0;"></i> Badge Certifié NADO inclus</li>
+                            <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#7c3aed;flex-shrink:0;"></i> Badge Certifié AUTOMANAGER inclus</li>
                         </ul>
                         <button class="vp-sol-cta-btn" onclick="openVenteModal()">
                             Choisir mon pack <i data-lucide="arrow-right" class="vp-sol-cta-arrow" style="width:16px;height:16px;"></i>
@@ -882,7 +882,7 @@
                     </div>
                     <div class="vp-sol-media" style="order:2;">
                         <img src="https://img.freepik.com/photos-gratuite/portrait-homme-gai-dans-vetements-base-souriant-montrant-pouces-vers-haut-camera-isole-fond-blanc_176420-45185.jpg?t=st=1771692121~exp=1771695721~hmac=ce97cd426b2a8c1de8802d203788c9db487f8bb33bee097d9870d3d36b8f53f2&w=1480"
-                             alt="Pack annonces NADO" loading="lazy">
+                             alt="Pack annonces AUTOMANAGER" loading="lazy">
                         <span class="vp-sol-float-badge" style="background:#7c3aed;">PACK ANNONCES</span>
                     </div>
                 </div>
@@ -891,7 +891,7 @@
                 <div class="vp-solution-item">
                     <div class="vp-sol-media">
                         <img src="https://img.freepik.com/photos-gratuite/vue-aerienne-clientele-feminine-homme-affaires-barbu-elegant-moderne-dans-salon-automobile_146671-16021.jpg?t=st=1771691824~exp=1771695424~hmac=a90a4858804a5138b7905f11697e2bea18a966fbc564872b76f90d625522ceb2&w=1480"
-                             alt="Enchère auto NADO" loading="lazy">
+                             alt="Enchère auto AUTOMANAGER" loading="lazy">
                         <span class="vp-sol-float-badge" style="background:#ea580c;">ENCHÈRE AUTO</span>
                     </div>
                     <div class="vp-sol-body">
@@ -900,7 +900,7 @@
                         <p class="vp-sol-desc">Mettez votre véhicule aux enchères et laissez les acheteurs se disputer le meilleur prix. Transparence totale, vente rapide, meilleure valeur garantie.</p>
                         <ul class="vp-sol-feats">
                             <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#ea580c;flex-shrink:0;"></i> Enchères ouvertes 7j/7 en ligne</li>
-                            <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#ea580c;flex-shrink:0;"></i> Acheteurs vérifiés par NADO</li>
+                            <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#ea580c;flex-shrink:0;"></i> Acheteurs vérifiés par AUTOMANAGER</li>
                             <li class="vp-sol-feat"><i data-lucide="check-circle-2" style="width:18px;height:18px;color:#ea580c;flex-shrink:0;"></i> Prix de réserve à votre main</li>
                         </ul>
                         <button class="vp-sol-cta-btn" onclick="openVenteModal()">
@@ -927,7 +927,7 @@
             <div class="vp-final-content" style="max-width:700px;margin:0 auto;">
                 <p class="vp-final-eyebrow">Commencez dès maintenant</p>
                 <h2 class="vp-final-h2">PRÊT À VENDRE<br>VOTRE VOITURE ?</h2>
-                <p class="vp-final-sub">Rejoignez les milliers de vendeurs qui font confiance à NADO pour une vente rapide au juste prix.</p>
+                <p class="vp-final-sub">Rejoignez les milliers de vendeurs qui font confiance à AUTOMANAGER pour une vente rapide au juste prix.</p>
                 <div class="vp-final-btns">
                     <button class="vp-btn-white" onclick="openVenteModal()">
                         <i data-lucide="plus-circle" style="width:18px;height:18px;"></i>
@@ -935,7 +935,7 @@
                     </button>
                     <a href="{{ route('reprise.form') }}" class="vp-btn-outline">
                         <i data-lucide="refresh-cw" style="width:18px;height:18px;"></i>
-                        Reprise NADO
+                        Reprise AUTOMANAGER
                     </a>
                 </div>
             </div>
@@ -970,7 +970,7 @@
 .vm-dropzone:hover,
 .vm-dropzone.drag-over {
     border-color: var(--vp-blue);
-    background: #eff6ff;
+    background: #FAF6EC;
     color: var(--vp-blue);
 }
 .vm-dropzone-icon  { font-size: 2rem; margin-bottom: 10px; line-height: 1; }
@@ -1280,7 +1280,7 @@
                     <div style="text-align:center;margin:28px 0 8px;">
                         <button type="button" id="vm-free-btn" class="vm-free-btn">
                             <i data-lucide="sparkles" style="width:15px;height:15px;"></i>
-                            Publier gratuitement sur nado.ma
+                            Publier gratuitement sur automanager.ma
                         </button>
                     </div>
                 </div>
@@ -1385,9 +1385,9 @@ var vmPhotoFiles = [];   // accumulated File objects
 var vmExistingPhotos = @json($prefill['photos'] ?? []);
 var vmPacks = [
     { id: 'Pack Distance', title: 'Pack Distance', price: '199',
-      features: ['Service à distance', 'Renouvellement 1x/jour (10j)', 'Diffusion NADO, Avito', 'Appel direct', 'Assistance de base'] },
+      features: ['Service à distance', 'Renouvellement 1x/jour (10j)', 'Diffusion AUTOMANAGER, Avito', 'Appel direct', 'Assistance de base'] },
     { id: 'Pack Showroom', title: 'Pack Showroom', price: '499', recommended: true,
-      features: ['Service local', 'Renouvellement 3x/j (30j)', 'Reels & Vidéo YouTube', 'Expertise & Contrôle', 'Expo Showroom 1 sem', 'Badge garantie NADO', 'Gestion rendez-vous'] },
+      features: ['Service local', 'Renouvellement 3x/j (30j)', 'Reels & Vidéo YouTube', 'Expertise & Contrôle', 'Expo Showroom 1 sem', 'Badge garantie AUTOMANAGER', 'Gestion rendez-vous'] },
     { id: 'Pack Express',  title: 'Pack Express',  price: '299',
       features: ['Service mobilité', 'Renouvellement 2x/j (15j)', 'Vidéo YouTube', 'Contrôle & expertise', 'Accompagnement RDV'] }
 ];

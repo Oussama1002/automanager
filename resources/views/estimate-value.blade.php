@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estimation Instantanée | Nado.ma</title>
+    <title>Estimation Instantanée | Automanager</title>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
-            --primary: #1459DD;
+            --primary: #0E0F12;
             --secondary: #F59E0B;
             --slate-900: #0f172a;
             --slate-700: #334155;
@@ -477,12 +477,12 @@
     @isset($valuation)
     <div id="valuation-print">
         <div class="report-print-header">
-            <strong style="color:var(--slate-900);">NADO.ma — Estimation du véhicule</strong>
+            <strong style="color:var(--slate-900);">AUTOMANAGER.ma — Estimation du véhicule</strong>
             <span>{{ \Carbon\Carbon::parse($valuation['date'])->format('d/m/Y') }}</span>
         </div>
 
         <div class="result-card">
-            <div class="result-label">Valeur Estimée NADO</div>
+            <div class="result-label">Valeur Estimée AUTOMANAGER</div>
             <div class="result-value">
                 {{ number_format($valuation['final_value'], 0, ',', ' ') }}
                 <span class="result-currency">MAD</span>
@@ -584,7 +584,7 @@
 
             <p class="report-note">
                 <strong>Valeur vénale estimative interne.</strong> Cette estimation est calculée automatiquement à partir de
-                coefficients internes NADO et des annonces disponibles. Ce n'est ni une expertise officielle, ni une valeur
+                coefficients internes AUTOMANAGER et des annonces disponibles. Ce n'est ni une expertise officielle, ni une valeur
                 d'assurance, ni une offre d'achat ferme, tant qu'elle n'a pas été validée par un expert habilité.
             </p>
         </div>
@@ -781,7 +781,7 @@
                     <label>Prix neuf / valeur de référence <span style="font-weight:400;font-size:0.78rem;color:var(--slate-500);">(optionnel)</span></label>
                     <input type="number" name="reference_value" placeholder="Ex: 250 000 MAD" min="0" step="500"
                         value="{{ $val('reference_value') }}">
-                    <span class="form-hint">Prix neuf du véhicule (catalogue, facture d'achat neuf). Sinon, NADO utilise ses tarifs de référence ou les annonces comparables.</span>
+                    <span class="form-hint">Prix neuf du véhicule (catalogue, facture d'achat neuf). Sinon, AUTOMANAGER utilise ses tarifs de référence ou les annonces comparables.</span>
                     @error('reference_value')<span style="font-size:0.75rem;color:#ef4444;">{{ $message }}</span>@enderror
                 </div>
 
@@ -796,7 +796,7 @@
 
     <div class="disclaimer">
         <i data-lucide="info" style="width:18px;height:18px;color:var(--primary);flex-shrink:0;margin-top:1px;"></i>
-        <p><strong>Estimation indicative.</strong> Cette valeur est calculée à partir de coefficients internes NADO et des annonces du marché marocain. Ce n'est pas une expertise officielle ni une offre d'achat ferme. Pour une évaluation précise, contactez nos experts NADO.</p>
+        <p><strong>Estimation indicative.</strong> Cette valeur est calculée à partir de coefficients internes AUTOMANAGER et des annonces du marché marocain. Ce n'est pas une expertise officielle ni une offre d'achat ferme. Pour une évaluation précise, contactez nos experts AUTOMANAGER.</p>
     </div>
 
 </div>
