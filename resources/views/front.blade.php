@@ -2887,7 +2887,7 @@
         <script src="https://unpkg.com/lucide@latest"></script>
 
         <!-- Top Bar Info -->
-        <div class="top-bar" style="background-color: #0E0F12;">
+        <div class="top-bar" style="background-color: #ffffff;">
             <div class="container custom-container top-bar-content">
                 <div class="contact-info">
                     <div class="info-item">
@@ -3076,8 +3076,8 @@
                 --nav-gold: #C8A24B;
                 --nav-gold-bright: #E3C178;
                 --nav-obsidian: #0E0F12;
-                --nav-obsidian-800: #17181C;
-                --nav-ivory: #F7F5F1;
+                --nav-obsidian-800: #ffffff;  /* nav surface back to white */
+                --nav-ivory: #334155;         /* nav text now dark on white */
                 --slate-900: #0f172a;
                 --slate-700: #334155;
                 --slate-50: #f8fafc;
@@ -3116,8 +3116,9 @@
                 line-height: 1;
                 letter-spacing: 0.04em;
                 display: inline-flex;
+                white-space: nowrap;
             }
-            .brand-wordmark .bw-dark { color: var(--nav-ivory); }
+            .brand-wordmark .bw-dark { color: var(--nav-obsidian); }
             .brand-wordmark .bw-gold { color: var(--nav-gold); margin-left: 0.12em; }
 
             .custom-container {
@@ -3186,11 +3187,13 @@
             /* Main Nav */
             .main-nav {
                 background: var(--nav-obsidian-800);
-                border-bottom: 1px solid rgba(200, 162, 75, 0.22);
+                border-bottom: 1px solid #eef0f3;
                 height: 96px;
                 display: flex;
                 align-items: center;
+                flex-wrap: nowrap;
             }
+            .nav-content, .left-section, .desktop-menu, .right-section { flex-wrap: nowrap; }
 
             .nav-content {
                 height: 100%;
@@ -3245,24 +3248,25 @@
                 font-size: 13.5px;
                 font-weight: 600;
                 text-transform: uppercase;
-                letter-spacing: 0.08em;
-                padding: 8px 14px;
+                letter-spacing: 0.06em;
+                padding: 8px 12px;
                 border-radius: 10px;
-                color: rgba(247, 245, 241, 0.72);
+                color: #334155;
                 text-decoration: none;
                 transition: all 0.2s;
                 background: transparent;
                 border: none;
                 cursor: pointer;
+                white-space: nowrap;
             }
 
             .nav-link:hover {
-                background-color: rgba(200, 162, 75, 0.1);
-                color: var(--nav-gold);
+                background-color: rgba(200, 162, 75, 0.12);
+                color: #A17E31;
             }
 
             .highlight-link {
-                color: var(--nav-gold);
+                color: #A17E31;
                 background-color: rgba(200, 162, 75, 0.12);
                 box-shadow: inset 0 -2px 0 var(--nav-gold);
             }
@@ -3289,8 +3293,8 @@
                 margin-top: 8px;
                 background: var(--nav-obsidian-800);
                 border-radius: 12px;
-                box-shadow: 0 24px 40px -12px rgba(0, 0, 0, 0.6);
-                border: 1px solid rgba(200, 162, 75, 0.2);
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+                border: 1px solid #eef0f3;
                 min-width: 200px;
                 overflow: hidden;
                 display: none;
@@ -3307,7 +3311,7 @@
                 font-weight: 600;
                 letter-spacing: 0.05em;
                 text-transform: uppercase;
-                color: rgba(247, 245, 241, 0.75);
+                color: #334155;
                 text-decoration: none;
                 transition: background 0.2s, color 0.2s;
             }

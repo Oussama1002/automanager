@@ -3,7 +3,7 @@
 @endphp
 
 <header class="sticky top-0 z-50">
-    <div class="bg-[#0E0F12] text-[#F7F5F1] py-2.5 px-4 border-b border-[#C8A24B]/20">
+    <div class="bg-white text-slate-700 py-2.5 px-4 border-b border-slate-100">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-4">
                 <div class="flex items-center gap-2 text-[11px] font-black uppercase tracking-widest opacity-90">
@@ -23,22 +23,22 @@
         </div>
     </div>
 
-    <nav class="bg-[#17181C] border-b border-[#C8A24B]/20 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between gap-3">
-            <div class="flex items-center gap-10">
+    <nav class="bg-white border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between gap-3 flex-nowrap">
+            <div class="flex items-center gap-10 flex-nowrap">
                 <a href="{{ route('nadoautoenchere.categories') }}" class="flex items-center hover:scale-105 transition-transform no-underline" style="font-family:'Jost',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:1;white-space:nowrap;">
-                    <span style="color:#F7F5F1;">AUTO</span><span style="color:#C8A24B;margin-left:.1em;">ENCHÈRE</span>
+                    <span style="color:#0E0F12;">AUTO</span><span style="color:#C8A24B;margin-left:.1em;">ENCHÈRE</span>
                 </a>
-                <div class="hidden lg:flex items-center gap-2">
+                <div class="hidden lg:flex items-center gap-2 flex-nowrap">
                     @hasSection('na_nav_links')
                         @yield('na_nav_links')
                     @else
                         <a href="{{ route('nadoautoenchere.categories') }}"
-                           class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-[#F7F5F1]/70 hover:text-[#C8A24B] hover:bg-[#C8A24B]/10">
+                           class="whitespace-nowrap text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#A17E31] hover:bg-[#C8A24B]/10">
                             Catégories
                         </a>
                         <a href="{{ route('nadoautoenchere.index') }}"
-                           class="text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-[#F7F5F1]/70 hover:text-[#C8A24B] hover:bg-[#C8A24B]/10">
+                           class="whitespace-nowrap text-[13px] font-bold uppercase tracking-wide px-3 py-2 rounded-2xl transition-all text-slate-700 hover:text-[#A17E31] hover:bg-[#C8A24B]/10">
                             Tous les véhicules
                         </a>
                     @endif
@@ -52,19 +52,19 @@
                         <button type="button" id="naAccountBtn" aria-haspopup="true" aria-expanded="false"
                             class="flex items-center gap-2 px-3 py-2 rounded-2xl bg-[#C8A24B]/10 border border-[#C8A24B]/40 hover:bg-[#C8A24B]/20 transition-all cursor-pointer">
                             <span class="w-7 h-7 rounded-full bg-[#C8A24B]/20 flex items-center justify-center shrink-0">
-                                <i data-lucide="user" class="w-3.5 h-3.5 text-[#C8A24B]"></i>
+                                <i data-lucide="user" class="w-3.5 h-3.5 text-[#A17E31]"></i>
                             </span>
-                            <span class="hidden md:inline text-[12px] font-bold uppercase tracking-wide text-[#F7F5F1]/80 truncate max-w-[140px]"
+                            <span class="hidden md:inline text-[12px] font-bold uppercase tracking-wide text-slate-700 truncate max-w-[140px]"
                                   title="{{ $authClient->company ?? $authClient->name }}">
                                 {{ $authClient->company ?? $authClient->name }}
                             </span>
-                            <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-[#C8A24B] shrink-0"></i>
+                            <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-[#A17E31] shrink-0"></i>
                         </button>
 
                         <div id="naAccountMenu"
-                             class="hidden absolute right-0 top-full mt-2 w-56 bg-[#17181C] border border-[#C8A24B]/20 rounded-2xl shadow-xl overflow-hidden z-[1200]">
+                             class="hidden absolute right-0 top-full mt-2 w-56 bg-white border border-slate-200 rounded-2xl shadow-xl overflow-hidden z-[1200]">
                             <a href="{{ route('client.dashboard') }}"
-                               class="flex items-center gap-3 px-4 py-3 text-[13px] font-bold text-[#F7F5F1]/80 hover:bg-[#C8A24B]/10 hover:text-[#C8A24B] transition-colors no-underline">
+                               class="flex items-center gap-3 px-4 py-3 text-[13px] font-bold text-slate-700 hover:bg-[#C8A24B]/10 hover:text-[#A17E31] transition-colors no-underline">
                                 <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
                                 Mon espace
                             </a>
@@ -80,7 +80,7 @@
                     </div>
                 @else
                     <a href="{{ route('nadoautoenchere.login') }}"
-                        class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl border border-[#C8A24B]/45 hover:border-[#C8A24B] text-[#F7F5F1] hover:text-[#C8A24B] font-extrabold text-[13px] uppercase tracking-widest transition-all">
+                        class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl border border-slate-200 hover:border-[#C8A24B] text-slate-900 hover:text-[#A17E31] font-extrabold text-[13px] uppercase tracking-widest transition-all whitespace-nowrap">
                         Connexion
                     </a>
                     <a href="{{ route('nadoautoenchere.register') }}"
