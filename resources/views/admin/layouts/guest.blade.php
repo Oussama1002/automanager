@@ -13,8 +13,25 @@
 
         <link rel="stylesheet" href="{{ asset('assets/back/assets/css/shared/iconly.css') }}">
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+        {{-- Automanager · Obsidian & Gold login override --}}
+        <style>
+            :root { --bs-primary:#C8A24B; --bs-primary-rgb:200,162,75; }
+            body, .form-control, .btn, input { font-family:'Jost',system-ui,sans-serif; }
+            h1, h2, h3, h4, h5, #auth-left .auth-title { font-family:'Cormorant Garamond',Georgia,serif !important; font-weight:600 !important; }
+            #auth-right { background:
+                radial-gradient(1200px 600px at 70% 20%, rgba(200,162,75,.18), transparent 60%),
+                linear-gradient(160deg, #0E0F12 0%, #17181C 100%) !important; }
+            .btn-primary {
+                --bs-btn-bg:#C8A24B; --bs-btn-border-color:#C8A24B; --bs-btn-color:#0E0F12;
+                --bs-btn-hover-bg:#E3C178; --bs-btn-hover-border-color:#E3C178; --bs-btn-hover-color:#0E0F12;
+                font-weight:600; }
+            a, .text-primary { color:#A17E31 !important; }
+            .form-control:focus { border-color:#C8A24B; box-shadow:0 0 0 .2rem rgba(200,162,75,.2); }
+        </style>
 
     </head>
 

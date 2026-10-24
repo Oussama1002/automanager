@@ -5,7 +5,9 @@
 @section('content')
 
     <div class="auth-logo">
-        <a href="index.html"><img src="{{ asset('assets/images/logo.png')}}" alt="Logo"></a>
+        <a href="#" style="font-family:'Jost',sans-serif;font-size:1.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;">
+            <span style="color:#0E0F12;">AUTO</span><span style="color:#C8A24B;margin-left:.1em;">MANAGER</span>
+        </a>
     </div>
     <h1 class="auth-title">Log in</h1>
 

@@ -3,7 +3,9 @@
         <div class="sidebar-header position-relative">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="logo">
-                    <a href="#"><img src="{{ asset('assets/images/logo.png')}}" alt="Logo"></a>
+                    <a href="#" class="am-wordmark">
+                        <span class="bw-dark">AUTO</span><span class="bw-gold">MANAGER</span>
+                    </a>
                 </div>
                 <div class="theme-toggle d-flex gap-2 align-items-center mt-2 d-none">
                     <div class="form-check form-switch fs-6">

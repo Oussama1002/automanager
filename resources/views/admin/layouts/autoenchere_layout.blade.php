@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="{{ asset('assets/back/assets/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/back/assets/vendors/bootstrap-icons/bootstrap-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/back/assets/css/app.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <style>
+        :root { --bs-primary:#C8A24B; --bs-primary-rgb:200,162,75; }
+        body, .btn, .form-control, input, table { font-family:'Jost',system-ui,sans-serif; }
+        h1,h2,h3,h4,h5,h6,.card-title { font-family:'Cormorant Garamond',Georgia,serif !important; font-weight:600 !important; }
+        .sidebar-wrapper { background-color:#0E0F12 !important; border-right:1px solid rgba(200,162,75,.14); }
+        .sidebar-wrapper .menu .sidebar-link { color:rgba(247,245,241,.72) !important; border-radius:8px; }
+        .sidebar-wrapper .menu .sidebar-link i { color:rgba(247,245,241,.72) !important; }
+        .sidebar-wrapper .menu .sidebar-link:hover { background-color:rgba(200,162,75,.1) !important; color:#C8A24B !important; }
+        .sidebar-wrapper .menu .sidebar-link:hover i { color:#C8A24B !important; }
+        .sidebar-wrapper .menu .sidebar-item.active > .sidebar-link { background-color:rgba(200,162,75,.15) !important; box-shadow:inset 3px 0 0 #C8A24B; }
+        .sidebar-wrapper .menu .sidebar-item.active > .sidebar-link span,
+        .sidebar-wrapper .menu .sidebar-item.active > .sidebar-link i { color:#C8A24B !important; }
+        .am-wordmark { font-family:'Jost',sans-serif; font-size:1.3rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; text-decoration:none; }
+        .am-wordmark .bw-dark { color:#F7F5F1; } .am-wordmark .bw-gold { color:#C8A24B; margin-left:.1em; }
+        .btn-primary { --bs-btn-bg:#C8A24B; --bs-btn-border-color:#C8A24B; --bs-btn-color:#0E0F12; --bs-btn-hover-bg:#E3C178; --bs-btn-hover-border-color:#E3C178; --bs-btn-hover-color:#0E0F12; font-weight:600; }
+        .text-primary { color:#A17E31 !important; } .bg-primary { background-color:#C8A24B !important; }
+    </style>
 </head>
 <body>
 <div id="app">
@@ -14,10 +34,9 @@
     <div id="sidebar" class="active">
         <div class="sidebar-wrapper active">
             <div class="sidebar-header text-center mt-3">
-                <a href="{{ route('dashboard') }}">
-                    <img src="{{ asset('assets/images/logoenchere.jpg') }}" alt="Auto Enchère" width="150">
+                <a href="{{ route('dashboard') }}" class="am-wordmark">
+                    <span class="bw-dark">AUTO</span><span class="bw-gold">ENCHÈRE</span>
                 </a>
-                <h6 class="mt-2 text-secondary">Auto Enchère</h6>
             </div>
 
             <div class="sidebar-menu mt-4">
