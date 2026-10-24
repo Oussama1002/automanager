@@ -82,6 +82,7 @@
             transform: translateX(100%);
         }
     </style>
+    @include('partials.am-front-theme')
 </head>
 
 <body class="min-h-screen bg-white text-slate-900">

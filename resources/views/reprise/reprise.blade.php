@@ -1,9 +1,8 @@
-loo<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-
-
 <body id="bg" class="font-poppins home-2" style="background-color: #0f172a;">
+    @include('partials.am-front-theme')
     <!-- Ensure body matches Dark Theme -->
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZMXWVX4" height="0" width="0"

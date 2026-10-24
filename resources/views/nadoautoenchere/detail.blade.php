@@ -46,6 +46,7 @@
     filter: blur(40px); z-index:0;
   }
 </style>
+    @include('partials.am-front-theme')
 </head>
 <body>
 

@@ -929,6 +929,7 @@
             height: 0.875rem;
         }
     </style>
+    @include('partials.am-front-theme')
 </head>
 
 <body>

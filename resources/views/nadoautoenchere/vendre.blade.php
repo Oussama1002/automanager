@@ -31,6 +31,7 @@
         .profile-btn.is-selected .btn-label   { color: #0E0F12; }
         .profile-btn.is-selected svg          { color: #0E0F12; }
     </style>
+    @include('partials.am-front-theme')
 </head>
 <body class="min-h-screen bg-slate-50 font-inter">
 
