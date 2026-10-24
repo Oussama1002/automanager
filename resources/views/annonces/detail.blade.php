@@ -32,7 +32,7 @@
     <meta property="og:type" content="website">
 
     {{-- Fonts & Icons --}}
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     {{-- SweetAlert2 --}}
@@ -58,7 +58,7 @@
     }
 
     body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Jost', sans-serif;
         background-color: var(--bg-light);
         color: var(--slate-900);
     }
@@ -2126,7 +2126,7 @@
         </div>
 
         <style>
-            .nado-navbar { font-family: 'Inter', sans-serif; width: 100%; z-index: 1000; direction: ltr; }
+            .nado-navbar { font-family: 'Jost', sans-serif; width: 100%; z-index: 1000; direction: ltr; }
             .nado-navbar.sticky-top { position: fixed; top: 0; left: 0; width: 100%; }
             .nv-top-bar { padding: 10px 16px; border-bottom: 1px solid rgba(0,0,0,.05); color: #0f172a; }
             .nv-container { max-width: 1280px; margin: 0 auto; padding: 0 16px; display: flex; justify-content: space-between; align-items: center; width: 100%; }

@@ -3,10 +3,10 @@
 @section('title', 'Demande #' . $demande->id . ' — AUTOMANAGER')
 
 @section('content')
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-    .dmd-show { max-width:960px; margin:40px auto 60px; padding:0 20px; font-family:'Inter',sans-serif; color:#0f172a; }
+    .dmd-show { max-width:960px; margin:40px auto 60px; padding:0 20px; font-family:'Jost',sans-serif; color:#0f172a; }
     .dmd-back { display:inline-flex; align-items:center; gap:6px; font-size:14px; color:#64748b; text-decoration:none; margin-bottom:16px; }
     .dmd-back:hover { color:#0E0F12; }
 
@@ -219,7 +219,7 @@
 </div>
 
 {{-- ============== PROPOSE VEHICLE MODAL ============== --}}
-<div id="proposeModal" style="display:none;position:fixed;inset:0;z-index:10000;background:rgba(15,23,42,.55);backdrop-filter:blur(4px);align-items:flex-start;justify-content:center;padding:40px 16px;overflow-y:auto;font-family:'Inter',sans-serif;">
+<div id="proposeModal" style="display:none;position:fixed;inset:0;z-index:10000;background:rgba(15,23,42,.55);backdrop-filter:blur(4px);align-items:flex-start;justify-content:center;padding:40px 16px;overflow-y:auto;font-family:'Jost',sans-serif;">
     <div style="background:#fff;max-width:620px;width:100%;border-radius:16px;box-shadow:0 30px 60px -20px rgba(15,23,42,.4);">
         <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 22px;border-bottom:1px solid #e2e8f0;">
             <div>
@@ -463,7 +463,7 @@
 
 {{-- ============== PROPOSE SUCCESS POPUP ============== --}}
 @if(session('propose_success'))
-<div id="proposeSuccess" style="position:fixed;inset:0;z-index:10001;background:rgba(15,23,42,.6);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:20px;font-family:'Inter',sans-serif;">
+<div id="proposeSuccess" style="position:fixed;inset:0;z-index:10001;background:rgba(15,23,42,.6);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:20px;font-family:'Jost',sans-serif;">
     <div style="background:#fff;max-width:420px;width:100%;border-radius:16px;box-shadow:0 30px 60px -20px rgba(15,23,42,.4);padding:28px 24px;text-align:center;">
         <div style="width:72px;height:72px;border-radius:50%;background:#ecfdf5;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5">

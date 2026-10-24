@@ -7,7 +7,7 @@
     .purchase-page {
         background-color: #f8fafc;
         min-height: 100vh;
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
         padding-bottom: 80px;
     }
 

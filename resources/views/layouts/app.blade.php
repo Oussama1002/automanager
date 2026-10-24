@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Owl Carousel CSS (kept for pages that still use it) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -44,8 +44,8 @@
             --white:      #ffffff;
             --black:      #000000;
 
-            --font-display: 'Playfair Display', Georgia, serif;
-            --font-sans:    'Inter', system-ui, sans-serif;
+            --font-display: 'Cormorant Garamond', Georgia, serif;
+            --font-sans:    'Jost', system-ui, sans-serif;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -61,7 +61,7 @@
         ul     { list-style: none; }
         button { border: none; background: none; cursor: pointer; font-family: inherit; }
         ::selection { background: var(--gold); color: var(--obsidian); }
-        h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.01em; }
+        h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spacing: 0; }
     </style>
 
     @yield('link')

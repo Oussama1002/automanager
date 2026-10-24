@@ -13,7 +13,7 @@
     --sp-white  : #ffffff;
     --sp-slate50: #f8fafc;
 }
-.sp-page { font-family: 'Inter', -apple-system, sans-serif; background: var(--sp-slate50); min-height: 100vh; padding-top: 40px; padding-bottom: 80px; color: var(--sp-slate); }
+.sp-page { font-family: 'Jost', -apple-system, sans-serif; background: var(--sp-slate50); min-height: 100vh; padding-top: 40px; padding-bottom: 80px; color: var(--sp-slate); }
 .sp-page *, .sp-page *::before, .sp-page *::after { box-sizing: border-box; }
 .sp-wrap { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
 
@@ -42,7 +42,7 @@
 .sp-form-group { display: flex; flex-direction: column; gap: 6px; }
 .sp-form-group.full { grid-column: 1 / -1; }
 .sp-form-group label { font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .12em; color: var(--sp-muted); margin-left: 4px; }
-.sp-input { background: var(--sp-slate50); border: 2px solid transparent; border-radius: .75rem; padding: 14px 16px; font-size: 14px; font-weight: 600; color: var(--sp-slate); width: 100%; outline: none; font-family: 'Inter', sans-serif; transition: border-color .2s, background .2s; }
+.sp-input { background: var(--sp-slate50); border: 2px solid transparent; border-radius: .75rem; padding: 14px 16px; font-size: 14px; font-weight: 600; color: var(--sp-slate); width: 100%; outline: none; font-family: 'Jost', sans-serif; transition: border-color .2s, background .2s; }
 .sp-input:focus { border-color: var(--sp-blue); background: white; }
 .sp-submit { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 18px; background: var(--sp-blue); color: white; border: none; border-radius: .75rem; font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: .15em; cursor: pointer; margin-top: 24px; transition: background .2s; }
 .sp-submit:hover { background: #0f46b1; }

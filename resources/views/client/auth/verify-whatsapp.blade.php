@@ -3,7 +3,7 @@
 @section('content')
 <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f8fafc; }
+    body { font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif; background: #f8fafc; }
 
     .vw-page {
         min-height: 100vh;

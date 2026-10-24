@@ -7,14 +7,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { inter: ['Inter', 'sans-serif'] },
+                    fontFamily: { inter: ['Jost', 'sans-serif'] },
                     colors:    { primary: '#0E0F12', accent: '#C8A24B' },
                 }
             }
@@ -23,7 +23,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Jost', sans-serif; }
         ::selection { background-color: #C8A24B; color: white; }
         .card-shadow       { box-shadow: 0 2px 10px rgb(0 0 0 / 0.02); }
         .card-shadow-hover { box-shadow: 0 20px 40px rgb(20 89 221 / 0.08); }

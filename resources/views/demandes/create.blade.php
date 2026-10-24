@@ -4,10 +4,10 @@
 @section('title', 'Publier ma demande')
 
 @section('content')
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-    .dmd-form-wrap { max-width:560px; margin:50px auto 70px; padding:0 20px; font-family:'Inter',sans-serif; color:#0f172a; }
+    .dmd-form-wrap { max-width:560px; margin:50px auto 70px; padding:0 20px; font-family:'Jost',sans-serif; color:#0f172a; }
     .dmd-form-wrap h1 { font-size:26px; font-weight:800; margin:0 0 6px; letter-spacing:-0.02em; }
     .dmd-form-wrap .intro { color:#64748b; font-size:14px; margin:0 0 24px; line-height:1.5; }
 

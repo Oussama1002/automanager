@@ -7,7 +7,7 @@
     <title>AUTOMANAGER Connect - Financez votre voiture</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
     <style>
@@ -18,7 +18,7 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Jost', sans-serif;
             background-color: #ffffff;
             color: #0f172a;
             min-height: 100vh;
@@ -1145,7 +1145,7 @@
             }
 
             .nado-navbar {
-                font-family: 'Inter', sans-serif;
+                font-family: 'Jost', sans-serif;
                 width: 100%;
                 z-index: 1000;
                 position: relative;

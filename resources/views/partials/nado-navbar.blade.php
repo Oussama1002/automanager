@@ -184,10 +184,10 @@
             --slate-50: #f8fafc;
             --border-color: #e2e8f0;
         }
-        .nado-navbar { font-family: 'Inter', sans-serif; width: 100%; z-index: 1000; position: relative; direction: ltr; }
+        .nado-navbar { font-family: 'Jost', sans-serif; width: 100%; z-index: 1000; position: relative; direction: ltr; }
         .sticky-top { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; }
         .top-bar { padding: 10px 16px; border-bottom: 1px solid rgba(200,162,75,.16); color: var(--nav-ivory); }
-        .brand-wordmark { font-family: 'Inter', sans-serif; font-size: 1.7rem; font-weight: 800; text-transform: uppercase; line-height: 1; letter-spacing: .04em; display: inline-flex; }
+        .brand-wordmark { font-family: 'Jost', sans-serif; font-size: 1.7rem; font-weight: 800; text-transform: uppercase; line-height: 1; letter-spacing: .04em; display: inline-flex; }
         .brand-wordmark .bw-dark { color: var(--nav-ivory); }
         .brand-wordmark .bw-gold { color: var(--nav-gold); margin-left: .12em; }
         .custom-container { max-width: 1280px; margin: 0 auto; padding: 0 16px; display: flex; justify-content: space-between; align-items: center; width: 100%; }

@@ -14,7 +14,7 @@
     --pp-white  : #ffffff;
     --pp-slate50: #f8fafc;
 }
-.pp-page { font-family: 'Inter', -apple-system, sans-serif; background: var(--pp-slate50); min-height: 100vh; padding-top: 40px; padding-bottom: 80px; color: var(--pp-slate); }
+.pp-page { font-family: 'Jost', -apple-system, sans-serif; background: var(--pp-slate50); min-height: 100vh; padding-top: 40px; padding-bottom: 80px; color: var(--pp-slate); }
 .pp-page *, .pp-page *::before, .pp-page *::after { box-sizing: border-box; }
 .pp-wrap { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
 

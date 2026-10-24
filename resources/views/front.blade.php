@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Automanager</title>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -38,12 +38,20 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Jost', sans-serif;
             background-color: var(--white);
             color: var(--slate-900);
             min-height: 100vh;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4,
+        .section-title, .blog-big-title, .story-title, .whatsapp-title,
+        .hero-title, .pub-title, .price-title {
+            font-family: 'Cormorant Garamond', Georgia, serif !important;
+            font-weight: 600;
+            letter-spacing: 0;
         }
 
         a {
@@ -2657,7 +2665,7 @@
 
     {{-- ============== DEMANDE LIVE FEED (bottom-left) ============== --}}
     @if(!empty($recentDemandes))
-        <div id="dmdLive" style="position:fixed;left:20px;bottom:20px;z-index:9999;width:400px;max-width:calc(100vw - 20px);font-family:'Inter',sans-serif;pointer-events:none;">
+        <div id="dmdLive" style="position:fixed;left:20px;bottom:20px;z-index:9999;width:400px;max-width:calc(100vw - 20px);font-family:'Jost',sans-serif;pointer-events:none;">
             {{-- Persistent banner on top (bigger & more prominent than the live cards) --}}
             <a href="{{ route('demandes.index') }}" id="dmdLiveBanner"
                style="pointer-events:auto;display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,#0E0F12,#C8A24B);color:#fff;padding:20px 22px;border-radius:18px;text-decoration:none;box-shadow:0 24px 48px -14px rgba(20,89,221,.5);margin-bottom:14px;position:relative;">
@@ -3077,7 +3085,7 @@
             }
 
             .nado-navbar {
-                font-family: 'Inter', sans-serif;
+                font-family: 'Jost', sans-serif;
                 width: 100%;
                 z-index: 1000;
                 position: relative;
@@ -3101,7 +3109,7 @@
             }
 
             .brand-wordmark {
-                font-family: 'Inter', sans-serif;
+                font-family: 'Jost', sans-serif;
                 font-size: 1.7rem;
                 font-weight: 800;
                 text-transform: uppercase;
@@ -5279,7 +5287,7 @@
     opacity: 0;
     pointer-events: none;
     transition: transform .25s cubic-bezier(.34,1.56,.64,1), opacity .2s;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 #nado-chat-panel.open {
     transform: scale(1) translateY(0);
@@ -5378,7 +5386,7 @@
     cursor: pointer;
     white-space: nowrap;
     transition: background .15s, border-color .15s;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 .nc-chip:hover { background: #F2E9D2; border-color: #0E0F12; color: #0E0F12; }
 
@@ -5409,7 +5417,7 @@
     border: 1px solid #e2e8f0;
     border-radius: 999px;
     font-size: 13px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Jost', sans-serif;
     outline: none;
     transition: border-color .2s;
     color: #0f172a;

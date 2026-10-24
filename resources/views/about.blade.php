@@ -23,7 +23,7 @@
     --ap-slate50: #f8fafc;
 }
 
-.ap-page { font-family: 'Inter', -apple-system, sans-serif; background: var(--ap-bg); min-height: 100vh; color: var(--ap-slate); overflow-x: hidden; font-size: 18px; }
+.ap-page { font-family: 'Jost', -apple-system, sans-serif; background: var(--ap-bg); min-height: 100vh; color: var(--ap-slate); overflow-x: hidden; font-size: 18px; }
 .ap-page *, .ap-page *::before, .ap-page *::after { box-sizing: border-box; }
 ::selection { background: var(--ap-yellow); color: var(--ap-slate); }
 
@@ -249,7 +249,7 @@
     font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .12em;
     cursor: pointer; background: transparent; color: var(--ap-muted2);
     transition: background .2s, color .2s;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 .ap-filter-btn.active { background: var(--ap-blue); color: white; }
 

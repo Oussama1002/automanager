@@ -11,7 +11,7 @@
         display: flex;
         flex-direction: column;
         background: #f8fafc;
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
         position: relative;
     }
 

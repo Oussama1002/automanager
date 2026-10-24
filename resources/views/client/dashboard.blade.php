@@ -29,7 +29,7 @@
     --navH: 140px; /* global fixed navbar height (client navbar is tall) */
 }
 
-body { background: var(--slate-50); font-family: 'Inter', sans-serif; color: var(--slate-900); }
+body { background: var(--slate-50); font-family: 'Jost', sans-serif; color: var(--slate-900); }
 
 /* ── Shell ────────────────────────────────────────────────── */
 .dash-shell { display: flex; min-height: 100vh; }

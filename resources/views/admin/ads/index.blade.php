@@ -4,10 +4,10 @@
 @section('title', 'Forum des demandes — AUTOMANAGER')
 
 @section('content')
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-    .dmd-wrap { max-width:1180px; margin:40px auto 60px; padding:0 20px; font-family:'Inter',sans-serif; color:#0f172a; }
+    .dmd-wrap { max-width:1180px; margin:40px auto 60px; padding:0 20px; font-family:'Jost',sans-serif; color:#0f172a; }
     .dmd-hero { display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; margin-bottom:28px; }
     .dmd-hero h1 { font-size:30px; font-weight:800; margin:0; letter-spacing:-0.02em; }
     .dmd-hero p  { margin:6px 0 0; color:#64748b; font-size:15px; }

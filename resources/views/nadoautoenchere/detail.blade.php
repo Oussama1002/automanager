@@ -24,13 +24,13 @@
 <title>{{ $brandName }} {{ $modelName }} — Enchère AUTOMANAGER</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <style>
-  body { font-family: 'Inter', sans-serif; background:#F8FAFC; color:#0F172A; }
+  body { font-family: 'Jost', sans-serif; background:#F8FAFC; color:#0F172A; }
   .font-black { font-weight: 900; }
   .card-shadow { box-shadow: 0 1px 3px rgba(15,23,42,0.05), 0 4px 20px rgba(15,23,42,0.04); }
   .card-shadow-hover { box-shadow: 0 8px 30px rgba(20,89,221,0.12); }

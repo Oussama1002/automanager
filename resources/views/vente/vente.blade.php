@@ -20,7 +20,7 @@
     --vp-border : #e2e8f0;
     --vp-white  : #ffffff;
 }
-.vente-mkt { font-family: 'Inter', -apple-system, sans-serif; color: var(--vp-slate); overflow-x: hidden; }
+.vente-mkt { font-family: 'Jost', -apple-system, sans-serif; color: var(--vp-slate); overflow-x: hidden; }
 .vente-mkt *, .vente-mkt *::before, .vente-mkt *::after { box-sizing: border-box; }
 
 /* ── NAVBAR (match home page sizing) ──
@@ -380,7 +380,7 @@
     background: var(--vp-slate50); border: 2px solid transparent;
     border-radius: 16px; padding: 14px 20px;
     font-weight: 650; font-size: 13px; outline: none; width: 100%;
-    font-family: 'Inter', sans-serif; color: var(--vp-slate);
+    font-family: 'Jost', sans-serif; color: var(--vp-slate);
     transition: border-color .2s, background .2s;
 }
 .vm-input:focus { border-color: var(--vp-blue); background: white; }
@@ -443,7 +443,7 @@
     font-size: 12px; font-weight: 800;
     text-transform: uppercase; letter-spacing: .1em;
     color: var(--vp-muted); cursor: pointer;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Jost', sans-serif;
     transition: border-color .2s, color .2s, background .2s;
 }
 .vm-free-btn:hover { border-color: var(--vp-blue); color: var(--vp-blue); background: #FAF6EC; }
@@ -531,7 +531,7 @@
     font-size: 12px; font-weight: 700;
     text-transform: uppercase; letter-spacing: .1em;
     color: var(--vp-muted);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Jost', sans-serif;
     transition: color .2s;
 }
 .vm-cp-cancel:hover { color: var(--vp-slate); }

@@ -4,7 +4,7 @@
     $accentColor = $isAutoEnchere ? '#C8A24B' : '#C8A24B';
 @endphp
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -137,7 +137,7 @@
     <style>
         /* ═══ AUTOMANAGER NAVBAR — fully isolated with nv- prefix ═══ */
         .nado-navbar {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+            font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif !important;
             width: 100% !important;
             position: fixed !important;
             top: 0 !important; left: 0 !important;
@@ -146,7 +146,7 @@
         }
         .nado-navbar *, .nado-navbar *::before, .nado-navbar *::after {
             box-sizing: border-box !important;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+            font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif !important;
         }
 
         /* Top bar */

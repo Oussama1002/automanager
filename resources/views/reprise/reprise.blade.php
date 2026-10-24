@@ -205,7 +205,7 @@ loo<!DOCTYPE html>
                 }
 
                 .nado-navbar {
-                    font-family: 'Inter', sans-serif;
+                    font-family: 'Jost', sans-serif;
                     width: 100%;
                     z-index: 1000;
                     position: relative;
@@ -801,7 +801,7 @@ loo<!DOCTYPE html>
 
                 /* Override any potential global constraints for this specific wrapper */
                 .reprise-wrapper {
-                    font-family: 'Inter', sans-serif;
+                    font-family: 'Jost', sans-serif;
                     color: var(--slate-900);
                     width: 100%;
                     overflow-x: hidden;

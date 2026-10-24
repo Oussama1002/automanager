@@ -6,12 +6,13 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Espace Client — AUTOMANAGER</title>
     <link rel="icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest" defer></script>
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html, body { height: 100%; }
-        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+        body { font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; letter-spacing: 0; }
     </style>
 </head>
 <body>

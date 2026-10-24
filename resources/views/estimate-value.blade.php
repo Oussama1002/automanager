@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estimation Instantanée | Automanager</title>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -22,7 +22,7 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Jost', sans-serif;
             background-color: var(--slate-50);
             color: var(--slate-900);
             min-height: 100vh;
@@ -225,7 +225,7 @@
             font-size: 0.8125rem;
             font-weight: 500;
             color: var(--slate-700);
-            font-family: 'Inter', sans-serif;
+            font-family: 'Jost', sans-serif;
             outline: none;
             transition: border-color 0.2s, box-shadow 0.2s;
             appearance: none;

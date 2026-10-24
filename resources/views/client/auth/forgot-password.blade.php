@@ -3,7 +3,7 @@
 @section('content')
 <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    .auth-page { min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; background: #f8fafc; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; position: relative; }
+    .auth-page { min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; background: #f8fafc; font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif; position: relative; }
     .auth-grid-bg { position: fixed; inset: 0; opacity: 0.03; pointer-events: none; background-image: linear-gradient(#0E0F12 1px, transparent 1px), linear-gradient(90deg, #0E0F12 1px, transparent 1px); background-size: 32px 32px; z-index: 0; }
     .auth-z { position: relative; z-index: 10; display: flex; flex-direction: column; flex: 1; min-height: 0; }
     .auth-main { flex: 1; padding: 32px 16px; }
